@@ -19,6 +19,19 @@
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
     # nix-colors.url = "github:misterio77/nix-colors";
+
+    # ===== non-flake repos ========
+    # astro-nvim is an aesthetic and feature-rich neovim config.
+    # astronvim = {
+    #   url = "github:AstroNvim/AstroNvim/v3.41.2";
+    #   flake = false;
+    # };
+    #
+    # # doom-emacs is a configuration framework for GNU Emacs.
+    # doomemacs = {
+    #   url = "github:doomemacs/doomemacs";
+    #   flake = false;
+    # };
   };
 
   outputs = {
@@ -59,28 +72,41 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      # FIXME replace with your hostname
-      lenovo = nixpkgs.lib.nixosSystem {
+      lenovo-laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          # > Our main nixos configuration file <
-          ./nixos/configuration.nix
+          ./nixos/lenovo-laptop/configuration.nix
         ];
       };
+
+      dell-pc = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          ./nixos/dell-pc/configuration.nix
+        ];
+      };
+
     };
 
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      # FIXME replace with your username@hostname
-      "lenovo@lenovo" = home-manager.lib.homeManagerConfiguration {
+      "tiendat" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
-          # > Our main home-manager configuration file <
-          ./home-manager/home.nix
+          ./home-manager/hosts/tiendat.nix
         ];
       };
+
+      "icslab" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [
+          ./home-manager/hosts/icslab.nix
+        ];
+      };
+
     };
   };
 }

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: str
+# key: str
+# --
+/**
+ * @brief ${1:Structure/Union description}
+ */
+struct ${2:struct_name} {
+    /**
+     * @brief ${3:Member description}
+     */
+    ${4:type} ${5:member_name};
+    // ...
+};

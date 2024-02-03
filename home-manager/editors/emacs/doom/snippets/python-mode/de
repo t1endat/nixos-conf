@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: de
+# key: de
+# --
+def ${1:function_name}(${2:args}):
+    """${3:Function docstring}
+
+    Args:
+        ${4:args}: ${5:Description of args}
+
+    Returns:
+        ${6:return_type}: ${7:Description of return value}
+    """
+
+    #...

@@ -1,0 +1,30 @@
+#+TITLE: Python in Doom Emacs
+* Config
+- Don't forget to uncomment =python= in =init.el=
+  - Change enable =lsp= under =:tools= and change =python= to =(python +lsp)= if you're planning to use a [[https://en.wikipedia.org/wiki/Language_Server_Protocol][Language Protocol Server]] using [[http://emacs-lsp.github.io/][lsp-mode]].
+  - Enable =(company +childframe)= under =:complection= as well.
+* First Steps
+- Run =doom doctor= and look inside the python section to see what executables you lack and install them.
+* Basics
+- First see the LSP section of the main file
+- =M-x run-python= to open a python shell.
+  - =python-shell-send-region= or =C-c C-r= to send a selected region to the shell.
+  - =python-shell-send-file= or =C-c C-l= to send another file to the shell.
+  - =python-shell-send-buffer= or =C-c C-c= to send a selected region to the shell.
+* Virtual Environments
+** General
+- Once a virtual environment is activated, =vterm= will open a terminal with that certain environment activated.
+** [[https://virtualenv.pypa.io/en/stable/][Virtualenv]] or [[https://docs.python.org/3/library/venv.html][Venv]]
+- =pyvenv-workon= to activate a virtualenv defined in =~/.virtualenvs=.
+  - Install virtualenv using =pip install --user --upgrade virtualenv=
+  - After opening a python file, =pyvenv-create= to create a venv.
+- =pyvenv-activate= to activate a venv from a certain path.
+  - Use =python -m venv PATH= to create a venv in a directory.
+- =pyvenv-deactivate= to deactivate a venv or a virtualenv.
+** TODO [[https://github.com/pyenv/pyenv][Pyenv]]
+
+
+* Flycheck
+- See inside the variable =flycheck-checkers= to see from which software check your code. For python the list includes python-flake8, python-pylint, python-pycompile, python-pyright, and python-mypy.
+* Sources
+- https://youtu.be/jPXIP46BnNA
