@@ -3,13 +3,13 @@
   home-manager.users = {
     ${tiendat} = {
       imports = [
-	./hosts/tiendat.nix
+	      ./hosts/tiendat.nix
       ];
     };
 
     ${icslab} = {
       imports = [
-	./hosts/icslab.nix
+	      ./hosts/icslab.nix
       ];
     };
   };

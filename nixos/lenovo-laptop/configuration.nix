@@ -76,13 +76,24 @@
   
   #=======================================================================================
   # global fonts
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    intel-one-mono
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
-  ];
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      intel-one-mono
+      (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    ];
+    fontconfig.defaultFonts = {
+      serif = [ "Intel One Mono" ];
+      sansSerif = [ "Intel One Mono" ];
+      monospace = [ "Intel One Mono" ];
+    };
+  };
+
+  # virtualbox
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -132,7 +143,7 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
-  # programs.sway.enable = true;
+  # enable sway
   hardware.opengl.enable = true; # when using QEMU KVM
   security.polkit.enable = true;
 
@@ -160,12 +171,15 @@
   users.users.tiendat = {
     isNormalUser = true;
     description = "tiendat";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "video" ];
     packages = with pkgs; [
       # firefox
       # thunderbird
     ];
   };
+  
+  # set up brightness
+  programs.light.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
