@@ -1,7 +1,22 @@
 {
+  #TODO: css can not import absolute path
   programs.waybar = {
     enable = true;
-    settings = {
+    style = ''
+    @import "mocha.css";
+
+    * {
+      /* reference the color by using @color-name */
+      color: @text;
+    }
+
+    window#waybar {
+      /* you can also GTK3 CSS functions! */
+      background-color: shade(@base, 0.9);
+      border: 2px solid alpha(@crust, 0.3);
+    }
+    '';
+    settings = [{
       "layer" = "top";
       "modules-left" = [ "sway/workspaces" ];
       "modules-center" = [ "sway/window" ];
@@ -74,6 +89,6 @@
           "tooltip-format"= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       };
 
-    };
+    }];
   };
 }
