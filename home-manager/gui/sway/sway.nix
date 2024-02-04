@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     autotiling # tiling behavior like hyprland
+    swaylock # lock screen
   ];
   wayland.windowManager.sway = {
     enable = true;
