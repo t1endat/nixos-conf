@@ -78,10 +78,11 @@
   # global fonts
   fonts = {
     packages = with pkgs; [
+      intel-one-mono
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-      intel-one-mono
+      font-awesome
       (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
     fontconfig.defaultFonts = {
