@@ -28,6 +28,7 @@
 
       # rofi
       bindsym Mod4+Shift+Return exec 'rofi -show drun'
+      bindsym Mod4+Shift+d exec 'rofi -show run'
 
       # touchpad
       input "type:pointer" accel_profile flat
