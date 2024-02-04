@@ -7,7 +7,6 @@
     gcc                                         # cc global
 
     # terminal
-    # alacritty                                   # terminal emulator
     nushell                                     # mordern shell
     starship                                    # cross-shell prompt
     

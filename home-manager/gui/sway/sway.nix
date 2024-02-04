@@ -45,7 +45,7 @@
     titlebar_border_thickness 0
 
     # wallpaper
-    output "*" bg ~/nixos-conf/wallpapers/aesthetic_deer.jpg fill
+    output "*" bg ./wallpapers/aesthetic_deer.jpg fill
 
     # gaps
     gaps inner 2px

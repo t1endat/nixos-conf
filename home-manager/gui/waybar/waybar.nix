@@ -1,7 +1,7 @@
 {
   programs.waybar = {
     enable = true;
-    settings = [{
+    settings = {
       "layer" = "top";
       "modules-left" = [ "sway/workspaces" ];
       "modules-center" = [ "sway/window" ];
@@ -74,6 +74,6 @@
           "tooltip-format"= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       };
 
-    }];
+    };
   };
 }
