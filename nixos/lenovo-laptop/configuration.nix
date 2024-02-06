@@ -1,3 +1,4 @@
+  #================================== TEMPLATE =====================================================
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
@@ -74,7 +75,7 @@
     auto-optimise-store = true;
   };
   
-  #=======================================================================================
+  #================================== CUSTOM =====================================================
   # global fonts
   fonts = {
     packages = with pkgs; [
@@ -96,9 +97,69 @@
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
 
+  # enable sway
+  hardware.opengl.enable = true; # when using QEMU KVM
+  security.polkit.enable = true;
+
+  # enable bluetooth
+  hardware.bluetooth = {
+    enable = true; # enables support for Bluetooth
+    powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  };
+
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.tiendat = {
+    isNormalUser = true;
+    description = "tiendat";
+    extraGroups = [ "networkmanager" "wheel" "video" ];
+    packages = with pkgs; [
+      # firefox
+      # thunderbird
+    ];
+  };
+  
+  # set up brightness
+  programs.light.enable = true;
+
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+     git
+     vim 
+     wget
+     curl
+  ];
+
+  # Enable the OpenSSH daemon.
+  services.openssh.enable = true;
+
+  # displayManager
+  services.greetd = {
+    enable = true;
+    settings = rec {
+      default_session = {
+        command = "${pkgs.sway}/bin/sway";
+        user = "tiendat";
+      };
+      # default_session = initial_session;
+    };
+  };
+
+  #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  
+  # Some programs need SUID wrappers, can be configured further or are
+  # started in user sessions.
+  # programs.mtr.enable = true;
+  # programs.gnupg.agent = {
+  #   enable = true;
+  #   enableSSHSupport = true;
+  # };
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  # services.xserver.libinput.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -143,11 +204,7 @@
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
-
-  # enable sway
-  hardware.opengl.enable = true; # when using QEMU KVM
-  security.polkit.enable = true;
-
+  
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -164,51 +221,6 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-
-  # enable bluetooth
-  hardware.bluetooth = {
-    enable = true; # enables support for Bluetooth
-    powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.tiendat = {
-    isNormalUser = true;
-    description = "tiendat";
-    extraGroups = [ "networkmanager" "wheel" "video" ];
-    packages = with pkgs; [
-      # firefox
-      # thunderbird
-    ];
-  };
-  
-  # set up brightness
-  programs.light.enable = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-     git
-     vim 
-     wget
-     curl
-  ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
