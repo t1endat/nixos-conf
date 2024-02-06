@@ -1,11 +1,10 @@
-let {
+let 
   modifier = "Mod4";
   left = "h";
   down = "j";
   up = "k";
   right = "l";
-} in
-{
+in {
   "${modifier}+1" = "workspace number 1";
   "${modifier}+2" = "workspace number 2";
   "${modifier}+3" = "workspace number 3";

@@ -1,4 +1,6 @@
-{
+let
+  ROOT = builtins.toString ./.;
+in {
   wayland.windowManager.sway = {
     enable = true;
     config = rec {
@@ -11,9 +13,8 @@
 
         "type:pointer".accel_profile = "flat";
       };
-      # TODO: change to relative path
       output = {
-        "*".bg = "~/nix/nixos-conf/home-manager/gui/sway/wallpapers/aesthetic_deer.jpg fill";
+        "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill";
       };
       modifier = "Mod4";
       terminal = "alacritty";

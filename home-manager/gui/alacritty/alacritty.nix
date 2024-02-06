@@ -1,10 +1,11 @@
-{
+let
+  ROOT = builtins.toString ./.;
+in {
   programs.alacritty = {
     enable = true;
     settings = {
-      # TODO: change to relative path
-      import = ["~/nixos-conf/home-manager/gui/alacritty/catppuccin-mocha.yaml"];
-      # import = [ "./catppuccin-mocha.yaml"];
+      # import = [ "~/nix/nixos-conf/home-manager/gui/alacritty/theme.yaml" ];
+      import = [ "${ROOT}/theme.yaml" ];
     };
   };
 }
