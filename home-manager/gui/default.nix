@@ -4,5 +4,6 @@
     ./rofi
     ./waybar
     ./alacritty
+    ./gtk
   ];
 }

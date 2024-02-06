@@ -141,7 +141,6 @@
         command = "${pkgs.sway}/bin/sway";
         user = "tiendat";
       };
-      # default_session = initial_session;
     };
   };
 
