@@ -41,11 +41,14 @@ in {
   "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
   "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
   
-  "${modifier}+Return" = "exec alacritty";
   "${modifier}+Shift+Return" =  "exec rofi -show drun";
+  "${modifier}+Shift+q" = "exec wlogout";
+  "${modifier}+Shift+e" = "emacsclient --create-frame --alternate-editor=''";
+  
+  "${modifier}+Return" = "exec alacritty";
   "${modifier}+q" = "kill";
   "${modifier}+f" = "fullscreen toggle";
   "${modifier}+b" = "exec firefox";
-  "${modifier}+Shift+q" = "exec wlogout";
   "${modifier}+d" = "exec rofi -show run";
+  "${modifier}+e" = "exec alacritty -e joshuto";
 }

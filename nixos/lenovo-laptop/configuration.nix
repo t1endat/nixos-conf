@@ -90,6 +90,7 @@
       serif = [ "Intel One Mono" ];
       sansSerif = [ "Intel One Mono" ];
       monospace = [ "Intel One Mono" ];
+      emoji = [ "Noto Emoji" ]; 
     };
   };
 
