@@ -1,6 +1,6 @@
 {
   imports = [
     ./sway.nix
-    ./apps.nix
+    ./daemon.nix
   ];
 }
