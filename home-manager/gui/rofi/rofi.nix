@@ -1,8 +1,9 @@
-{
+let 
+  ROOT = builtins.toString ./.;
+in {
   programs.rofi = {
     enable = true;
-    # TODO: change to relative path
-    theme = "~/nixos-conf/home-manager/gui/rofi/catppuccin-mocha.rasi";
+    theme = "${ROOT}/theme.rasi";
     extraConfig = {
       modi = "run,drun";
       show-icons = true;

@@ -1,11 +1,16 @@
+{ config, ... }:
 let 
-  ROOT = builtins.toString ./.;
+  symlink = config.lib.file.mkOutOfStoreSymlink;
 in {
-  #TODO: css can not import absolute path
+  # link file 
+  home.file."./.config/waybar/theme.css" = {
+    source = symlink ./theme.css;
+  };
+  
   programs.waybar = {
     enable = true;
     style = ''
-    @import "${ROOT}/theme.css";
+    @import "theme.css";
 
     * {
       /* reference the color by using @color-name */
