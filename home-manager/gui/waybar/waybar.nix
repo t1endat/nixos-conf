@@ -9,20 +9,7 @@ in {
   
   programs.waybar = {
     enable = true;
-    style = ''
-    @import "theme.css";
-
-    * {
-      /* reference the color by using @color-name */
-      color: @text;
-    }
-
-    window#waybar {
-      /* you can also GTK3 CSS functions! */
-      background-color: shade(@base, 0.9);
-      border: 2px solid alpha(@crust, 0.3);
-    }
-    '';
+    style = (import ./custom_style.css);
     settings = [(import ./settings.nix)];
   };
 }

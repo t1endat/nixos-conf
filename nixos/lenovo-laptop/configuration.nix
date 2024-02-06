@@ -144,6 +144,9 @@
     };
   };
 
+  # for gtk apps
+  programs.dconf.enable = true;
+
   #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
