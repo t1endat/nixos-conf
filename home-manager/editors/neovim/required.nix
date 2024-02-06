@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  home.file."~/.config/nvim/lua/user" = {
+  home.file.".config/nvim/lua/user" = {
     source = ./astronvim_user;
     recursive = true;
   };

@@ -43,7 +43,7 @@ in {
   
   "${modifier}+Shift+Return" =  "exec rofi -show drun";
   "${modifier}+Shift+q" = "exec wlogout";
-  "${modifier}+Shift+e" = "emacsclient --create-frame --alternate-editor=''";
+  "${modifier}+Shift+e" = "exec emacsclient --create-frame --alternate-editor=''";
   
   "${modifier}+Return" = "exec alacritty";
   "${modifier}+q" = "kill";
