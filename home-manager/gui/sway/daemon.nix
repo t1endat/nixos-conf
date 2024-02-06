@@ -7,7 +7,6 @@
     libnotify           # to test mako
     wl-clipboard        # copy/paste utilities
     wlogout             # logout menu              
-    pavucontrol         # PulseAudio Volume Control
   # ] ++ (with pkgsUnstable; [
   #   wl-gammarelay-rs    # control display temperature
   # ]);

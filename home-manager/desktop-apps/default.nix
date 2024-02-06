@@ -5,8 +5,10 @@
   ];
 
   home.packages = with pkgs; [
-    discord
-    blender
+    discord     # for better programming
+    blender     # 3D printing     
+    pavucontrol # PulseAudio Volume Control
+    blueman     # bluetooth
   ];
 }
 
