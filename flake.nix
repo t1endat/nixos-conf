@@ -19,19 +19,6 @@
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
     # nix-colors.url = "github:misterio77/nix-colors";
-
-    # ===== non-flake repos ========
-    # astro-nvim is an aesthetic and feature-rich neovim config.
-    # astronvim = {
-    #   url = "github:AstroNvim/AstroNvim/v3.41.2";
-    #   flake = false;
-    # };
-    #
-    # # doom-emacs is a configuration framework for GNU Emacs.
-    # doomemacs = {
-    #   url = "github:doomemacs/doomemacs";
-    #   flake = false;
-    # };
   };
 
   outputs = {
@@ -53,6 +40,9 @@
     # This is a function that generates an attribute by calling a function you
     # pass to it, with each system as an argument
     forAllSystems = nixpkgs.lib.genAttrs systems;
+
+    # packages unstable
+    pkgsUnstable = import <nixpkgs-unstable> {};
   in {
     # Your custom packages
     # Accessible through 'nix build', 'nix shell', etc
@@ -94,7 +84,6 @@
     homeConfigurations = {
       "tiendat" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-        pkgs-unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
           ./home-manager/hosts/tiendat.nix

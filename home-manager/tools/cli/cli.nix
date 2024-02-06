@@ -1,4 +1,4 @@
-{ pkgs, pkgs-unstable, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -25,12 +25,5 @@
     trash-cli                                   # alternative for rm
     rclone                                      # drive cmdline tool
     neofetch                                    # system info script
-    wl-clipboard                                # copy/paste utilities
-    wl-gammarelay-rs                            # control display temperature
-  ];
-  
-  # packages unstable
-  home.packages = with pkgs-unstable; [
-    wl-gammarelay-rs                            # control display temperature
   ];
 }

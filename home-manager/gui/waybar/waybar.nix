@@ -33,6 +33,7 @@
           "format-linked"= "{ifname} (No IP) ";
           "format-disconnected"= "Disconnected ⚠";
           "format-alt"= "{ifname}: {ipaddr}/{cidr}";
+          "on-click-right"= "alacritty -e nmtui";
       };
 
       "pulseaudio"= {
@@ -52,7 +53,7 @@
               "car"= "";
               "default"= ["" "" ""];
           };
-          "on-click"= "pavucontrol";
+          "on-click-right"= "pavucontrol";
       };
 
       "battery"= {

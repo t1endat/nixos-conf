@@ -1,9 +1,4 @@
-{ pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    autotiling # tiling behavior like hyprland
-    swaylock # lock screen
-  ];
   wayland.windowManager.sway = {
     enable = true;
     config = rec {
@@ -12,11 +7,15 @@
       bars = [{
         command = "waybar";
       }];
+      # keybindings = {
+      #   XF86MonBrightnessDown = "exec light -U 10";
+      # };
     };
     # TODO: change to relative path
     extraConfig = ''
       # custom keybinding
-      bindsym Mod4+Shift+b exec 'firefox'
+      # bindsym Mod4+b exec 'firefox'
+      bindsym Mod4+Ctrl+q exec 'wlogout'
 
       # Brightness
       bindsym XF86MonBrightnessDown exec light -U 10
@@ -56,6 +55,9 @@
 
       # tiling layout
       exec_always autotiling
+
+      # notification daemon
+      exec mako
     '';
   };
 }
