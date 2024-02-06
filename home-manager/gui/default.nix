@@ -5,5 +5,6 @@
     ./waybar
     ./alacritty
     ./gtk
+    ./daemon
   ];
 }

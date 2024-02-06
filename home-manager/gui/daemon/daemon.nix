@@ -10,7 +10,7 @@
     cliphist         # clipboard manager
     grim             # screenshot
     slurp            # region screenshot 
-    gammastep        # control display temperature                     
+    wlsunset         # control display temperature                     
     sov              # workspace overview app 
   ];
 }
