@@ -1,9 +1,11 @@
-{
+let 
+  ROOT = builtins.toString ./.;
+in {
   #TODO: css can not import absolute path
   programs.waybar = {
     enable = true;
     style = ''
-    @import "mocha.css";
+    @import "${ROOT}/theme.css";
 
     * {
       /* reference the color by using @color-name */
