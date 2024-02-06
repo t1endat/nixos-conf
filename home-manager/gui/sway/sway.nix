@@ -38,6 +38,9 @@ in {
 
       # notification daemon
       exec mako
+
+      # cliphist daemon
+      exec wl-paste --watch cliphist store
     '';
   };
 }

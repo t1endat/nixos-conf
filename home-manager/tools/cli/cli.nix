@@ -25,5 +25,9 @@
     trash-cli                                   # alternative for rm
     rclone                                      # drive cmdline tool
     neofetch                                    # system info script
+
+    # tui tools
+    imv                                         # image viewer
+    mpv                                         # line video viewer
   ];
 }
