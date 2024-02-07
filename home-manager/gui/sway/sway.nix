@@ -59,7 +59,7 @@ in {
       
       # daemon
       exec_always autotiling # tiling layout
-      exec mako # notification daemon
+      exec mako --default-timeout 5000 # notification daemon
       exec wl-paste --watch cliphist store # cliphist daemon
       exec wlsunset -l 21.0 -L 105.8 # Hanoi lat/long for wlsunset
       exec rm -f /tmp/sovpipe && mkfifo /tmp/sovpipe && tail -f /tmp/sovpipe | sov -t 500 # sov with swaywm
