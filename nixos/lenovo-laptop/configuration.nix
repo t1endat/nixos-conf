@@ -84,6 +84,7 @@
       noto-fonts-cjk
       noto-fonts-emoji
       font-awesome
+      papirus-icon-theme
       (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
     fontconfig.defaultFonts = {

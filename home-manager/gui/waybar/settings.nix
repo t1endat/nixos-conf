@@ -34,19 +34,19 @@
   
   "bluetooth"= {
     "min-length" = 6;
-	"format"= " {status}";
-	"format-connected"= " {device_alias}";
-	"format-connected-battery"= " {device_alias} {device_battery_percentage}%";
-	# // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-	"tooltip-format"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
-	"tooltip-format-connected"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
-	"tooltip-format-enumerate-connected"= "{device_alias}\t{device_address}";
-	"tooltip-format-enumerate-connected-battery"= "{device_alias}\t{device_address}\t{device_battery_percentage}%";
+	  "format"= " {status}";
+	  "format-connected"= " {device_alias}";
+	  "format-connected-battery"= " {device_alias} {device_battery_percentage}%";
+	  # // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	  "tooltip-format"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
+	  "tooltip-format-connected"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
+	  "tooltip-format-enumerate-connected"= "{device_alias}\t{device_address}";
+	  "tooltip-format-enumerate-connected-battery"= "{device_alias}\t{device_address}\t{device_battery_percentage}%";
     "on-click-right"= "blueman-manager";
   };
 
   "network"= {
-    "min-length" = 18;
+    "min-length" = 22;
     # "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi"= "{essid} ({signalStrength}%) ";
     "format-ethernet"= "{ipaddr}/{cidr} ";
@@ -58,7 +58,7 @@
   };
 
   "pulseaudio"= {
-    "min-length" = 12;
+    "min-length" = 14;
     "format"= "{volume}% {icon} {format_source}";
     "format-bluetooth"= "{volume}% {icon} {format_source}";
     "format-bluetooth-muted"= " {icon} {format_source}";

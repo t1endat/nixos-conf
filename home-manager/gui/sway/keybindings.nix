@@ -5,16 +5,6 @@ let
   up = "k";
   right = "l";
 in {
-  "${modifier}+1" = "workspace number 1";
-  "${modifier}+2" = "workspace number 2";
-  "${modifier}+3" = "workspace number 3";
-  "${modifier}+4" = "workspace number 4";
-  "${modifier}+5" = "workspace number 5";
-  "${modifier}+6" = "workspace number 6";
-  "${modifier}+7" = "workspace number 7";
-  "${modifier}+8" = "workspace number 8";
-  "${modifier}+9" = "workspace number 9";
-  
   "${modifier}+Shift+1" = "move container to workspace number 1";
   "${modifier}+Shift+2" = "move container to workspace number 2";
   "${modifier}+Shift+3" = "move container to workspace number 3";
@@ -41,9 +31,9 @@ in {
   "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
   "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
   
-  "${modifier}+Shift+Return" =  "exec rofi -show drun";
+  "${modifier}+Shift+Return" = "exec rofi -show drun";
   "${modifier}+Shift+q" = "exec wlogout";
-  "${modifier}+Shift+e" = "exec emacsclient --create-frame --alternate-editor=''";
+  "${modifier}+Shift+e" = ''exec emacsclient --create-frame --alternate-editor=""'';
   
   "${modifier}+Return" = "exec alacritty";
   "${modifier}+q" = "kill";
@@ -51,4 +41,6 @@ in {
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec rofi -show run";
   "${modifier}+e" = "exec alacritty -e joshuto";
+  "${modifier}+v" = "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
+  "${modifier}+Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
 }
