@@ -1,8 +1,15 @@
 { pkgs, ... }:
 
 {
+  # doom config
   home.file.".config/doom" = {
     source = ./doom;
+    recursive = true;
+  };
+
+  # library for spelling
+  home.file."Library/Spelling" = {
+    source = ./dicts/en_US;
     recursive = true;
   };
   
