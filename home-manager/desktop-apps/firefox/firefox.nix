@@ -1,7 +1,6 @@
-{ config, ... }:
 let 
+  #TODO: change to better code
   profile = "cpbibh9c.default";
-  symlink = config.lib.file.mkOutOfStoreSymlink;
 in {
   # link file 
   home.file.".mozilla/firefox/${profile}/chrome" = {
