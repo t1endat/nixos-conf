@@ -1,21 +1,21 @@
 { pkgs, ... }:
 
 {
-  # # doom config
-  # home.file.".config/doom" = {
-  #   source = ./doom;
-  #   recursive = true;
-  # };
-  #
-  # # library for spelling
-  # home.file."Library/Spelling" = {
-  #   source = ./dicts/en_US;
-  #   recursive = true;
-  # };
+  # doom config
+  home.file.".config/doom" = {
+    source = ./doom;
+    recursive = true;
+  };
+
+  # library for spelling
+  home.file."Library/Spelling" = {
+    source = ./dicts/en_US;
+    recursive = true;
+  };
   
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs29-gtk3;  
+    package = pkgs.emacs-gtk;  
   };
 
   home.packages = with pkgs; [
@@ -27,7 +27,10 @@
     mpc-cli
     wordnet
     nodejs 
-    libvterm
     sqlite # required by roam
+    libvterm 
+    cmake
+    gnumake
+    libtool
   ];
 }

@@ -17,8 +17,8 @@
 (mapc 'load (file-expand-wildcards "~/.config/doom/configs/*.el"))
 
 ;; make sure installed packages
-(unless (package-installed-p 'nerd-icons)
-  (package-install 'nerd-icons))
+;; (unless (package-installed-p 'nerd-icons)
+;;   (package-install 'nerd-icons))
 
 ;; default path
 (setq projectile-project-search-path '("~/Documents/"))
