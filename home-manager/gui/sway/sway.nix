@@ -1,6 +1,10 @@
 let
   ROOT = builtins.toString ./.;
   mod = "Mod4";
+  lockscreen_lock_after = "300"; # 5min
+  lockscreen_turnoff_after = "10"; # 10sec
+  #TODO: better format
+  lockscreen = "exec swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5 --ring-color bb00cc --key-hl-color 880033 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2";
 in {
   wayland.windowManager.sway = {
     enable = true;
@@ -63,6 +67,13 @@ in {
       exec wl-paste --watch cliphist store # cliphist daemon
       exec wlsunset -l 21.0 -L 105.8 # Hanoi lat/long for wlsunset
       exec rm -f /tmp/sovpipe && mkfifo /tmp/sovpipe && tail -f /tmp/sovpipe | sov -t 500 # sov with swaywm
+
+      # lockscreen after period of time
+      exec swayidle -w \
+      timeout ${lockscreen_lock_after} '${lockscreen}' \
+      timeout ${lockscreen_turnoff_after} 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
+      resume 'swaymsg "output * dpms on"' \
+      before-sleep '${lockscreen}'
     '';
   };
 }

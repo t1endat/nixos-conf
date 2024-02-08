@@ -9,6 +9,14 @@
   (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]\\.direnv\\'")
   ;; or
   ;; (add-to-list 'lsp-file-watch-ignored-files "[/\\\\]\\.my-files\\'")
+
+  ;; add nix support
+  (lsp-register-client
+   (make-lsp-client :new-connection (lsp-stdio-connection "nixd")
+                    :major-modes '(nix-mode)
+                    :priority 0
+                    :server-id 'nixd)
+   )
   )
 
 ;; debugger

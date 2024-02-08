@@ -11,7 +11,11 @@
   pkgs,
   ...
 }:
-{
+let
+  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  session = "${pkgs.sway}/bin/sway";
+  username = "tiendat";
+in {
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
     # outputs.nixosModules.example
@@ -117,9 +121,8 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.tiendat = {
+  users.users.${username} = {
     isNormalUser = true;
-    description = "tiendat";
     extraGroups = [ "networkmanager" "wheel" "video" ];
     packages = with pkgs; [
       # firefox
@@ -145,10 +148,14 @@
   # displayManager
   services.greetd = {
     enable = true;
-    settings = rec {
+    settings = {
+      initial_session = {
+        command = "${session}";
+        user = "${username}";
+      };
       default_session = {
-        command = "${pkgs.sway}/bin/sway";
-        user = "tiendat";
+        command = "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
+        user = "greeter";
       };
     };
   };
@@ -162,6 +169,9 @@
     enable = true;
     enableSSHSupport = true;
   };
+
+  # enable PAM for swaylock
+  security.pam.services.swaylock = {};
 
   #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.

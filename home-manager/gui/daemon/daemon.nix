@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     autotiling       # tiling behavior like hyprland
     swaylock-effects # lock screen
+    swayidle         # lock screen after time
     mako             # notification daemon 
     libnotify        # to test mako
     wl-clipboard     # copy/paste utilities

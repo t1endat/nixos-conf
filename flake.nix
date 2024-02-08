@@ -39,6 +39,12 @@
     # This is a function that generates an attribute by calling a function you
     # pass to it, with each system as an argument
     forAllSystems = nixpkgs.lib.genAttrs systems;
+  
+    # custom user and host
+    user1 = "tiendat";
+    user2 = "icslab";
+    host1 = "lenovo-laptop";
+    host2 = "dell-pc";
   in {
     # # packages unstable
     # pkgsUnstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
@@ -62,14 +68,14 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      lenovo-laptop = nixpkgs.lib.nixosSystem {
+      ${host1} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./nixos/lenovo-laptop/configuration.nix
         ];
       };
 
-      dell-pc = nixpkgs.lib.nixosSystem {
+      ${host2} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./nixos/dell-pc/configuration.nix
@@ -81,19 +87,19 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "tiendat" = home-manager.lib.homeManagerConfiguration {
+      "${user1}" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
-          ./home-manager/hosts/tiendat.nix
+          ./home-manager/hosts/${user1}.nix
         ];
       };
 
-      "icslab" = home-manager.lib.homeManagerConfiguration {
+      "${user2}" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
-          ./home-manager/hosts/icslab.nix
+          ./home-manager/hosts/${user2}.nix
         ];
       };
 
