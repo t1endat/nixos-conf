@@ -5,6 +5,12 @@
 
 ;; lsp config
 (with-eval-after-load 'lsp-mode
+  ;; add nix suppport
+  (lsp-register-client
+    (make-lsp-client :new-connection (lsp-stdio-connection "nixd")
+                     :major-modes '(nix-mode)
+                     :priority 0
+                     :server-id 'nixd))
   (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]\\.devenv\\'")
   (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]\\.direnv\\'")
   ;; or
