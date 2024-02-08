@@ -24,6 +24,7 @@
 (setq projectile-project-search-path '("~/Documents/"))
 (setq delete-by-moving-to-trash t
       trash-directory "~/.local/share/Trash/files/")
+(setq doom-user-dir "~/Documents/nix-dev/nixos-conf/home-manager/editors/emacs/doom/")
 
 ;; disable mouse
 (require 'disable-mouse)
