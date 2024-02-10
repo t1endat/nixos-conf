@@ -8,6 +8,7 @@ in {
     recursive = true;
   };
   
+  # ublock to block short in yt : https://christitus.com/remove-youtube-shorts/
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;

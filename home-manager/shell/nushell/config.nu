@@ -160,6 +160,17 @@ alias bt = blueman-manager
 alias lt = exa -l -T
 alias wifi = nmtui
 
+# switch for home-manager and nixos
+def h1 [] {
+  cd ~/Documents/nix-dev/nixos-conf/; 
+  home-manager switch --flake .#tiendat
+}
+def n1 [] {
+  cd ~/Documents/nix-dev/nixos-conf/; 
+  sudo nixos-rebuild switch --flake .#lenovo-laptop 
+}
+
+
 # -----------------------------------------------------
 # GIT
 # -----------------------------------------------------

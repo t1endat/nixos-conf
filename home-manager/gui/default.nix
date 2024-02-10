@@ -6,5 +6,6 @@
     ./alacritty
     ./gtk
     ./daemon
+    ./mako
   ];
 }
