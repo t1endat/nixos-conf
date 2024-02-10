@@ -1,9 +1,9 @@
 let 
-  ROOT = builtins.toString ./.;
-  mocha = import ./mocha;
+  readFile = builtins.readFile;
 in {
+  # TODO: prevent copy manual
   services.mako = {
     enable = true;
-    extraConfig = mocha;
+    extraConfig = readFile ./mocha;
   };
 }

@@ -4,7 +4,8 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      import = [ "${ROOT}/theme.yaml" ];
+      import = [ "${ROOT}/catppuccin-mocha.toml" ];
+      # import = [ "./theme.yaml" ];
     };
   };
 }
