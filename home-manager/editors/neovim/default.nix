@@ -1,5 +1,1 @@
-{
-  imports = [
-    ./required.nix
-  ];
-}
+{ imports = [ ./required.nix ]; }

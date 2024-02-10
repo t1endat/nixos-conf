@@ -1,10 +1,7 @@
-let
-  ROOT = builtins.toString ./.;
+let ROOT = builtins.toString ./.;
 in {
   programs.alacritty = {
     enable = true;
-    settings = {
-      import = [ "${ROOT}/theme.yaml" ];
-    };
+    settings = { import = [ "${ROOT}/theme.yaml" ]; };
   };
 }

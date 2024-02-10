@@ -12,10 +12,10 @@
     source = ./dicts/en_US;
     recursive = true;
   };
-  
+
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs29-gtk3;  
+    package = pkgs.emacs29-gtk3;
   };
 
   home.packages = with pkgs; [
@@ -26,9 +26,9 @@
     mpd
     mpc-cli
     wordnet
-    nodejs 
+    nodejs
     sqlite # required by roam
-    libvterm 
+    libvterm
     cmake
     gnumake
     libtool

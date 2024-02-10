@@ -1,5 +1,4 @@
-let 
-  readFile = builtins.readFile;
+let readFile = builtins.readFile;
 in {
   services.mako = {
     enable = true;

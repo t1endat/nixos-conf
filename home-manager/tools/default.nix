@@ -1,6 +1,1 @@
-{
-  imports = [
-    ./cli/cli.nix
-    ./direnv/direnv.nix
-  ];
-}
+{ imports = [ ./cli/cli.nix ./direnv/direnv.nix ]; }

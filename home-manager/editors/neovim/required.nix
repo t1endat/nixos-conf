@@ -5,7 +5,7 @@
     source = ./astronvim_user;
     recursive = true;
   };
-  
+
   home.packages = with pkgs; [
     # config editor
     neovim

@@ -1,6 +1,1 @@
-{
-  imports = [
-    ./bash/bash.nix
-    ./nushell/nushell.nix
-  ];
-}
+{ imports = [ ./bash/bash.nix ./nushell/nushell.nix ]; }

@@ -1,5 +1,1 @@
-{
-  imports = [
-    ./gtk.nix
-  ];
-}
+{ imports = [ ./gtk.nix ]; }

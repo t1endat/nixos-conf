@@ -1,11 +1,1 @@
-{
-  imports = [
-    ./sway
-    ./rofi
-    ./waybar
-    ./alacritty
-    ./gtk
-    ./daemon
-    ./mako
-  ];
-}
+{ imports = [ ./sway ./rofi ./waybar ./alacritty ./gtk ./daemon ./mako ]; }

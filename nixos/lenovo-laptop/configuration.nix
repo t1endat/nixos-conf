@@ -1,16 +1,9 @@
-  #================================== TEMPLATE =====================================================
+# ================================== TEMPLATE =====================================================
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{
-  inputs,
-  outputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}:
+{ inputs, outputs, lib, config, pkgs, ... }:
 let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
   session = "${pkgs.sway}/bin/sway";
@@ -59,18 +52,16 @@ in {
 
   # This will add each flake input as a registry
   # To make nix3 commands consistent with your flake
-  nix.registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
+  nix.registry = (lib.mapAttrs (_: flake: { inherit flake; }))
+    ((lib.filterAttrs (_: lib.isType "flake")) inputs);
 
   # This will additionally add your inputs to the system's legacy channels
   # Making legacy nix commands consistent as well, awesome!
-  nix.nixPath = ["/etc/nix/path"];
-  environment.etc =
-    lib.mapAttrs'
-    (name: value: {
-      name = "nix/path/${name}";
-      value.source = value.flake;
-    })
-    config.nix.registry;
+  nix.nixPath = [ "/etc/nix/path" ];
+  environment.etc = lib.mapAttrs' (name: value: {
+    name = "nix/path/${name}";
+    value.source = value.flake;
+  }) config.nix.registry;
 
   nix.settings = {
     # Enable flakes and new 'nix' command
@@ -78,7 +69,7 @@ in {
     # Deduplicate and optimize nix store
     auto-optimise-store = true;
   };
-  
+
   #================================== CUSTOM =====================================================
   # global fonts
   fonts = {
@@ -95,15 +86,17 @@ in {
       serif = [ "Intel One Mono" ];
       sansSerif = [ "Intel One Mono" ];
       monospace = [ "Intel One Mono" ];
-      emoji = [ "Noto Emoji" ]; 
+      emoji = [ "Noto Emoji" ];
     };
   };
 
   # gaming
   programs.steam = {
     enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    remotePlay.openFirewall =
+      true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall =
+      true; # Open ports in the firewall for Source Dedicated Server
   };
 
   # virtualbox
@@ -124,23 +117,19 @@ in {
   users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "video" ];
-    packages = with pkgs; [
-      # firefox
-      # thunderbird
-    ];
+    packages = with pkgs;
+      [
+        # firefox
+        # thunderbird
+      ];
   };
-  
+
   # set up brightness
   programs.light.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-     git
-     vim 
-     wget
-     curl
-  ];
+  environment.systemPackages = with pkgs; [ git vim wget curl ];
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
@@ -154,7 +143,8 @@ in {
         user = "${username}";
       };
       default_session = {
-        command = "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
+        command =
+          "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
         user = "greeter";
       };
     };
@@ -162,7 +152,7 @@ in {
 
   # for gtk apps
   programs.dconf.enable = true;
-  
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.gnupg.agent = {
@@ -171,7 +161,7 @@ in {
   };
 
   # enable PAM for swaylock
-  security.pam.services.swaylock = {};
+  security.pam.services.swaylock = { };
 
   # better battery for laptop
   powerManagement.enable = true;
@@ -191,9 +181,9 @@ in {
       CPU_MIN_PERF_ON_BAT = 0;
       CPU_MAX_PERF_ON_BAT = 20;
 
-     #Optional helps save long term battery health
-     START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
-     STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
+      #Optional helps save long term battery health
+      START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
+      STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
 
     };
   };
@@ -202,7 +192,7 @@ in {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -253,7 +243,7 @@ in {
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
-  
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;

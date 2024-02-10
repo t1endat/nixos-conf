@@ -1,12 +1,13 @@
 let
   ROOT = builtins.toString ./.;
   readFile = builtins.readFile;
-  
+
   mod = "Mod4";
   lockscreen_lock_after = "300"; # 5min
   lockscreen_turnoff_after = "10"; # 10sec
   #TODO: better format
-  lockscreen = "exec swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5 --ring-color bb00cc --key-hl-color 880033 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2";
+  lockscreen =
+    "exec swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5 --ring-color bb00cc --key-hl-color 880033 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2";
 in {
   wayland.windowManager.sway = {
     enable = true;
@@ -20,9 +21,7 @@ in {
 
         "type:pointer".accel_profile = "flat";
       };
-      output = {
-        "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill";
-      };
+      output = { "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill"; };
       modifier = "${mod}";
       terminal = "alacritty";
       bars = [{ command = "waybar"; }];
@@ -62,7 +61,7 @@ in {
       font pango:monospace 0
       titlebar_padding 1
       titlebar_border_thickness 0
-      
+
       # daemon
       exec_always autotiling # tiling layout
       exec mako --default-timeout 5000 # notification daemon
