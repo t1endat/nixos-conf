@@ -9,7 +9,7 @@ in {
   programs.rofi = {
     enable = true;
     font = "Intel One Mono 12";
-    theme = "${ROOT}/theme.rasi";
+    theme = "${ROOT}/catppuccin-mocha.rasi";
     extraConfig = {
       modi = "run,drun";
       lines = 5;
