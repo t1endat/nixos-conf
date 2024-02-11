@@ -5,7 +5,7 @@
   "modules-left" = [ "sway/workspaces" "sway/window" ];
   "modules-center" = [ "clock" ];
   "modules-right" = [ "bluetooth" "network" "pulseaudio" "battery" ];
-
+  
   "sway/window" = { "max-length" = 25; };
 
   "clock" = {
@@ -54,7 +54,7 @@
   };
 
   "network" = {
-    "min-length" = 22;
+    "min-length" = 20;
     # "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi" = "{essid} ({signalStrength}%) ";
     "format-ethernet" = "{ipaddr}/{cidr} ";

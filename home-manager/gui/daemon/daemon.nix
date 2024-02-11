@@ -11,5 +11,6 @@
     slurp # region screenshot
     wlsunset # control display temperature
     sov # workspace overview app
+    swayest-workstyle # icons in workspace
   ];
 }

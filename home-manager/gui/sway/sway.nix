@@ -68,6 +68,7 @@ in {
       exec wl-paste --watch cliphist store # cliphist daemon
       exec wlsunset -l 21.0 -L 105.8 # Hanoi lat/long for wlsunset
       exec rm -f /tmp/sovpipe && mkfifo /tmp/sovpipe && tail -f /tmp/sovpipe | sov -t 500 # sov with swaywm
+      exec sworkstyle # better workspace
 
       # lockscreen after period of time
       exec swayidle -w \

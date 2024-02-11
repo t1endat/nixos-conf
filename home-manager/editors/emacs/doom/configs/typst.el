@@ -4,4 +4,3 @@
 (setq treesit-extra-load-path '("~/.config/emacs/tree-sitter"))
 (setq typst-ts-mode-watch-options "--open")
 
-;; format on save
