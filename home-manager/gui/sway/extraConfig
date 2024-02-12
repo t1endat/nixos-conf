@@ -55,7 +55,8 @@ exec wl-paste --watch cliphist store # cliphist daemon
 exec wlsunset -l 21.0 -L 105.8 # Hanoi lat/long for wlsunset
 exec rm -f /tmp/sovpipe && mkfifo /tmp/sovpipe && tail -f /tmp/sovpipe | sov -t 500 # sov with swaywm
 exec sworkstyle # better workspace
-exec fcitx5
+exec fcitx5 # for input method
+exec swaymsg seat seat0 hide_cursor 3000 # hide cursor after 3 secs
 
 # lockscreen after period of time
 exec swayidle -w \
