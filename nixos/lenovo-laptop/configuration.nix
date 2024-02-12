@@ -74,6 +74,7 @@ in {
   # global fonts
   fonts = {
     packages = with pkgs; [
+      corefonts
       intel-one-mono
       noto-fonts
       noto-fonts-cjk

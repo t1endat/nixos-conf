@@ -6,5 +6,6 @@
     blueman # bluetooth
     obs-studio # screen-recording
     wdisplays # wlroots compositors
+    onlyoffice-bin # hopefully good enough
   ];
 }
