@@ -29,7 +29,7 @@
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
   };
-
+  
   "bluetooth" = {
     "min-length" = 6;
     "format" = " {status}";

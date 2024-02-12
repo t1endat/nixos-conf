@@ -187,6 +187,17 @@ in {
 
     };
   };
+  
+  # enable vietnames input method
+  services.xserver.desktopManager.runXdgAutostartIfNone = true;
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-unikey
+      fcitx5-chinese-addons
+    ];
+  };
+  
 
   #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.
@@ -200,7 +211,7 @@ in {
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos-lenovo"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
