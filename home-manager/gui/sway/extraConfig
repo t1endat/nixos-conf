@@ -1,7 +1,6 @@
 set $mod Mod4
 set $lockscreen_lock_after 300
 set $lockscreen_turnoff_after 10
-set $lockscreen_lock_after 300
 set $lockscreen swaylock \
 --screenshots \
 --clock \
