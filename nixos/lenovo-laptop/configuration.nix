@@ -73,21 +73,22 @@ in {
   #================================== CUSTOM =====================================================
   # global fonts
   fonts = {
+    fontDir.enable = true;
     packages = with pkgs; [
       corefonts
       intel-one-mono
       noto-fonts
       noto-fonts-cjk
-      noto-fonts-emoji
+      # noto-fonts-emoji
       font-awesome
-      papirus-icon-theme
+      papirus-icon-theme # for rofi
       (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
     fontconfig.defaultFonts = {
       serif = [ "Intel One Mono" ];
       sansSerif = [ "Intel One Mono" ];
       monospace = [ "Intel One Mono" ];
-      emoji = [ "Noto Emoji" ];
+      emoji = [ "Font Awesome 6 Free" ];
     };
   };
 
@@ -199,7 +200,6 @@ in {
     ];
   };
   
-
   #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
