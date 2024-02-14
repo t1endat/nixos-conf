@@ -4,8 +4,6 @@
 ;; packages for org
 ;; notification on org
 (package! org-alert)
-;; org ai for chatGPT
-(package! org-ai)
 ;; code rust in org mode
 (package! ob-rust)
 
