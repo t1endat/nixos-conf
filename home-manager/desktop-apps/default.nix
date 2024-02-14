@@ -1,2 +1,8 @@
-{ imports = [ ./firefox/firefox.nix ./others.nix ]; }
+{ 
+  imports = [ 
+    ./firefox/firefox.nix 
+    ./obs-studio/obs_studio.nix
+    ./others.nix 
+  ]; 
+}
 
