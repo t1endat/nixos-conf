@@ -199,6 +199,17 @@ in {
       fcitx5-chinese-addons
     ];
   };
+
+  # enable xdg desktop integration for screen sharing
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+    };
+  };
   
   #================================== DEFAULT CONFIGURATION =====================================================
   # Bootloader.
