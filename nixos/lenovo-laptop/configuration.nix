@@ -75,7 +75,6 @@ in {
   fonts = {
     fontDir.enable = true;
     packages = with pkgs; [
-      corefonts
       intel-one-mono
       noto-fonts
       noto-fonts-cjk
