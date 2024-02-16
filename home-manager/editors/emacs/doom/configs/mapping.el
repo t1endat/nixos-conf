@@ -87,12 +87,9 @@
        )
 
       (:prefix ("j". "My binding functions")
-       ;; eww
-       :desc "eww" "w" #'eww
-       ;; edwina split window
-       :desc "edwina split window" "s" #'edwina-split-window
-       ;; search-duckduckgo
-       :desc "engine/search-duckduckgo" "d" #'engine/search-duckduckgo
+       :desc "eww" "e" #'eww ;; eww
+       :desc "edwina split window" "s" #'edwina-split-window ;; edwina split window
+       :desc "engine/search-duckduckgo" "d" #'engine/search-duckduckgo ;; search-duckduckgo
 
        ;; quick delete window
        :desc "delete-window-below" "j" #'delete-window-below
