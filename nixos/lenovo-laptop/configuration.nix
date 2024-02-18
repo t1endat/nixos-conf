@@ -3,7 +3,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, outputs, lib, config, pkgs, ... }:
+{ inputs, outputs, lib, config, ... }:
 {
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
@@ -18,7 +18,9 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
-    ./custom.nix
+    ./fonts.nix
+    ./daemon.nix
+    ./desktop-apps.nix
   ];
 
   # Allow unfree packages

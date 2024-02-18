@@ -1,48 +1,7 @@
-{ inputs, outputs, lib, config, pkgs, ... }:
+{ pkgs, ... }:
 let
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  session = "${pkgs.sway}/bin/sway";
   username = "tiendat";
 in {
-  #================================== CUSTOM =====================================================
-  # global fonts
-  fonts = {
-    fontDir.enable = true;
-    packages = with pkgs; [
-      intel-one-mono
-      noto-fonts
-      noto-fonts-cjk
-      # noto-fonts-emoji
-      font-awesome
-      papirus-icon-theme # for rofi
-      (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
-    ];
-    fontconfig.defaultFonts = {
-      serif = [ "Intel One Mono" ];
-      sansSerif = [ "Intel One Mono" ];
-      monospace = [ "Intel One Mono" ];
-      # emoji = [ "Font Awesome 6 Free" ];
-      emoji = [ "Symbols Nerd Font" ];
-    };
-  };
-
-  # gaming
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall =
-      true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall =
-      true; # Open ports in the firewall for Source Dedicated Server
-  };
-
-  # virtualbox
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
-
-  # enable sway
-  hardware.opengl.enable = true; # when using QEMU KVM
-  security.polkit.enable = true;
-
   # enable bluetooth
   hardware.bluetooth = {
     enable = true; # enables support for Bluetooth
@@ -69,25 +28,6 @@ in {
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-
-  # displayManager
-  services.greetd = {
-    enable = true;
-    settings = {
-      initial_session = {
-        command = "${session}";
-        user = "${username}";
-      };
-      default_session = {
-        command =
-          "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
-        user = "greeter";
-      };
-    };
-  };
-
-  # for gtk apps
-  programs.dconf.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
