@@ -21,6 +21,7 @@
     ./fonts.nix
     ./daemon.nix
     ./desktop-apps.nix
+    ./systemd.nix
   ];
 
   # Allow unfree packages
