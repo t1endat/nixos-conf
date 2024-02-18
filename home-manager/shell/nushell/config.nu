@@ -165,9 +165,18 @@ def h1 [] {
   cd ~/Documents/nix-dev/nixos-conf/; 
   home-manager switch --flake .#tiendat
 }
+def h2 [] {
+  cd ~/Documents/nix-dev/nixos-conf/; 
+  home-manager switch --flake .#icslab
+}
+
 def n1 [] {
   cd ~/Documents/nix-dev/nixos-conf/; 
   sudo nixos-rebuild switch --flake .#lenovo-laptop 
+}
+def n2 [] {
+  cd ~/Documents/nix-dev/nixos-conf/; 
+  sudo nixos-rebuild switch --flake .#dell-pc 
 }
 
 

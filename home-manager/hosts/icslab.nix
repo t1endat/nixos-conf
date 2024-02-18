@@ -1,7 +1,6 @@
-{ config, pkgs, ... }:
-
 {
-  imports = [ ../packages.nix ../fonts.nix ../default.nix ];
+  imports =
+    [ ../desktop-apps ../editors ../gui ../shell ../tools ../default.nix ];
 
   home.username = "icslab";
   home.homeDirectory = "/home/icslab";
