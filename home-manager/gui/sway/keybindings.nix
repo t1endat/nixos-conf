@@ -65,4 +65,5 @@ in {
   "${modifier}+v" =
     "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
   "${modifier}+Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
+  "${modifier}+p" = "exec wlsunset -t 4000";
 }

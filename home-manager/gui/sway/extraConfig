@@ -41,8 +41,6 @@ bindsym --release $mod+9 exec "echo 0 > /tmp/sovpipe"
 bindsym --release $mod+0 exec "echo 0 > /tmp/sovpipe"
 
 # hide titlebar
-default_border none
-default_floating_border none
 font pango:monospace 0
 titlebar_padding 1
 titlebar_border_thickness 0

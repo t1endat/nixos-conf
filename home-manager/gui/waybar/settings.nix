@@ -5,7 +5,7 @@
   "modules-left" = [ "sway/workspaces" "sway/window" ];
   "modules-center" = [ "clock" ];
   "modules-right" = [ "bluetooth" "network" "pulseaudio" "battery" ];
-  
+
   "sway/window" = { "max-length" = 25; };
 
   "clock" = {
@@ -29,7 +29,7 @@
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
   };
-  
+
   "bluetooth" = {
     "min-length" = 6;
     "format" = " {status}";

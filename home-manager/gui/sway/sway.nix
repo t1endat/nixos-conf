@@ -7,7 +7,7 @@ in {
     source = ./fcitx5;
     recursive = true;
   };
-  
+
   wayland.windowManager.sway = {
     enable = true;
     config = rec {

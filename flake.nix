@@ -40,6 +40,9 @@
       user2 = "icslab";
       host1 = "lenovo-laptop";
       host2 = "dell-pc";
+      
+      #TODO: use for home-manager, should avoid dupplicate it
+      overlays = import ./overlays { inherit inputs; };
     in {
       # # packages unstable
       # pkgsUnstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
@@ -83,7 +86,13 @@
         "${user1}" = home-manager.lib.homeManagerConfiguration {
           pkgs =
             nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-          extraSpecialArgs = { inherit inputs outputs; };
+          extraSpecialArgs = {
+            inherit inputs outputs overlays;
+            pkgs-unstable = import nixpkgs-unstable {
+              system = "x86_64-linux";
+              config.allowUnfree = true;
+            };
+          };
           modules = [ ./home-manager/hosts/${user1}.nix ];
         };
 
