@@ -57,6 +57,9 @@ exec fcitx5 # for input method
 exec swaymsg seat seat0 hide_cursor 3000 # hide cursor after 3 secs
 exec systemctl --user import-environment # ensure that the environment variables are correctly set for the user systemd units
 
+# give sway a little time to startup before starting kanshi.
+exec sleep 5; systemctl --user start kanshi.service
+
 # lockscreen after period of time
 exec swayidle -w \
 timeout $lockscreen_lock_after '$lockscreen' \

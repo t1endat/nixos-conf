@@ -6,6 +6,7 @@ in {
   # reset devices list after reboot, run after init swayWM 
   systemd.services.reset-input-devices= {
     #NOTE: it work!
+    description = "reset input devices";
     after = [ "tlp.service" ];
     wantedBy = [ "tlp.service" ];
     serviceConfig = {
@@ -15,5 +16,14 @@ in {
     script = ''
       bash ${ROOT}/reset-input-devices.sh
     '';
+  };
+
+  # kanshi systemd service
+  systemd.user.services.kanshi = {
+    description = "kanshi daemon";
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = ''${pkgs.kanshi}/bin/kanshi -c ${ROOT}/kanshi_config'';
+    };
   };
 }
