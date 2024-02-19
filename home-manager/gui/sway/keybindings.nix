@@ -56,14 +56,15 @@ in {
     	--fade-in 0.2
   '';
 
-  "${modifier}+Return" = "exec alacritty";
   "${modifier}+q" = "kill";
   "${modifier}+f" = "fullscreen toggle";
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec rofi -show run";
   "${modifier}+e" = "exec alacritty -e joshuto";
+  "${modifier}+p" = "exec wlsunset -t 4000";
   "${modifier}+v" =
     "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
+  "${modifier}+Return" = "exec alacritty";
+  "${modifier}+tab" = "workspace back_and_forth";
   "${modifier}+Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
-  "${modifier}+p" = "exec wlsunset -t 4000";
 }

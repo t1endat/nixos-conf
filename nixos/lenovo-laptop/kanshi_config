@@ -4,5 +4,5 @@ profile single {
 
 profile dual {
 	output "eDP-1" position 1920,0
-	output "HDMI-A-1" position 0,0
+	output "HDMI-A-1" position 0,0 
 }
