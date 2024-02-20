@@ -1,1 +1,1 @@
-{ imports = [ ./emacs ./neovim ]; }
+{ imports = [ ./emacs/required.nix ./neovim/required.nix ]; }

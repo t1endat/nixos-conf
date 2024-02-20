@@ -40,7 +40,7 @@
       user2 = "icslab";
       host1 = "lenovo-laptop";
       host2 = "dell-pc";
-      
+
       #TODO: use for home-manager, should avoid dupplicate it
       overlays = import ./overlays { inherit inputs; };
     in {

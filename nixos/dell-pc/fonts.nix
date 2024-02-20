@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   # global fonts
   fonts = {
     fontDir.enable = true;

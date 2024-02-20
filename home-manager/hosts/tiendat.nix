@@ -1,6 +1,5 @@
 {
-  imports =
-    [ ../desktop-apps ../editors ../gui ../shell ../tools ../default.nix ];
+  imports = [ ../default.nix ];
 
   home.username = "tiendat";
   home.homeDirectory = "/home/tiendat";

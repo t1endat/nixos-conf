@@ -2,7 +2,7 @@
 let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
   session = "${pkgs.sway}/bin/sway";
-  username = "tiendat";
+  # username = "tiendat";
 in {
   # gaming
   programs.steam = {

@@ -1,6 +1,5 @@
 { pkgs, ... }:
-let
-  username = "tiendat";
+let username = "tiendat";
 in {
   # enable bluetooth
   hardware.bluetooth = {
@@ -70,7 +69,7 @@ in {
     enabled = "fcitx5";
     fcitx5.addons = with pkgs; [ fcitx5-unikey ];
   };
-  
+
   # enable xdg desktop integration for screen sharing
   xdg = {
     portal = {

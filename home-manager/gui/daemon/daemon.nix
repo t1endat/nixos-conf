@@ -13,5 +13,5 @@
     sov # workspace overview app
     swayest-workstyle # icons in workspace
     playerctl # mpris media player command-line
-  ]; 
+  ];
 }
