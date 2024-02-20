@@ -25,6 +25,8 @@
     trash-cli # alternative for rm
     rclone # drive cmdline tool
     neofetch # system info script
+    unzip # unzip file
+    zip # zip file
 
     # tui tools
     imv # image viewer
