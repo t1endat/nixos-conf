@@ -39,4 +39,7 @@ in {
       };
     };
   };
+
+  # better gui for network manager
+  
 }

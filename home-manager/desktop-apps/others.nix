@@ -5,5 +5,6 @@
     pavucontrol # PulseAudio Volume Control
     blueman # bluetooth
     wdisplays # wlroots compositors
+    networkmanagerapplet # NetworkManager control applet for GNOME
   ];
 }
