@@ -1,4 +1,10 @@
 return {
+  options = {
+    opt = {
+      colorcolumn = "80"
+    },
+  },
+  
   colorscheme = "catppuccin",
   plugins = {
     {
