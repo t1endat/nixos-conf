@@ -21,10 +21,7 @@
   home.packages = with pkgs; [
     # required packages
     fzf
-    languagetool
     hunspell
-    mpd
-    mpc-cli
     wordnet
     nodejs
     sqlite # required by roam
