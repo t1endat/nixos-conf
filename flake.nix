@@ -18,9 +18,12 @@
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
     # nix-colors.url = "github:misterio77/nix-colors";
+
+    # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
+    hosts.url = github:StevenBlack/hosts;
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, hosts, ... }@inputs:
     let
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
@@ -70,12 +73,34 @@
       nixosConfigurations = {
         ${host1} = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./nixos/lenovo-laptop/configuration.nix ];
+          modules = [ 
+            ./nixos/lenovo-laptop/configuration.nix 
+            hosts.nixosModule {
+              networking.stevenBlackHosts = {
+                enable = true;
+                blockFakenews = true;
+                blockGambling = true;
+                blockPorn = true;
+                blockSocial = true;
+              };
+            }
+          ];
         };
 
         ${host2} = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./nixos/dell-pc/configuration.nix ];
+          modules = [ 
+            ./nixos/lenovo-laptop/configuration.nix 
+            hosts.nixosModule {
+              networking.stevenBlackHosts = {
+                enable = true;
+                blockFakenews = true;
+                blockGambling = true;
+                blockPorn = true;
+                blockSocial = true;
+              };
+            }
+          ];
         };
 
       };
