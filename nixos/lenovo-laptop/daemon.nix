@@ -1,6 +1,7 @@
 { pkgs, ... }:
 let username = "tiendat";
 in {
+  # source: https://nixos.wiki/wiki/Bluetooth#Enabling_Bluetooth_support
   # enable bluetooth
   hardware.bluetooth = {
     enable = true; # enables support for Bluetooth
@@ -18,6 +19,7 @@ in {
     #   ];
   };
 
+  # source: https://nixos.wiki/wiki/Sway#Brightness_and_volume
   # set up brightness
   programs.light.enable = true;
 
@@ -35,9 +37,11 @@ in {
     enableSSHSupport = true;
   };
 
+  # source: https://nixos.wiki/wiki/Sway#Swaylock_cannot_be_unlocked_with_the_correct_password
   # enable PAM for swaylock
   security.pam.services.swaylock = { };
 
+  # source: https://nixos.wiki/wiki/Laptop#Power_management
   # better battery for laptop
   powerManagement.enable = true;
   powerManagement.powertop.enable = true;
@@ -63,6 +67,7 @@ in {
     };
   };
 
+  # source: https://nixos.wiki/wiki/Fcitx5#Setup
   # enable vietnames input method
   services.xserver.desktopManager.runXdgAutostartIfNone = true;
   i18n.inputMethod = {
@@ -70,6 +75,7 @@ in {
     fcitx5.addons = with pkgs; [ fcitx5-unikey ];
   };
 
+  # source: https://nixos.wiki/wiki/Firefox#Screen_Sharing_under_Wayland
   # enable xdg desktop integration for screen sharing
   xdg = {
     portal = {
