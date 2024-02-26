@@ -74,7 +74,7 @@
         ${host1} = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [ 
-            ./nixos/lenovo-laptop/configuration.nix 
+            ./nixos/${host1}/configuration.nix 
             hosts.nixosModule {
               networking.stevenBlackHosts = {
                 enable = true;
@@ -90,7 +90,7 @@
         ${host2} = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [ 
-            ./nixos/lenovo-laptop/configuration.nix 
+            ./nixos/${host2}/configuration.nix 
             hosts.nixosModule {
               networking.stevenBlackHosts = {
                 enable = true;
