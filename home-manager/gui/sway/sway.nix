@@ -24,10 +24,13 @@ in {
       modifier = "Mod4";
       terminal = "alacritty";
       bars = [{ command = "waybar"; }];
+
+      # source: https://www.youtube.com/watch?v=QAmTUkzpIiM
       gaps = {
         inner = 2;
         outer = 2;
       };
+
       keybindings = (import ./keybindings.nix);
     };
     extraConfig = readFile ./extraConfig;

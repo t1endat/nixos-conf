@@ -1,4 +1,5 @@
 #! /bin/sh
+# source: https://bbs.archlinux.org/viewtopic.php?id=273039 
 # Reset the keyboard driver and USB mouse 
         
 /run/current-system/sw/bin/modprobe -r atkbd

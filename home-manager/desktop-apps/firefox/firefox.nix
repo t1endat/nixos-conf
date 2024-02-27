@@ -3,6 +3,7 @@ let
   #TODO: change to better code
   profile = "cpbibh9c.default";
 in {
+  # source: https://github.com/Jamir-boop/minimalisticfox 
   # better style 
   home.file.".mozilla/firefox/${profile}/chrome" = {
     source = ./chrome;
@@ -22,7 +23,8 @@ in {
       };
     };
   };
-
+  
+  # source: https://nixos.wiki/wiki/Firefox#Screen_Sharing_under_Wayland
   # Set environment variables to hint Firefox to use Wayland features
   home.sessionVariables = {
     # only needed for Sway

@@ -1,3 +1,4 @@
+# source: https://github.com/gytis-ivaskevicius/nixfiles/blob/master/home-manager/keybindings.nix
 let
   modifier = "Mod4";
   left = "h";
