@@ -1,8 +1,13 @@
-let readFile = builtins.readFile;
+let 
+  mocha = builtins.readFile ./mocha;
+  extra = builtins.readFile ./extraConfig;
 in {
   services.mako = {
     enable = true;
-    # extraConfig = readFile ./mocha;
-    extraConfig = readFile ./test;
+    # extraConfig = readFile ./mocha readFile ./extraConfig;
+    extraConfig = ''
+    ${mocha}
+    ${extra}
+    '';
   };
 }
