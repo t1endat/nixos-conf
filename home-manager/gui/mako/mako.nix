@@ -4,10 +4,9 @@ let
 in {
   services.mako = {
     enable = true;
-    # extraConfig = readFile ./mocha readFile ./extraConfig;
     extraConfig = ''
-    ${mocha}
     ${extra}
+    ${mocha}
     '';
   };
 }
