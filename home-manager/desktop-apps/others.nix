@@ -3,7 +3,7 @@
     discord # for better programming
     blender # 3D printing
     pavucontrol # PulseAudio Volume Control
-    blueman # bluetooth
+    # blueman # bluetooth
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
   ];
