@@ -26,7 +26,8 @@
     rclone # drive cmdline tool
     neofetch # system info script
     unzip # unzip file
-    zip # zip file
+    zip # .zip file
+    rar # .rar file
 
     # tui tools
     imv # image viewer
