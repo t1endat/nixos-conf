@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   # source: https://nixos.wiki/wiki/Bluetooth#Enabling_Bluetooth_support
   # enable bluetooth
   hardware.bluetooth = {
