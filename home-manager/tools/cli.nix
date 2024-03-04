@@ -14,7 +14,6 @@
     bat # alternative of cat
     fd # alternative of find
     zoxide # alternative of cd
-    joshuto # terminal file manager
     ripgrep # recursively searches directories
     eza # a modern replacement for ls
     thefuck # corrects your previous console command
@@ -28,6 +27,14 @@
     unzip # unzip file
     zip # .zip file
     rar # .rar file
+    
+    yazi # terminal file manager
+    ueberzugpp # required by yazi for wayland
+    file # required by yazi
+    ffmpegthumbnailer # yazi plugin for video thumbnails 
+    unar # yazi plugin for archive preview
+    jq # yazi plugin for JSON preview
+    poppler # yazi plugin for PDF preview
 
     # tui tools
     imv # image viewer
