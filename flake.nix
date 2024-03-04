@@ -21,7 +21,7 @@
     # nix-colors.url = "github:misterio77/nix-colors";
 
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
-    hosts.url = github:StevenBlack/hosts;
+    hosts.url = "github:StevenBlack/hosts";
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, hosts, ... }@inputs:
