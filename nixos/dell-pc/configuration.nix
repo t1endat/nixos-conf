@@ -2,7 +2,7 @@ let username = "icslab";
 in {
   imports = [
     ./hardware-configuration.nix
-    ../default
+    ../base
   ];
   
   # Define a user account. Don't forget to set a password with ‘passwd’.

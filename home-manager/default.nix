@@ -1,1 +1,1 @@
-{ imports = [ ./preset.nix ./desktop-apps ./editors ./gui ./shell ./tools ]; }
+{ imports = [ ./base.nix ./desktop-apps ./editors ./gui ./shell ./tools ]; }

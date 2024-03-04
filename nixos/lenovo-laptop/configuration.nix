@@ -4,7 +4,7 @@ in {
     ./hardware-configuration.nix
     ./laptop.nix
     ./systemd.nix
-    ../default
+    ../base
   ];
   
   # Define a user account. Don't forget to set a password with ‘passwd’.

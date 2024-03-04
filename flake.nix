@@ -42,8 +42,10 @@
       # custom user and host
       user1 = "tiendat";
       user2 = "icslab";
+      users = ["tiendat" "icslab"];
       host1 = "lenovo-laptop";
       host2 = "dell-pc";
+      hosts = ["lenovo-laptop" "dell-pc"];
 
       #TODO: use for home-manager, should avoid dupplicate it
       overlays = import ./overlays { inherit inputs; };
@@ -103,40 +105,71 @@
             }
           ];
         };
-
       };
-
+      
+      
       # Standalone home-manager configuration entrypoint
       # Available through 'home-manager --flake .#your-username@your-hostname'
-      homeConfigurations = {
-        "${user1}" = home-manager.lib.homeManagerConfiguration {
-          pkgs =
-            nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+      # homeConfigurations = {
+      #   "${user1}" = home-manager.lib.homeManagerConfiguration {
+      #     pkgs =
+      #       nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+      #     extraSpecialArgs = {
+      #       inherit inputs outputs overlays;
+      #
+      #       # source: https://github.com/Misterio77/nix-starter-configs/issues/15
+      #       pkgs-unstable = import nixpkgs-unstable {
+      #         system = "x86_64-linux";
+      #         config.allowUnfree = true;
+      #       };
+      #     };
+      #     modules = [ ./home-manager/hosts/${user1}.nix ];
+      #   };
+      #
+      #   "${user2}" = home-manager.lib.homeManagerConfiguration {
+      #     pkgs =
+      #       nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+      #     extraSpecialArgs = {
+      #       inherit inputs outputs overlays;
+      #       pkgs-unstable = import nixpkgs-unstable {
+      #         system = "x86_64-linux";
+      #         config.allowUnfree = true;
+      #       };
+      #     };
+      #     modules = [ ./home-manager/hosts/${user2}.nix ];
+      #   };
+      #
+      # };
+      
+      users = [ "tiendat" "icslab" ];  # Define the list of users
+
+      # configs = map (user:
+      #   home-manager.lib.homeManagerConfiguration {
+      #     pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      #     extraSpecialArgs = {
+      #       inherit inputs outputs overlays;
+      #       pkgs-unstable = import nixpkgs-unstable {
+      #         system = "x86_64-linux";
+      #         config.allowUnfree = true;
+      #       };
+      #     };
+      #     modules = [ ./home-manager/hosts/${user}.nix ];
+      #   }
+      # ) users;
+      
+      homeConfigurations = builtins.mapAttrs (user: value:  
+        home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
             inherit inputs outputs overlays;
-
-            # source: https://github.com/Misterio77/nix-starter-configs/issues/15
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;
             };
           };
-          modules = [ ./home-manager/hosts/${user1}.nix ];
-        };
+          modules = [ ./home-manager/hosts/${user}.nix ];
+        }
+      ) { "tiendat" = 1; "icslab" = 2; };
 
-        "${user2}" = home-manager.lib.homeManagerConfiguration {
-          pkgs =
-            nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-          extraSpecialArgs = {
-            inherit inputs outputs overlays;
-            pkgs-unstable = import nixpkgs-unstable {
-              system = "x86_64-linux";
-              config.allowUnfree = true;
-            };
-          };
-          modules = [ ./home-manager/hosts/${user2}.nix ];
-        };
-
-      };
     };
 }
