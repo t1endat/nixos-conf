@@ -34,3 +34,6 @@
 
 ;; enable fold when open new file
 (setq org-startup-folded 'content)
+
+;; kill frame when use noter
+(setq org-noter-kill-frame-at-session-end nil)

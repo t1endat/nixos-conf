@@ -46,3 +46,4 @@
 (setq display-line-numbers-type 'relative)
 (setq tramp-default-method "ssh")
 
+
