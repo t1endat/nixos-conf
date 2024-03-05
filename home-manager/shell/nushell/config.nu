@@ -161,24 +161,20 @@ alias lt = exa -l -T
 alias wifi = nmtui
 
 # switch for home-manager and nixos
-def h1 [] {
+let user = $env.HOME | path basename
+let host = if $user == "icslab" { "dell-pc" } else { "lenovo-laptop" }
+
+# home-manager swith
+def hs [] {
   cd ~/Documents/nix-dev/nixos-conf/; 
-  home-manager switch --flake .#tiendat
-}
-def h2 [] {
-  cd ~/Documents/nix-dev/nixos-conf/; 
-  home-manager switch --flake .#icslab
+  home-manager switch --flake .#$user
 }
 
-def n1 [] {
+# nixos swith
+def ns [] {
   cd ~/Documents/nix-dev/nixos-conf/; 
-  sudo nixos-rebuild switch --flake .#lenovo-laptop 
+  sudo nixos-rebuild switch --flake .#$host
 }
-def n2 [] {
-  cd ~/Documents/nix-dev/nixos-conf/; 
-  sudo nixos-rebuild switch --flake .#dell-pc 
-}
-
 
 # -----------------------------------------------------
 # GIT

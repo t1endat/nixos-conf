@@ -2,7 +2,8 @@
 
 ;; some config of rss
 (after! elfeed
-  (setq elfeed-search-filter "@1-year-ago +unread"))
+  ;; (setq elfeed-search-filter "@2-year-ago +unread"))
+  (setq elfeed-search-filter "@1-year-ago"))
 (add-hook! 'elfeed-search-mode-hook #'elfeed-update)
 (setq elfeed-goodies/entry-pane-size 0.5)
 
