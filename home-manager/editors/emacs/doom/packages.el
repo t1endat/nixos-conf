@@ -17,7 +17,7 @@
 (package! pomidor)
 
 ;; typst
-(package! typst-ts-mode :recipe (:type git :host sourcehut :repo "meow_king/typst-ts-mode"))
+;; (package! typst-ts-mode :recipe (:type git :host sourcehut :repo "meow_king/typst-ts-mode"))
 
 ;;python autoload env
 (package! pyvenv)
