@@ -48,4 +48,7 @@
       config.common.default = "*";
     };
   };
+
+  # limit configurations in boot menu
+  boot.loader.grub.configurationLimit = 10;
 }
