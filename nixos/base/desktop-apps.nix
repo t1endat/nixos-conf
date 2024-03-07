@@ -56,4 +56,13 @@ in {
   # other functionalities for nixos
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
+    
+  # source: https://nixos.wiki/wiki/Docker
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
 }
