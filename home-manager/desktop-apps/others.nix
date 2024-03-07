@@ -5,5 +5,6 @@
     pavucontrol # PulseAudio Volume Control
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
+    drawio # creating diagrams
   ];
 }
