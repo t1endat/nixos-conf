@@ -1,3 +1,8 @@
+{
+  inputs,
+  pkgs,
+  ...
+}:
 let username = "icslab";
 in {
   imports = [ ./hardware-configuration.nix ../base ];
@@ -6,10 +11,9 @@ in {
   users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "video" "docker" ];
-    # packages = with pkgs;
-    #   [
-    #     # firefox
-    #     # thunderbird
-    #   ];
+    packages = 
+      [
+        inputs.home-manager.packages.${pkgs.system}.default
+      ];
   };
 }
