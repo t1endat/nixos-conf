@@ -7,5 +7,6 @@
     ./gtk/gtk.nix
     ./daemon/daemon.nix
     ./mako/mako.nix
+    ./cursor/cursor.nix
   ];
 }
