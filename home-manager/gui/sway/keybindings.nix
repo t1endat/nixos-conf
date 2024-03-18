@@ -5,6 +5,7 @@ let
   down = "j";
   up = "k";
   right = "l";
+  ROOT = builtins.toString ./.;
 in {
   "${modifier}+Shift+1" = "move container to workspace number 1";
   "${modifier}+Shift+2" = "move container to workspace number 2";
@@ -67,5 +68,6 @@ in {
     "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
   "${modifier}+Return" = "exec alacritty";
   "${modifier}+tab" = "workspace back_and_forth";
+  "${modifier}+s" = "exec ${ROOT}/switch_workspaces.sh";
   "${modifier}+Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
 }

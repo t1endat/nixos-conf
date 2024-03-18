@@ -4,7 +4,7 @@
 
   "modules-left" = [ "sway/workspaces" "sway/window" ];
   "modules-center" = [ "clock" ];
-  "modules-right" = [ "bluetooth" "network" "pulseaudio" "battery" ];
+  "modules-right" = [ "bluetooth" "network" "pulseaudio" "tray" "battery" ];
 
   "sway/window" = { "max-length" = 25; };
 
@@ -29,7 +29,13 @@
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
   };
-
+  
+  
+  "tray" = {
+    "icon-size"= 21;
+    "spacing"= 10;
+  };
+  
   "bluetooth" = {
     "min-length" = 6;
     "format" = " {status}";

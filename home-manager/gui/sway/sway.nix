@@ -2,12 +2,12 @@ let
   ROOT = builtins.toString ./.;
   readFile = builtins.readFile;
 in {
-  # fcitx5 profile
+  # create symlink for fcitx5 profile 
   home.file.".config/fcitx5" = {
     source = ./fcitx5;
     recursive = true;
   };
-
+  
   wayland.windowManager.sway = {
     enable = true;
     config = rec {
