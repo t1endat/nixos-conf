@@ -14,10 +14,10 @@ in {
       true; # Open ports in the firewall for Source Dedicated Server
   };
 
-  # source: https://nixos.wiki/wiki/VirtualBox#VirtualBox_Oracle_Extensions 
-  # virtualbox
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  # source: https://nixos.wiki/wiki/Virt-manager
+  # Virt-manager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # source: https://www.drakerossman.com/blog/wayland-on-nixos-confusion-conquest-triumph
   # enable sway
@@ -26,7 +26,15 @@ in {
 
   # source: https://nixos.wiki/wiki/KDE#GTK_themes_are_not_applied_in_Wayland_applications_.2F_Window_Decorations_missing_.2F_Cursor_looks_different
   # for gtk apps
-  programs.dconf.enable = true;
+  programs.dconf = {
+    enable = true;
+    settings = {
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = ["qemu:///system"];
+        uris = ["qemu:///system"];
+      };
+    };
+  };
 
   # displayManager
   services.greetd = {
