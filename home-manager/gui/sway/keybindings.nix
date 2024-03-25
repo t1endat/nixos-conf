@@ -62,7 +62,8 @@ in {
   "${modifier}+f" = "fullscreen toggle";
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec rofi -show run";
-  "${modifier}+e" = "exec alacritty -e yazi";
+  "${modifier}+e" = "exec thunar";
+  "${modifier}+Ctrl+e" = "exec alacritty -e yazi";
   "${modifier}+p" = "exec wlsunset -t 4000";
   "${modifier}+v" =
     "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";

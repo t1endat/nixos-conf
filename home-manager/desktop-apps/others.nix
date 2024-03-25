@@ -9,4 +9,12 @@
     # thunderbird # mail client
     # blender # 3D printing
   ];
+  
+  # source: https://nixos.wiki/wiki/Virt-manager
+  dconf.settings = {
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
+  };
 }
