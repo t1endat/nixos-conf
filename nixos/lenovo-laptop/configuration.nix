@@ -10,7 +10,7 @@ in {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "video" "docker" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "docker" ];
     packages = 
       [
         # source: https://github.com/Misterio77/nix-starter-configs?tab=readme-ov-file#use-home-manager-as-a-nixos-module

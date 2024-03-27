@@ -4,11 +4,6 @@ let
   session = "${pkgs.sway}/bin/sway";
   # username = "tiendat";
 in {
-  # source: https://nixos.wiki/wiki/Virt-manager
-  # Virt-manager
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
   # source: https://www.drakerossman.com/blog/wayland-on-nixos-confusion-conquest-triumph
   # enable sway
   hardware.opengl.enable = true; # when using QEMU KVM
