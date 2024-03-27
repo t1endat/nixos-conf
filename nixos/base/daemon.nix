@@ -52,4 +52,9 @@
   # source: https://nixos.wiki/wiki/Bootloader#Limiting_amount_of_entries_with_grub_or_systemd-boot
   # limit configurations in boot menu
   boot.loader.systemd-boot.configurationLimit = 10;
+
+  # source: https://nixos.wiki/wiki/Visual_Studio_Code#Wayland
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
 }
