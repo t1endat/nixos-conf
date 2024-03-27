@@ -4,7 +4,6 @@
     ./obs_studio.nix
     ./others.nix
     ./qemu.nix
-    ./vscode.nix
   ];
 }
 
