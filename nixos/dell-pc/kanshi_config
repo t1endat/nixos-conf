@@ -5,5 +5,5 @@ profile single {
 
 profile dual {
 	output "DP-3" position 0,0
-	output "HDMI-A-1" position 1920,0 
+	output "HDMI-A-1" position 1920,0 mode 1366x768 
 }
