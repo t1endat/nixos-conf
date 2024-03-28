@@ -29,13 +29,12 @@
       <big>{:%Y %B}</big>
       <tt><small>{calendar}</small></tt>'';
   };
-  
-  
+
   "tray" = {
-    "icon-size"= 21;
-    "spacing"= 10;
+    "icon-size" = 21;
+    "spacing" = 10;
   };
-  
+
   "bluetooth" = {
     "min-length" = 6;
     "format" = " {status}";

@@ -23,11 +23,11 @@ in {
       DisplayBookmarksToolbar = "never";
       DisablePrivateBrowsing = true;
       DisplayMenuBar = "default-off";
-      SearchBar = "unified"; 
+      SearchBar = "unified";
       Preferences = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
-      
+
       # source: about:support
       ExtensionSettings = (import ./extensions.nix);
     };

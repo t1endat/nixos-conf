@@ -1,3 +1,9 @@
 {
-  imports = [ ./cli.nix ./direnv.nix ./embedded.nix ./global.nix ./tui.nix ];
+  imports = [
+    ./cli.nix
+    ./direnv.nix
+    ./embedded-programming.nix
+    ./global.nix
+    ./tui.nix
+  ];
 }

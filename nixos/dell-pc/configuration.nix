@@ -1,8 +1,4 @@
-{
-  inputs,
-  pkgs,
-  ...
-}:
+{ inputs, pkgs, ... }:
 let username = "icslab";
 in {
   imports = [ ./hardware-configuration.nix ./systemd.nix ../base ];
@@ -11,9 +7,6 @@ in {
   users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "video" "docker" ];
-    packages = 
-      [
-        inputs.home-manager.packages.${pkgs.system}.default
-      ];
+    packages = [ inputs.home-manager.packages.${pkgs.system}.default ];
   };
 }
