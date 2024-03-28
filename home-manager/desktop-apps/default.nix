@@ -1,4 +1,4 @@
 {
-  imports = [ ./firefox/firefox.nix ./obs_studio.nix ./others.nix ./qemu.nix ];
+  imports = [ ./firefox/firefox.nix ./obs_studio.nix ./others.nix ];
 }
 
