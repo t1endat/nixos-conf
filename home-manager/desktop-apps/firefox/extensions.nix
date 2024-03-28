@@ -99,4 +99,9 @@
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/nixos-packages-search-engine/latest.xpi";
     installation_mode = "force_installed";
   };
+  # LeechBlock NG
+  "leechblockng@proginosko.com" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
+    installation_mode = "force_installed";
+  };
 }

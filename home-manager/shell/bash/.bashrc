@@ -8,7 +8,7 @@ PS1='[\u@\h \W]\$ '
 # Define Editor
 export EDITOR=nvim
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 if command -v nu &> /dev/null; then 
   exec nu 
