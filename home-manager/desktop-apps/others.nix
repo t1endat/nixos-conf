@@ -5,6 +5,7 @@
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
     qemu # better machine emulator
+    spotify # prevent listen music in yt
     # drawio # creating diagrams
     # thunderbird # mail client
     # blender # 3D printing
