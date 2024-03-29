@@ -28,6 +28,7 @@
       SearchBar = "unified";
       Preferences = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "browser.ctrlTab.sortByRecentlyUsed" = true;
         "browser.display.use_document_fonts" = 0;
       };
 
