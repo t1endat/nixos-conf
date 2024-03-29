@@ -1,21 +1,23 @@
 { pkgs, ... }:
-let
-  #TODO: change to better code
-  profile = "cpbibh9c.default";
-in {
+{
   # source: https://github.com/Jamir-boop/minimalisticfox 
-  # better style 
-  home.file.".mozilla/firefox/${profile}/chrome" = {
+  home.file.".mozilla/firefox/default/chrome" = {
     source = ./chrome;
     recursive = true;
   };
-
-  # ublock to block short in yt : https://christitus.com/remove-youtube-shorts/
+  
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;
     package = (pkgs.wrapFirefox
       (pkgs.firefox-unwrapped.override { pipewireSupport = true; }) { });
+    profiles = {
+      default = {
+        id = 0;
+        name = "default";
+        path = "default";
+      };
+    };
     # source: about:policies#documentation
     policies = {
       AppAutoUpdate = true;
