@@ -28,6 +28,7 @@
       SearchBar = "unified";
       Preferences = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "browser.display.use_document_fonts" = 0;
       };
 
       # source: about:support
