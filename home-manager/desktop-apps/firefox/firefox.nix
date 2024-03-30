@@ -30,6 +30,9 @@
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "browser.ctrlTab.sortByRecentlyUsed" = true;
         "browser.display.use_document_fonts" = 0;
+        "browser.fullscreen.autohide" = false;
+        "pref.privacy.disable_button.view_passwords_exceptions" = false;
+        "browser.startup.page" = 3;
       };
 
       # source: about:support
