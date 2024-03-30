@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     # terminal
     nushell # mordern shell
-    # starship # cross-shell prompt
 
     # cli tools
     bat # alternative of cat
@@ -20,8 +19,5 @@
     trash-cli # alternative for rm
     rclone # drive cmdline tool
     neofetch # system info script
-    unzip # unzip file
-    zip # .zip file
-    rar # .rar file
   ];
 }

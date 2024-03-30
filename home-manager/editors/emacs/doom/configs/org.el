@@ -6,7 +6,7 @@
                           "~/Documents/org/TODO/long-term.org"
                           "~/Documents/org/TODO/tracking-habit.org" ))
 (setq org-noter-notes-search-path '("~/Documents/org/noter/"))
-(setq org-journal-dir "~/Documents/org/journal/")
+;; (setq org-journal-dir "~/Documents/org/journal/")
 
 ;; org notification
 (require 'org-alert)
@@ -20,7 +20,7 @@
 (setq org-log-done 'time)
 
 ;; Set up for journal
-(setq org-journal-file-type 'yearly)
+;; (setq org-journal-file-type 'yearly)
 
 ;; add mermaid to org-babel-load-languages
 (org-babel-do-load-languages

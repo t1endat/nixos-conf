@@ -38,6 +38,7 @@ in {
     enable = true;
     plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman ];
   };
+  programs.file-roller.enable = true;
 
   # other functionalities for nixos
   services.gvfs.enable = true; # Mount, trash, and other functionalities
