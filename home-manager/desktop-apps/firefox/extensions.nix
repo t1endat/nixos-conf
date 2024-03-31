@@ -78,11 +78,11 @@
     installation_mode = "force_installed";
   };
   # Firefox Relay
-  "private-relay@firefox.com" = {
-    install_url =
-      "https://addons.mozilla.org/firefox/downloads/latest/private-relay/latest.xpi";
-    installation_mode = "force_installed";
-  };
+  # "private-relay@firefox.com" = {
+  #   install_url =
+  #     "https://addons.mozilla.org/firefox/downloads/latest/private-relay/latest.xpi";
+  #   installation_mode = "force_installed";
+  # };
   # Simple Tab Groups
   "simple-tab-groups@drive4ik" = {
     install_url =

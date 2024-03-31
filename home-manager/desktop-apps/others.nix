@@ -5,8 +5,8 @@
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
     spotify # prevent listen music in yt
-    # drawio # creating diagrams
-    # thunderbird # mail client
+    thunderbird # mail client
+    drawio # creating diagrams
     # blender # 3D printing
   ];
 }

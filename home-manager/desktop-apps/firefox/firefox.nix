@@ -1,11 +1,10 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   # source: https://github.com/Jamir-boop/minimalisticfox 
   home.file.".mozilla/firefox/default/chrome" = {
     source = ./chrome;
     recursive = true;
   };
-  
+
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;
