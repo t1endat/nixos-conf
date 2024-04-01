@@ -19,5 +19,6 @@
     trash-cli # alternative for rm
     rclone # drive cmdline tool
     neofetch # system info script
+    screen # multiplexes a physical terminal
   ];
 }
