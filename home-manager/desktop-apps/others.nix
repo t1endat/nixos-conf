@@ -7,6 +7,7 @@
     spotify # prevent listen music in yt
     thunderbird # mail client
     drawio # creating diagrams
+    evince # pdf reader 
     # blender # 3D printing
   ];
 }
