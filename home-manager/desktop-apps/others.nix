@@ -6,8 +6,9 @@
     networkmanagerapplet # NetworkManager control applet for GNOME
     spotify # prevent listen music in yt
     thunderbird # mail client
-    drawio # creating diagrams
     evince # pdf reader
+    onlyoffice-bin # office tools
+    # drawio # creating diagrams
     # isoimagewriter # iso writer
     # blender # 3D printing
   ];
