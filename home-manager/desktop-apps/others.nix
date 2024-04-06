@@ -8,6 +8,7 @@
     thunderbird # mail client
     drawio # creating diagrams
     evince # pdf reader
+    # isoimagewriter # iso writer
     # blender # 3D printing
   ];
 }
