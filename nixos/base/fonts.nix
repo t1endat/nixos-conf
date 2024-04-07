@@ -5,6 +5,7 @@
     fontDir.enable = true;
     packages = with pkgs; [
       intel-one-mono
+      corefonts
       noto-fonts
       noto-fonts-cjk
       # noto-fonts-emoji

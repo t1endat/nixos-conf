@@ -7,7 +7,7 @@
     spotify # prevent listen music in yt
     thunderbird # mail client
     evince # pdf reader
-    onlyoffice-bin # office tools
+    libreoffice-qt # office tools
     # drawio # creating diagrams
     # isoimagewriter # iso writer
     # blender # 3D printing
