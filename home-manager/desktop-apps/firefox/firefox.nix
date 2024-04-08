@@ -31,6 +31,7 @@
         "browser.display.use_document_fonts" = 0;
         "browser.fullscreen.autohide" = false;
         "browser.startup.page" = 3;
+        "font.name.monospace.x-western" = "Symbols Nerd Font";
       };
 
       # source: about:support
