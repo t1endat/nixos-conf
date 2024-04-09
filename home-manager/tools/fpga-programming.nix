@@ -3,9 +3,9 @@
     ghdl # vhdl simulator
     verilog # icarus Verilog compiler 
     gtkwave # VCD/Waveform viewer
-    yosys # fpga synthesis
-    nextpnr # fpga place and route
-    openfpgaloader # fpga programming
+    yosys # synthesis
+    nextpnr # place and route
+    openfpgaloader # flashing 
     python311Packages.apycula # Gowin FPGAs
   ];
 }
