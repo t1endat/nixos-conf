@@ -1,5 +1,5 @@
 {
   imports =
-    [ ./firefox/firefox.nix ./obs_studio.nix ./others.nix ];
+    [ ./firefox/firefox.nix ./obs_studio.nix ./vscode.nix ./others.nix ];
 }
 
