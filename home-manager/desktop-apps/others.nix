@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    discord # for better programming
+    # discord # for better programming
     pavucontrol # PulseAudio Volume Control
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
