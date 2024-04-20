@@ -4,21 +4,20 @@
   fonts = {
     fontDir.enable = true;
     packages = with pkgs; [
-      intel-one-mono
+      (nerdfonts.override { fonts = [ "IntelOneMono" ]; })
       corefonts
       noto-fonts
       noto-fonts-cjk
       # noto-fonts-emoji
       font-awesome
       papirus-icon-theme # for rofi
-      (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
     fontconfig.defaultFonts = {
-      serif = [ "Intel One Mono" ];
-      sansSerif = [ "Intel One Mono" ];
-      monospace = [ "Intel One Mono" ];
+      serif = [ "IntoneMono Nerd Font Mono" ];
+      sansSerif = [ "IntoneMono Nerd Font Mono" ];
+      monospace = [ "IntoneMono Nerd Font Mono" ];
+      emoji = [ "IntoneMono Nerd Font Mono" ];
       # emoji = [ "Font Awesome 6 Free" ];
-      emoji = [ "Symbols Nerd Font" ];
     };
   };
 }

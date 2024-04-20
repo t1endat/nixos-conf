@@ -8,7 +8,7 @@ in {
 
   programs.rofi = {
     enable = true;
-    font = "Intel One Mono 12";
+    font = "IntoneMono Nerd Font Mono 12";
     theme = "${ROOT}/catppuccin-mocha.rasi";
     extraConfig = {
       modi = "run,drun";
