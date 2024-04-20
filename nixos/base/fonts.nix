@@ -8,6 +8,7 @@
       corefonts
       noto-fonts
       noto-fonts-cjk
+      font-awesome
       papirus-icon-theme # for rofi
     ];
     fontconfig.defaultFonts = {
