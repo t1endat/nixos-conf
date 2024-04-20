@@ -126,4 +126,9 @@
       "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
     installation_mode = "force_installed";
   };
+  # Popup Blocker Ultimate
+  "{60B7679C-BED9-11E5-998D-8526BB8E7F8B}" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/popup-blocker-ultimate/latest.xpi";
+    installation_mode = "force_installed";
+  };
 }
