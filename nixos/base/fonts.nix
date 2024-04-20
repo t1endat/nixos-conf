@@ -8,7 +8,7 @@
       corefonts
       noto-fonts
       noto-fonts-cjk
-      font-awesome
+      font-awesome # for waybar
       papirus-icon-theme # for rofi
     ];
     fontconfig.defaultFonts = {
