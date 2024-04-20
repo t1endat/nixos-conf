@@ -53,6 +53,4 @@
   # limit configurations in boot menu
   boot.loader.systemd-boot.configurationLimit = 10;
 
-  # source: https://nixos.wiki/wiki/Visual_Studio_Code#Wayland
-  environment.sessionVariables = { NIXOS_OZONE_WL = "1"; };
 }
