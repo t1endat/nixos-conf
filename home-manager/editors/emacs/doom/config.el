@@ -5,10 +5,10 @@
 (setq user-full-name "tiendat"
       user-mail-address "tiendatlework@gmail.com")
 
-(setq doom-font (font-spec :family "IntoneMono Nerd Font Mono" :size 16)
-      doom-variable-pitch-font (font-spec :family "IntoneMono Nerd Font Mono" :height 1.3)
-      doom-symbol-font (font-spec :family "IntoneMono Nerd Font Mono")
-      doom-big-font (font-spec :family "IntoneMono Nerd Font Mono" :size 22))
+(setq doom-font (font-spec :family "IntoneMono Nerd Font" :size 16)
+      doom-variable-pitch-font (font-spec :family "IntoneMono Nerd Font" :height 1.3)
+      doom-symbol-font (font-spec :family "IntoneMono Nerd Font")
+      doom-big-font (font-spec :family "IntoneMono Nerd Font" :size 22))
 
 (setq doom-theme 'catppuccin)
 

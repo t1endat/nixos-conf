@@ -8,16 +8,13 @@
       corefonts
       noto-fonts
       noto-fonts-cjk
-      # noto-fonts-emoji
-      font-awesome
       papirus-icon-theme # for rofi
     ];
     fontconfig.defaultFonts = {
-      serif = [ "IntoneMono Nerd Font Mono" ];
-      sansSerif = [ "IntoneMono Nerd Font Mono" ];
-      monospace = [ "IntoneMono Nerd Font Mono" ];
-      emoji = [ "IntoneMono Nerd Font Mono" ];
-      # emoji = [ "Font Awesome 6 Free" ];
+      serif = [ "IntoneMono Nerd Font Propo" ];
+      sansSerif = [ "IntoneMono Nerd Font Propo" ];
+      monospace = [ "IntoneMono Nerd Font Propo" ];
+      emoji = [ "IntoneMono Nerd Font Propo" ];
     };
   };
 }

@@ -3,8 +3,7 @@
 * {
   /* reference the color by using @color-name */
   color: @text;
-  /* font-family: monospace, FontAwesome; */
-  font-family: "IntoneMono Nerd Font Mono", "Font Awesome 6 Free";
+  font-family: "IntoneMono Nerd Font Propo";
 }
 
 window#waybar {
