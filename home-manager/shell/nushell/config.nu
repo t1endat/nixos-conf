@@ -155,6 +155,7 @@ alias c = clear
 alias v = nvim
 alias j = joshuto
 alias e = exit
+alias y = yazi
 alias tp = trash-put
 alias bt = blueman-manager  
 alias lt = exa -l -T

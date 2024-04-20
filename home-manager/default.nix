@@ -1,1 +1,1 @@
-{ imports = [ ./base.nix ./desktop-apps ./editors ./gui ./shell ./tools ]; }
+{ imports = [ ./base.nix ./environment.nix ./desktop-apps ./editors ./gui ./shell ./tools ]; }

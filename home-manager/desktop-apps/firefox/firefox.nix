@@ -38,11 +38,4 @@
       ExtensionSettings = (import ./extensions.nix);
     };
   };
-
-  # source: https://nixos.wiki/wiki/Firefox#Screen_Sharing_under_Wayland
-  # Set environment variables to hint Firefox to use Wayland features
-  home.sessionVariables = {
-    # only needed for Sway
-    XDG_CURRENT_DESKTOP = "sway";
-  };
 }
