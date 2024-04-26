@@ -11,7 +11,7 @@ in {
 
   # source: https://nixos.wiki/wiki/KDE#GTK_themes_are_not_applied_in_Wayland_applications_.2F_Window_Decorations_missing_.2F_Cursor_looks_different
   # for gtk apps
-  programs.dconf = { enable = true; };
+  programs.dconf.enable = true;
 
   # displayManager
   services.greetd = {
@@ -63,4 +63,9 @@ in {
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
+
+  # source: https://nixos.wiki/wiki/GNOME/Calendar
+  services.gnome.evolution-data-server.enable = true;
+  services.gnome.gnome-online-accounts.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 }
