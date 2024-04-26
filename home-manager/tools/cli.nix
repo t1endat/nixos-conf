@@ -21,5 +21,6 @@
     neofetch # system info script
     screen # multiplexes a physical terminal
     just # A handy way to save and run project-specific commands
+    appimage-run # run appimage application
   ];
 }

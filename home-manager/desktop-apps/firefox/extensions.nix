@@ -131,4 +131,9 @@
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/popup-blocker-ultimate/latest.xpi";
     installation_mode = "force_installed";
   };
+  # Edge Translate
+  "nickyfeng@edgetranslate.com" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/edge_translate/latest.xpi";
+    installation_mode = "force_installed";
+  };
 }
