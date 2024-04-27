@@ -6,6 +6,8 @@
     yosys # synthesis
     nextpnr # place and route
     openfpgaloader # flashing 
-    python311Packages.apycula # Gowin FPGAs
+    # python311Packages.apycula # Gowin FPGAs
+    icestorm # Lattice iCE40 FPGAs
+    # trellis # Lattice ECP5 FPGAs
   ];
 }
