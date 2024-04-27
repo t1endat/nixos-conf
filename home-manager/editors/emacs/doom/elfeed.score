@@ -1,0 +1,19 @@
+;;; Elfeed score file                                     -*- lisp -*-
+((version 10)
+ ("title")
+ ("content")
+ ("title-or-content"
+  (:text "on-device" :title-value 50 :content-value 50 :type s)
+  (:text "tinyML" :title-value 50 :content-value 50 :type s)
+  (:text "webassembly" :title-value 50 :content-value 50 :type s)
+  
+  (:text "anomaly detection" :title-value 30 :content-value 50 :type s)
+  (:text "self-supervised" :title-value 20 :content-value 50 :type s)
+  (:text "time series" :title-value 20 :content-value 50 :type s))
+ ("tag")
+ ("authors")
+ ("feed")
+ ("link")
+ ("udf")
+ (mark nil)
+ ("adjust-tags"))

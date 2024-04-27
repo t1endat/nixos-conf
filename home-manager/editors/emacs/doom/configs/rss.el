@@ -48,6 +48,7 @@
 (use-package! elfeed-score
   :after elfeed
   :config
-  (elfeed-score-load-score-file "~/Documents/org/elfeed.score") ; See the elfeed-score documentation for the score file syntax
+  ;; (elfeed-score-load-score-file "~/Documents/org/elfeed.score") ; See the elfeed-score documentation for the score file syntax
+  (elfeed-score-load-score-file "~/.config/doom/elfeed.score") ; See the elfeed-score documentation for the score file syntax
   (elfeed-score-enable)
   (define-key elfeed-search-mode-map "=" elfeed-score-map))
