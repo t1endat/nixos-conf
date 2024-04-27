@@ -25,7 +25,6 @@
 (setq delete-by-moving-to-trash t
       trash-directory "~/.local/share/Trash/files/")
 (setq doom-user-dir "~/Documents/nix-dev/nixos-conf/home-manager/editors/emacs/doom/")
-;; (setq org-file-apps (append org-file-apps (list ("\\.pdf\\'" "evince %s"))))
 
 ;; disable mouse
 (require 'disable-mouse)
@@ -46,5 +45,3 @@
 (setq projectile-indexing-method 'alien)
 (setq display-line-numbers-type 'relative)
 (setq tramp-default-method "ssh")
-
-

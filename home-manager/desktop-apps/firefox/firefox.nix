@@ -22,7 +22,7 @@
       AppAutoUpdate = true;
       DisableAppUpdate = false;
       DisplayBookmarksToolbar = "never";
-      # DisablePrivateBrowsing = true;
+      DisablePrivateBrowsing = true;
       DisplayMenuBar = "default-off";
       SearchBar = "unified";
       Preferences = {

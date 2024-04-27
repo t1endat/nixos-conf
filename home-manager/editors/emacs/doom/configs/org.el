@@ -37,3 +37,15 @@
 
 ;; kill frame when use noter
 (setq org-noter-kill-frame-at-session-end nil)
+
+;; set pdf-viewer
+(defun my-org-setup ()
+  (setq org-file-apps
+        '((auto-mode . emacs)
+          (directory . emacs)
+          ("\\.mm\\'" . default)
+          ("\\.x?html?\\'" . default)
+          ("\\.pdf\\'" . "evince %s")))
+  )
+;; (add-hook 'buffer-list-update-hook 'my-org-setup)
+(add-hook 'org-mode-hook 'my-org-setup)
