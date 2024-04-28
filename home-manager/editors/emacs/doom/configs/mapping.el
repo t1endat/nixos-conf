@@ -65,7 +65,8 @@
 (map! :leader
       ;; rebinding vterm
       (:prefix ("o")
-       :desc "multi-vterm-dedicated-toggle" "T" #'multi-vterm-dedicated-toggle
+       :desc "multi-vterm-dedicated-toggle" "t" #'multi-vterm-dedicated-toggle
+       :desc "+vterm/toggle" "T" #'+vterm/toggle
        )
 
       ;; rebining for comment
