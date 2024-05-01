@@ -1,8 +1,10 @@
 {
   programs.nushell = {
     enable = true;
-    extraConfig = builtins.readFile ./config.nu;
-    extraEnv = builtins.readFile ./env.nu;
+    configFile.source = ./config.nu;
+    envFile.source = ./env.nu;
+    extraConfig = builtins.readFile ./configExtra.nu;
+    extraEnv = builtins.readFile ./envExtra.nu;
   };
 }
 
