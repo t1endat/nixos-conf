@@ -164,6 +164,22 @@
         "type": "github"
       }
     },
+    "nushell-defaultConfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714619513,
+        "narHash": "sha256-rbETUJceOHtwlx4HseK/AN2zGF0dNhr7s2TGzytI838=",
+        "owner": "nushell",
+        "repo": "nushell",
+        "rev": "cc91e36cf8aaf1411d55e6e8510e644fdb1e3d29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nushell",
+        "repo": "nushell",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "blockSites": "blockSites",
@@ -174,7 +190,8 @@
         "home-manager": "home-manager",
         "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nushell-defaultConfig": "nushell-defaultConfig"
       }
     }
   },

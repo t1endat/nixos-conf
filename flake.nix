@@ -17,7 +17,7 @@
     catppuccin-alacritty = {
       url = "github:catppuccin/alacritty";
       flake = false;
-    }; 
+    };
 
     catppuccin-mako = {
       url = "github:catppuccin/mako";
@@ -32,12 +32,12 @@
     catppuccin-waybar = {
       url = "github:catppuccin/waybar";
       flake = false;
-    }; 
+    };
 
-    # nushell-defaultConfig = {
-    #   url = "github:nushell/nushell";
-    #   flake = false;
-    # }; 
+    nushell-defaultConfig = {
+      url = "github:nushell/nushell";
+      flake = false;
+    };
 
     minimalisticfox = {
       url = "github:Jamir-boop/minimalisticfox";
@@ -45,7 +45,9 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar, catppuccin-alacritty, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites
+    , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
+    , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
     let
       # custom user and host
       users = {
@@ -117,7 +119,9 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays minimalisticfox catppuccin-mako catppuccin-rofi catppuccin-waybar catppuccin-alacritty;
+            inherit inputs outputs overlays minimalisticfox catppuccin-mako
+              catppuccin-rofi catppuccin-waybar catppuccin-alacritty
+              nushell-defaultConfig;
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;
