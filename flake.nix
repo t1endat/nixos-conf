@@ -1,28 +1,43 @@
 {
   description =
-    "Template from https://github.com/Misterio77/nix-starter-configs";
+    "";
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    # You can access packages and modules from different nixpkgs revs
-    # at the same time. Here's an working example:
-
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # TODO: Add any other flake you might need
-    # hardware.url = "github:nixos/nixos-hardware";
-
-    # Shameless plug: looking for a way to nixify your themes and make
-    # everything match nicely? Try nix-colors!
-    # nix-colors.url = "github:misterio77/nix-colors";
-
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
     blockSites.url = "github:StevenBlack/hosts";
+
+    # non-flake repositories
+    # catppuccin-alacritty = {
+    #   url = "github:catppuccin/alacritty";
+    #   flake = false;
+    # }; 
+    #
+    # catppuccin-mako = {
+    #   url = "github:catppuccin/mako";
+    #   flake = false;
+    # }; 
+    # 
+    # catppuccin-rofi = {
+    #   url = "github:catppuccin/rofi";
+    #   flake = false;
+    # }; 
+    # 
+    # catppuccin-waybar = {
+    #   url = "github:catppuccin/waybar";
+    #   flake = false;
+    # }; 
+    #
+    # nushell-defaultConfig = {
+    #   url = "github:nushell/nushell";
+    #   flake = false;
+    # }; 
   };
 
   outputs =
@@ -54,9 +69,6 @@
       #TODO: use for home-manager, should avoid dupplicate it
       overlays = import ./overlays { inherit inputs; };
     in {
-      # # packages unstable
-      # pkgsUnstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
-
       # Your custom packages
       # Accessible through 'nix build', 'nix shell', etc
       packages =

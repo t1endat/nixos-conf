@@ -11,7 +11,5 @@
     pkgs.clippy
     pkgs.rustfmt
     pkgs-unstable.rust-analyzer
-    
-    pkgs.go # go global
   ];
 }

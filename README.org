@@ -1,1 +1,4 @@
 I alllready moved to NixOS, hopefully I am not crazy
+- TODO
+  1. [ ] apply fetch from github
+

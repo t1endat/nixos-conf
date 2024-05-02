@@ -1,9 +1,25 @@
 { pkgs, ... }: {
   # source: https://github.com/Jamir-boop/minimalisticfox 
-  home.file.".mozilla/firefox/default/chrome" = {
-    source = ./chrome;
+  # home.file.".config/minimalisticfox-git" = {
+  #   source = builtins.fetchGit {
+  #     url = "https://github.com/Jamir-boop/minimalisticfox";
+  #     rev = "a2c8e2d7bf6e5060bf4b77d9e8330f92fccf5376";
+  #   };
+  # };
+  
+  home.file.".config/minimalisticfox-git" = {
+    source = builtins.fetchGit {
+      url = "https://github.com/Jamir-boop/minimalisticfox";
+      rev = "a2c8e2d7bf6e5060bf4b77d9e8330f92fccf5376";
+    };
     recursive = true;
+    # target = builtins.toString ./.;
   };
+  
+  # home.file.".mozilla/firefox/default/chrome/userChrome.css" = {
+  #   # source = "/home/tiendat/.config/minimalisticfox-git/userChrome.css";
+  #   source = "${HOME}/.config/minimalisticfox-git/userChrome.css";
+  # }
 
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
