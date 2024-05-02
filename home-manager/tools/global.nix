@@ -3,9 +3,9 @@
 {
   home.packages = [
     pkgs.python311 # python global
-    
+
     pkgs.gcc # cc global
-    
+
     pkgs.rustc # rust global
     pkgs.cargo
     pkgs.clippy

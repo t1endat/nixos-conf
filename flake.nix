@@ -1,6 +1,5 @@
 {
-  description =
-    "";
+  description = "tiendatAI's config for NixOs";
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
@@ -14,34 +13,39 @@
     blockSites.url = "github:StevenBlack/hosts";
 
     # non-flake repositories
-    # catppuccin-alacritty = {
-    #   url = "github:catppuccin/alacritty";
-    #   flake = false;
-    # }; 
-    #
-    # catppuccin-mako = {
-    #   url = "github:catppuccin/mako";
-    #   flake = false;
-    # }; 
-    # 
-    # catppuccin-rofi = {
-    #   url = "github:catppuccin/rofi";
-    #   flake = false;
-    # }; 
-    # 
-    # catppuccin-waybar = {
-    #   url = "github:catppuccin/waybar";
-    #   flake = false;
-    # }; 
-    #
+    # source: https://github.com/ryan4yin/nix-config
+    catppuccin-alacritty = {
+      url = "github:catppuccin/alacritty";
+      flake = false;
+    }; 
+
+    catppuccin-mako = {
+      url = "github:catppuccin/mako";
+      flake = false;
+    };
+
+    catppuccin-rofi = {
+      url = "github:catppuccin/rofi";
+      flake = false;
+    };
+
+    catppuccin-waybar = {
+      url = "github:catppuccin/waybar";
+      flake = false;
+    }; 
+
     # nushell-defaultConfig = {
     #   url = "github:nushell/nushell";
     #   flake = false;
     # }; 
+
+    minimalisticfox = {
+      url = "github:Jamir-boop/minimalisticfox";
+      flake = false;
+    };
   };
 
-  outputs =
-    { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar, catppuccin-alacritty, ... }@inputs:
     let
       # custom user and host
       users = {
@@ -113,7 +117,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays;
+            inherit inputs outputs overlays minimalisticfox catppuccin-mako catppuccin-rofi catppuccin-waybar catppuccin-alacritty;
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;

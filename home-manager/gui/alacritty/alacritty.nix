@@ -1,7 +1,10 @@
+{ catppuccin-alacritty, ... }:
 let ROOT = builtins.toString ./.;
 in {
   programs.alacritty = {
     enable = true;
-    settings = { import = [ "${ROOT}/theme.yaml" ]; };
+    settings = (builtins.fromTOML 
+      (builtins.readFile "${catppuccin-alacritty}/catppuccin-mocha.toml") 
+    ); 
   };
 }

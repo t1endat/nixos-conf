@@ -18,6 +18,70 @@
         "type": "github"
       }
     },
+    "catppuccin-alacritty": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712663324,
+        "narHash": "sha256-Pi1Hicv3wPALGgqurdTzXEzJNx7vVh+8B9tlqhRpR2Y=",
+        "owner": "catppuccin",
+        "repo": "alacritty",
+        "rev": "94800165c13998b600a9da9d29c330de9f28618e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "alacritty",
+        "type": "github"
+      }
+    },
+    "catppuccin-mako": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1691845483,
+        "narHash": "sha256-nUzWkQVsIH4rrCFSP87mXAka6P+Td2ifNbTuP7NM/SQ=",
+        "owner": "catppuccin",
+        "repo": "mako",
+        "rev": "9dd088aa5f4529a3dd4d9760415e340664cb86df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "mako",
+        "type": "github"
+      }
+    },
+    "catppuccin-rofi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672491652,
+        "narHash": "sha256-DNorfyl3C4RBclF2KDgwvQQwixpTwSRu7fIvihPN8JY=",
+        "owner": "catppuccin",
+        "repo": "rofi",
+        "rev": "5350da41a11814f950c3354f090b90d4674a95ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "rofi",
+        "type": "github"
+      }
+    },
+    "catppuccin-waybar": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711907468,
+        "narHash": "sha256-9lY+v1CTbpw2lREG/h65mLLw5KuT8OJdEPOb+NNC6Fo=",
+        "owner": "catppuccin",
+        "repo": "waybar",
+        "rev": "0830796af6aa64ce8bc7453d42876a628777ac68",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "waybar",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -36,6 +100,22 @@
         "owner": "nix-community",
         "ref": "release-23.11",
         "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "minimalisticfox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713713261,
+        "narHash": "sha256-pD1O1AYk8KPYbw7ycUpVx2fd+plcINfSfl5pU+GdgTs=",
+        "owner": "Jamir-boop",
+        "repo": "minimalisticfox",
+        "rev": "a2c8e2d7bf6e5060bf4b77d9e8330f92fccf5376",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Jamir-boop",
+        "repo": "minimalisticfox",
         "type": "github"
       }
     },
@@ -87,7 +167,12 @@
     "root": {
       "inputs": {
         "blockSites": "blockSites",
+        "catppuccin-alacritty": "catppuccin-alacritty",
+        "catppuccin-mako": "catppuccin-mako",
+        "catppuccin-rofi": "catppuccin-rofi",
+        "catppuccin-waybar": "catppuccin-waybar",
         "home-manager": "home-manager",
+        "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }
