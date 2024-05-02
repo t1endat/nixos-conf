@@ -5,8 +5,10 @@ let
 in {
   programs.nushell = {
     enable = true;
-    configFile.source = "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_config.nu";
-    envFile.source = "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_env.nu";
+    configFile.source =
+      "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_config.nu";
+    envFile.source =
+      "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_env.nu";
     extraConfig = ''
       ${theme}
       ${extraConfig}
