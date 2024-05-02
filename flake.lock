@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "astro-nvim": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-fLqbrGOvqBxr6UJjWGXixogQYnc0zeuB3AfqYB9fx10=",
+        "type": "file",
+        "url": "https://github.com/AstroNvim/template"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/AstroNvim/template"
+      }
+    },
     "blockSites": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -80,6 +92,18 @@
         "owner": "catppuccin",
         "repo": "waybar",
         "type": "github"
+      }
+    },
+    "doom-emacs": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-qiWAQfak6xm/DOH56qS7J0IZVE70mXoIgZgl9WfiOtw=",
+        "type": "file",
+        "url": "https://github.com/doomemacs/doomemacs"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/doomemacs/doomemacs"
       }
     },
     "home-manager": {
@@ -182,11 +206,13 @@
     },
     "root": {
       "inputs": {
+        "astro-nvim": "astro-nvim",
         "blockSites": "blockSites",
         "catppuccin-alacritty": "catppuccin-alacritty",
         "catppuccin-mako": "catppuccin-mako",
         "catppuccin-rofi": "catppuccin-rofi",
         "catppuccin-waybar": "catppuccin-waybar",
+        "doom-emacs": "doom-emacs",
         "home-manager": "home-manager",
         "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
