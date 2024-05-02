@@ -43,21 +43,11 @@
       url = "github:Jamir-boop/minimalisticfox";
       flake = false;
     };
-
-    astro-nvim = {
-      url = "https://github.com/AstroNvim/template";
-      flake = false;
-    };
-
-    doom-emacs = {
-      url = "https://github.com/doomemacs/doomemacs";
-      flake = false;
-    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
-    , catppuccin-alacritty, nushell-defaultConfig, astro-nvim, doom-emacs, ... }@inputs:
+    , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
     let
       # custom user and host
       users = {
@@ -131,7 +121,7 @@
           extraSpecialArgs = {
             inherit inputs outputs overlays minimalisticfox catppuccin-mako
               catppuccin-rofi catppuccin-waybar catppuccin-alacritty
-              nushell-defaultConfig astro-nvim doom-emacs;
+              nushell-defaultConfig;
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;
