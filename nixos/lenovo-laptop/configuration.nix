@@ -4,7 +4,6 @@ in {
   imports = [
     ./hardware-configuration.nix
     ./laptop.nix
-    ./gaming.nix
     ./systemd.nix
     ../base
   ];

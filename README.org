@@ -1,5 +1,5 @@
 I alllready moved to NixOS, hopefully I am not crazy
 - TODO
   1. [x] apply fetch from github
-  2. [ ] dive in to nix
+  2. [ ] use caching for building doom emacs
 
