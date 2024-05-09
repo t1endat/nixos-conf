@@ -7,5 +7,6 @@
     ./wasm-programming.nix
     ./global.nix
     ./tui.nix
+    ./git.nix
   ];
 }

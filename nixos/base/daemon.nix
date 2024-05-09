@@ -12,7 +12,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ git vim wget curl xdg-utils ];
+  environment.systemPackages = with pkgs; [ vim wget curl xdg-utils ];
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
