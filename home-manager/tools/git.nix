@@ -1,7 +1,7 @@
 {
   programs.git = {
     enable = true;
-    userName = "t1endat";
+    userName = "tiendat";
     userEmail = "tiendatlework@gmail.com";
     lfs.enable = true;
   };
