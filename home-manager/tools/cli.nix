@@ -23,7 +23,7 @@
     just # A handy way to save and run project-specific commands
     appimage-run # run appimage application
     unzip # .zip files
-    rar # .rar files
+    # rar # .rar files
     _7zz # 7z files
   ];
 }

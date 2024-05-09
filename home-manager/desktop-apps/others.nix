@@ -6,6 +6,5 @@
     spotify # prevent listen music in yt
     libreoffice-qt # office tools
     evince # pdf reader
-    evolution # mail and calendar client
   ];
 }
