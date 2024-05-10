@@ -27,10 +27,10 @@
       Preferences = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "browser.ctrlTab.sortByRecentlyUsed" = true;
-        "browser.display.use_document_fonts" = 0;
+        # "browser.display.use_document_fonts" = 0;
         "browser.fullscreen.autohide" = false;
         "browser.startup.page" = 3;
-        "font.name.monospace.x-western" = "Symbols Nerd Font";
+        "font.name.monospace.x-western" = "IntoneMono Nerd Font Propo";
       };
 
       # source: about:support
