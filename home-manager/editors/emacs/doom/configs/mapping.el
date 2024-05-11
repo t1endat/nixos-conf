@@ -61,7 +61,6 @@
   (other-window 1)
   )
 
-
 (map! :leader
       ;; rebinding vterm
       (:prefix ("o")
