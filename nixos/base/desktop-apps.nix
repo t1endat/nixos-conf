@@ -56,4 +56,8 @@ in {
 
   # source: https://nixos.wiki/wiki/Flatpak
   services.flatpak.enable = true;
+
+  # source: https://nixos.wiki/wiki/Virt-manager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }
