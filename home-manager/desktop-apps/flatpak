@@ -2,3 +2,7 @@ cc.arduino.IDE2
 com.discordapp.Discord
 com.visualstudio.code
 
+# games
+page.kramo.Cartridges
+com.play0ad.zeroad
+

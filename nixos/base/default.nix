@@ -6,6 +6,5 @@
     ./desktop-apps.nix
     ./udev.nix
     ./environment.nix
-    ./gaming.nix
   ];
 }
