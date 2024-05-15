@@ -6,5 +6,6 @@
     ./desktop-apps.nix
     ./udev.nix
     ./environment.nix
+    ./extra-hosts.nix
   ];
 }
