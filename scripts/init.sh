@@ -14,6 +14,10 @@ fi
 
 # Optional: Inform the user about the success
 echo "Already init for atuin"
+
+# requirement for qemu/kvm 
+sudo virsh net-autostart default 
+
 exit 0
 
 
