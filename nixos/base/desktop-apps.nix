@@ -60,4 +60,11 @@ in {
   # source: https://nixos.wiki/wiki/Virt-manager
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
+  
+  # game time!
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
 }
