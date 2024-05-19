@@ -63,7 +63,7 @@ in {
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec rofi -show run";
   "${modifier}+e" = "exec alacritty -e yazi";
-  "${modifier}+Ctrl+e" = "exec thunar";
+  # "${modifier}+Ctrl+e" = "exec thunar"; # use more yazi
   "${modifier}+p" = "exec wlsunset -t 4000";
   "${modifier}+v" =
     "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
