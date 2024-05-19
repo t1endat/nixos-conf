@@ -1,5 +1,4 @@
-{ pkgs, yazi, ... }:
-{
+{ pkgs, yazi, ... }: {
   home.packages = with pkgs; [
     ueberzugpp # required by yazi for wayland
     file # required by yazi
@@ -12,9 +11,10 @@
     imv # image viewer
     mpv # line video viewer
   ];
-  
+
   programs.yazi = {
-	  enable = true;
-	  package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
+    enable = true;
+    package =
+      yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
   };
 }

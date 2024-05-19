@@ -1,7 +1,8 @@
-{ pkgs, ... }: 
+{ pkgs, ... }:
 let
   platformio-udev = builtins.fetchurl {
-    url = "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules";
+    url =
+      "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules";
     sha256 = "1ihkih39vi48azf40z9qjy3m8whnpa21x7fjw2vrbwy15kzvp8yp";
   };
 in {
