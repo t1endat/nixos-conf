@@ -1,17 +1,20 @@
-{ pkgs, pkgs-unstable, ... }:
-
+{ pkgs, yazi, ... }:
 {
-  home.packages = [
-    pkgs-unstable.yazi # terminal file manager
-    pkgs.ueberzugpp # required by yazi for wayland
-    pkgs.file # required by yazi
-    pkgs.ffmpegthumbnailer # yazi plugin for video thumbnails
-    pkgs.unar # yazi plugin for archive preview
-    pkgs.jq # yazi plugin for JSON preview
-    pkgs.poppler # yazi plugin for PDF preview
+  home.packages = with pkgs; [
+    ueberzugpp # required by yazi for wayland
+    file # required by yazi
+    ffmpegthumbnailer # yazi plugin for video thumbnails
+    unar # yazi plugin for archive preview
+    jq # yazi plugin for JSON preview
+    poppler # yazi plugin for PDF preview
 
     # tui tools
-    pkgs.imv # image viewer
-    pkgs.mpv # line video viewer
+    imv # image viewer
+    mpv # line video viewer
   ];
+  
+  programs.yazi = {
+	  enable = true;
+	  package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
+  };
 }

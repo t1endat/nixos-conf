@@ -1,5 +1,12 @@
 {
   description = "tiendatAI's config for NixOs";
+  
+  # caching
+  nixConfig = {
+    extra-substituters = [ "https://yazi.cachix.org" ];
+    extra-trusted-public-keys = [ "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k=" ];
+  };
+    
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
@@ -11,6 +18,9 @@
 
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
     blockSites.url = "github:StevenBlack/hosts";
+
+    # source: https://yazi-rs.github.io/docs/installation
+    yazi.url = "github:sxyazi/yazi";
 
     # non-flake repositories
     # source: https://github.com/ryan4yin/nix-config
@@ -45,7 +55,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, yazi
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
     , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
     let
@@ -119,7 +129,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays minimalisticfox catppuccin-mako
+            inherit inputs outputs overlays yazi minimalisticfox catppuccin-mako
               catppuccin-rofi catppuccin-waybar catppuccin-alacritty
               nushell-defaultConfig;
             pkgs-unstable = import nixpkgs-unstable {
