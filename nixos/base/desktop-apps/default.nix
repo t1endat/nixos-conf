@@ -8,5 +8,6 @@
     ./opengl.nix
     ./thunar.nix
     ./virt-manager.nix
+    ./nh.nix
   ];
 }

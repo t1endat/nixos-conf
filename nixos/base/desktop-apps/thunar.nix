@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # source: https://nixos.wiki/wiki/Thunar
   # thunar file manager
