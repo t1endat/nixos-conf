@@ -1,4 +1,5 @@
 # source: https://github.com/gytis-ivaskevicius/nixfiles/blob/master/home-manager/keybindings.nix
+{ pkgs, ... }:
 let
   modifier = "Mod4";
   left = "h";
@@ -27,21 +28,21 @@ in {
   "${modifier}+Shift+${up}" = "move up";
   "${modifier}+Shift+${right}" = "move right";
 
-  "XF86MonBrightnessDown" = "exec light -U 5";
-  "XF86MonBrightnessUp" = "exec light -A 5";
-  "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+  "XF86MonBrightnessDown" = "exec ${pkgs.light}/bin/light -U 5";
+  "XF86MonBrightnessUp" = "exec ${pkgs.light}/bin/light -A 5";
+  "XF86AudioRaiseVolume" = "exec  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
   "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
   "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
-  "XF86AudioPlay" = "exec playerctl play-pause";
-  "XF86AudioNext" = "exec playerctl next";
-  "XF86AudioPrev" = "exec playerctl prev";
+  "XF86AudioPlay" = "exec ${pkgs.playerctl}/bin/playerctl play-pause";
+  "XF86AudioNext" = "exec ${pkgs.playerctl}/bin/playerctl next";
+  "XF86AudioPrev" = "exec ${pkgs.playerctl}/bin/playerctl prev";
 
-  "${modifier}+Shift+Return" = "exec rofi -show drun";
-  "${modifier}+Shift+q" = "exec wlogout";
+  "${modifier}+Shift+Return" = "exec ${pkgs.rofi}/bin/rofi -show drun";
+  "${modifier}+Shift+q" = "exec ${pkgs.wlogout}/bin/wlogout";
   "${modifier}+Shift+e" =
-    ''exec emacsclient --create-frame --alternate-editor=""'';
+    ''exec ${pkgs.emacs29-gtk3}/bin/emacsclient --create-frame --alternate-editor=""'';
   "${modifier}+Ctrl+l" = ''
-      exec swaylock \
+      exec ${pkgs.swaylock-effects}/bin/swaylock \
     	--screenshots \
     	--clock \
     	--indicator \
@@ -61,14 +62,15 @@ in {
   "${modifier}+q" = "kill";
   "${modifier}+f" = "fullscreen toggle";
   "${modifier}+b" = "exec firefox";
-  "${modifier}+d" = "exec rofi -show run";
-  "${modifier}+e" = "exec alacritty -e yazi";
+  "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show run";
+  # "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${yazi.packages.${pkgs.system}.default}/bin/yazi";
+  "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi --version";
   # "${modifier}+Ctrl+e" = "exec thunar"; # use more yazi
-  "${modifier}+p" = "exec wlsunset -t 4000";
+  "${modifier}+p" = "exec ${pkgs.wlsunset}/bin/wlsunset -t 4000";
   "${modifier}+v" =
-    "exec cliphist list | rofi -dmenu | cliphist decode | wl-copy";
-  "${modifier}+Return" = "exec alacritty";
+    "exec ${pkgs.cliphist}/bin/cliphist list | ${pkgs.rofi}/bin/rofi -dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy";
+  "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
   "${modifier}+tab" = "workspace back_and_forth";
   "${modifier}+s" = "exec ${ROOT}/switch_workspaces.sh";
-  "${modifier}+Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
+  "${modifier}+Print" = ''exec ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp -d)" - | ${pkgs.wl-clipboard}/bin/wl-copy -t image/png'';
 }

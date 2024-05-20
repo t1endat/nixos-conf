@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 let
   ROOT = builtins.toString ./.;
   readFile = builtins.readFile;
@@ -31,7 +32,8 @@ in {
         outer = 2;
       };
 
-      keybindings = (import ./keybindings.nix);
+      # keybindings = (import ./keybindings.nix);
+      keybindings = (import ./keybindings.nix { inherit pkgs; });
     };
     extraConfig = readFile ./extraConfig;
   };
