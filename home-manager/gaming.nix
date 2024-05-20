@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # source: https://github.com/vimjoyer/nixos-gaming-video?tab=readme-ov-file#protonup
   home.packages = with pkgs; [
