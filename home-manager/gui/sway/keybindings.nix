@@ -30,7 +30,7 @@ in {
 
   "XF86MonBrightnessDown" = "exec ${pkgs.light}/bin/light -U 5";
   "XF86MonBrightnessUp" = "exec ${pkgs.light}/bin/light -A 5";
-  "XF86AudioRaiseVolume" = "exec  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+  "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
   "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
   "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
   "XF86AudioPlay" = "exec ${pkgs.playerctl}/bin/playerctl play-pause";
@@ -73,4 +73,5 @@ in {
   "${modifier}+tab" = "workspace back_and_forth";
   "${modifier}+s" = "exec ${ROOT}/switch_workspaces.sh";
   "${modifier}+Print" = ''exec ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp -d)" - | ${pkgs.wl-clipboard}/bin/wl-copy -t image/png'';
+  "${modifier}+Shift+Print" = ''exec ${pkgs.grim}/bin/grim -o $(${pkgs.sway}/bin/swaymsg -t get_outputs | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')'';
 }

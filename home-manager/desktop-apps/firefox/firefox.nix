@@ -1,9 +1,4 @@
 { pkgs, minimalisticfox, ... }: {
-  # source: https://github.com/Jamir-boop/minimalisticfox 
-  home.file.".mozilla/firefox/default/chrome/userChrome.css" = {
-    source = "${minimalisticfox}/userChrome.css";
-  };
-
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;
@@ -12,8 +7,9 @@
     profiles = {
       default = {
         id = 0;
-        name = "default";
         path = "default";
+        # source: https://github.com/Jamir-boop/minimalisticfox 
+        userChrome = builtins.readFile "${minimalisticfox}/userChrome.css";
       };
     };
     # source: about:policies#documentation
