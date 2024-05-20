@@ -64,7 +64,7 @@ in {
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show run";
   # "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${yazi.packages.${pkgs.system}.default}/bin/yazi";
-  "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi --version";
+  "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi";
   # "${modifier}+Ctrl+e" = "exec thunar"; # use more yazi
   "${modifier}+p" = "exec ${pkgs.wlsunset}/bin/wlsunset -t 4000";
   "${modifier}+v" =
