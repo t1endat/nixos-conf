@@ -6,10 +6,6 @@
     powerOnBoot = true; # powers up the default Bluetooth controller on boot
   };
 
-  # source: https://nixos.wiki/wiki/Sway#Brightness_and_volume
-  # set up brightness
-  programs.light.enable = true;
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [ vim wget curl xdg-utils ];
@@ -52,5 +48,4 @@
   # source: https://nixos.wiki/wiki/Bootloader#Limiting_amount_of_entries_with_grub_or_systemd-boot
   # limit configurations in boot menu
   boot.loader.systemd-boot.configurationLimit = 10;
-
 }

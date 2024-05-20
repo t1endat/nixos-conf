@@ -6,7 +6,12 @@ let
 in {
   # source: https://www.drakerossman.com/blog/wayland-on-nixos-confusion-conquest-triumph
   # enable sway
-  hardware.opengl.enable = true; # when using QEMU KVM
+  hardware.opengl = {
+    enable = true; # when using QEMU KVM
+    # source: https://github.com/vimjoyer/nixos-gaming-video
+    driSupport = true;
+    driSupport32Bit = true;
+  }
   security.polkit.enable = true;
 
   # source: https://nixos.wiki/wiki/KDE#GTK_themes_are_not_applied_in_Wayland_applications_.2F_Window_Decorations_missing_.2F_Cursor_looks_different

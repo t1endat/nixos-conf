@@ -11,6 +11,13 @@ in {
     packages = [
       # source: https://github.com/Misterio77/nix-starter-configs?tab=readme-ov-file#use-home-manager-as-a-nixos-module
       inputs.home-manager.packages.${pkgs.system}.default
+
+      # for gaming
+      pkgs.mangohud
     ];
   };
+  
+  # source: https://nixos.wiki/wiki/Sway#Brightness_and_volume
+  # set up brightness
+  programs.light.enable = true;
 }

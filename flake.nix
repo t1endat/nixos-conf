@@ -1,5 +1,5 @@
 {
-  description = "tiendatAI's config for NixOs";
+  description = "t1endat's config for NixOs";
 
   # caching
   nixConfig = {
@@ -22,7 +22,10 @@
 
     # source: https://yazi-rs.github.io/docs/installation
     yazi.url = "github:sxyazi/yazi";
-
+    
+    # source: https://github.com/NixOS/nixos-hardware?tab=readme-ov-file#using-nix-flakes-support
+    # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    
     # non-flake repositories
     # source: https://github.com/ryan4yin/nix-config
     catppuccin-alacritty = {
@@ -121,6 +124,7 @@
                 blockSocial = true;
               };
             }
+            # nixos-hardware.nixosModules.dell-xps-13-9380
           ];
         }) hosts;
 
