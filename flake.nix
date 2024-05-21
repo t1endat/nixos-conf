@@ -22,10 +22,10 @@
 
     # source: https://yazi-rs.github.io/docs/installation
     yazi.url = "github:sxyazi/yazi";
-    
+
     # source: https://github.com/NixOS/nixos-hardware?tab=readme-ov-file#using-nix-flakes-support
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    
+
     # non-flake repositories
     # source: https://github.com/ryan4yin/nix-config
     catppuccin-alacritty = {
@@ -66,8 +66,14 @@
       # custom user and host
       users = [ "tiendat" "icslab" ];
       hosts = [ "lenovo-laptop" "dell-pc" ];
-      userToAttrs = builtins.listToAttrs (builtins.map(user: { name = user; value = null; }) users);
-      hostToAttrs = builtins.listToAttrs (builtins.map(host: { name = host; value = null; }) hosts);
+      userToAttrs = builtins.listToAttrs (builtins.map (user: {
+        name = user;
+        value = null;
+      }) users);
+      hostToAttrs = builtins.listToAttrs (builtins.map (host: {
+        name = host;
+        value = null;
+      }) hosts);
 
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
@@ -130,9 +136,9 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays_var yazi minimalisticfox catppuccin-mako
-              catppuccin-rofi catppuccin-waybar catppuccin-alacritty
-              nushell-defaultConfig;
+            inherit inputs outputs overlays_var yazi minimalisticfox
+              catppuccin-mako catppuccin-rofi catppuccin-waybar
+              catppuccin-alacritty nushell-defaultConfig;
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;

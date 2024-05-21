@@ -1,5 +1,4 @@
-{ config, catppuccin-waybar, ... }:
-{
+{ config, catppuccin-waybar, ... }: {
   # link file 
   home.file.".config/waybar/mocha.css" = {
     # source = symlink ./mocha.css; 

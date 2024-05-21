@@ -1,6 +1,5 @@
 { pkgs, ... }:
-let
-  ROOT = builtins.toString ./.;
+let ROOT = builtins.toString ./.;
 in {
   # create symlink for fcitx5 profile 
   home.file.".config/fcitx5" = {

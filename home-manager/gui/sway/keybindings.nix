@@ -39,8 +39,8 @@ in {
 
   "${modifier}+Shift+Return" = "exec ${pkgs.rofi}/bin/rofi -show drun";
   "${modifier}+Shift+q" = "exec ${pkgs.wlogout}/bin/wlogout";
-  "${modifier}+Shift+e" =
-    ''exec ${pkgs.emacs29-gtk3}/bin/emacsclient --create-frame --alternate-editor=""'';
+  "${modifier}+Shift+e" = ''
+    exec ${pkgs.emacs29-gtk3}/bin/emacsclient --create-frame --alternate-editor=""'';
   "${modifier}+Ctrl+l" = ''
       exec ${pkgs.swaylock-effects}/bin/swaylock \
     	--screenshots \
@@ -64,7 +64,8 @@ in {
   "${modifier}+b" = "exec firefox";
   "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show run";
   # "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${yazi.packages.${pkgs.system}.default}/bin/yazi";
-  "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi";
+  "${modifier}+e" =
+    "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi";
   # "${modifier}+Ctrl+e" = "exec thunar"; # use more yazi
   "${modifier}+p" = "exec ${pkgs.wlsunset}/bin/wlsunset -t 4000";
   "${modifier}+v" =
@@ -72,6 +73,8 @@ in {
   "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
   "${modifier}+tab" = "workspace back_and_forth";
   "${modifier}+s" = "exec ${ROOT}/switch_workspaces.sh";
-  "${modifier}+Print" = ''exec ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp -d)" - | ${pkgs.wl-clipboard}/bin/wl-copy -t image/png'';
-  "${modifier}+Shift+Print" = ''exec ${pkgs.grim}/bin/grim -o $(${pkgs.sway}/bin/swaymsg -t get_outputs | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')'';
+  "${modifier}+Print" = ''
+    exec ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp -d)" - | ${pkgs.wl-clipboard}/bin/wl-copy -t image/png'';
+  "${modifier}+Shift+Print" =
+    "exec ${pkgs.grim}/bin/grim -o $(${pkgs.sway}/bin/swaymsg -t get_outputs | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')";
 }

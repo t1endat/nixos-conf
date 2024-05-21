@@ -9,7 +9,7 @@
     # source: https://github.com/vimjoyer/nixos-gaming-video?tab=readme-ov-file#wrappers 
     gamescopeSession.enable = true;
   };
-  
+
   programs.gamemode.enable = true;
 }
 

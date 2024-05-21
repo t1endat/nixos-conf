@@ -9,7 +9,7 @@ in {
     extraGroups = [ "networkmanager" "wheel" "video" "docker" "libvirtd" ];
     packages = [ inputs.home-manager.packages.${pkgs.system}.default ];
   };
-  
+
   environment.sessionVariables = {
     # source: https://github.com/vimjoyer/nix-helper-video?tab=readme-ov-file#defining-flake
     FLAKE = "/home/${userName}/Documents/nix-dev/nixos-conf";
