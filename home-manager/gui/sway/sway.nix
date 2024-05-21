@@ -1,7 +1,6 @@
 { pkgs, ... }:
 let
   ROOT = builtins.toString ./.;
-  readFile = builtins.readFile;
 in {
   # create symlink for fcitx5 profile 
   home.file.".config/fcitx5" = {
@@ -35,6 +34,6 @@ in {
       # keybindings = (import ./keybindings.nix);
       keybindings = (import ./keybindings.nix { inherit pkgs; });
     };
-    extraConfig = readFile ./extraConfig;
+    extraConfig = builtins.readFile ./extraConfig;
   };
 }

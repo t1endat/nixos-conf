@@ -64,14 +64,10 @@
     , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
     let
       # custom user and host
-      users = {
-        "tiendat" = 1;
-        "icslab" = 2;
-      };
-      hosts = {
-        "lenovo-laptop" = 1;
-        "dell-pc" = 2;
-      };
+      users = [ "tiendat" "icslab" ];
+      hosts = [ "lenovo-laptop" "dell-pc" ];
+      userToAttrs = builtins.listToAttrs (builtins.map(user: { name = user; value = null; }) users);
+      hostToAttrs = builtins.listToAttrs (builtins.map(host: { name = host; value = null; }) hosts);
 
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
@@ -86,8 +82,8 @@
       # pass to it, with each system as an argument
       forAllSystems = nixpkgs.lib.genAttrs systems;
 
-      #TODO: use for home-manager, should avoid dupplicate it
-      overlays = import ./overlays { inherit inputs; };
+      #NOTE: use in both "let" and "in"
+      overlays_var = import ./overlays { inherit inputs; };
     in {
       # Your custom packages
       # Accessible through 'nix build', 'nix shell', etc
@@ -126,7 +122,7 @@
             }
             # nixos-hardware.nixosModules.dell-xps-13-9380
           ];
-        }) hosts;
+        }) hostToAttrs;
 
       # Standalone home-manager configuration entrypoint
       # Available through 'home-manager --flake .#your-username@your-hostname'
@@ -134,7 +130,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays yazi minimalisticfox catppuccin-mako
+            inherit inputs outputs overlays_var yazi minimalisticfox catppuccin-mako
               catppuccin-rofi catppuccin-waybar catppuccin-alacritty
               nushell-defaultConfig;
             pkgs-unstable = import nixpkgs-unstable {
@@ -143,6 +139,6 @@
             };
           };
           modules = [ ./home-manager/hosts/${user}.nix ];
-        }) users;
+        }) userToAttrs;
     };
 }

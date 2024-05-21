@@ -1,10 +1,10 @@
 { inputs, pkgs, ... }:
-let username = "tiendat";
+let userName = "tiendat";
 in {
   imports = [ ./hardware-configuration.nix ./laptop.nix ./systemd.nix ./gaming.nix ../base ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.${username} = {
+  users.users.${userName} = {
     isNormalUser = true;
     extraGroups =
       [ "networkmanager" "wheel" "video" "docker" "libvirtd" "dialout" ];
@@ -15,6 +15,11 @@ in {
       # for gaming
       pkgs.mangohud
     ];
+  };
+  
+  environment.sessionVariables = {
+    # source: https://github.com/vimjoyer/nix-helper-video?tab=readme-ov-file#defining-flake
+    FLAKE = "/home/${userName}/Documents/nix-dev/nixos-conf";
   };
   
   # source: https://nixos.wiki/wiki/Sway#Brightness_and_volume

@@ -2,7 +2,6 @@
 let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
   session = "${pkgs.sway}/bin/sway";
-  # username = "tiendat";
 in {
   # displayManager
   services.greetd = {
