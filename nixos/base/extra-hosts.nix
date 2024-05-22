@@ -11,7 +11,8 @@
     0.0.0.0 ww8.mangakakalot.tv
     0.0.0.0 nettruyencc.com
     0.0.0.0 nettruyenco.vn
-    0.0.0.0 nettruyendie.com
     0.0.0.0 nettruyenfull.com
+    0.0.0.0 www.nettruyendie.com
+    0.0.0.0 www.nettruyenmck.com
   '';
 }
