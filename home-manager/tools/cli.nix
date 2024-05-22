@@ -25,5 +25,6 @@
     unzip # .zip files
     # rar # .rar files
     _7zz # 7z files
+    dict # dictionary 
   ];
 }
