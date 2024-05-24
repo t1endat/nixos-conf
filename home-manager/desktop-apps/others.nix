@@ -6,5 +6,6 @@
     spotify # prevent listen music in yt
     libreoffice-qt # office tools
     evince # pdf reader
+    drawio # diagram
   ];
 }
