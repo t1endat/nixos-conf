@@ -2,7 +2,7 @@
 
 {
   home.file.".config/nvim/lua" = {
-    source = ./lazyvim/lua;
+    source = ./astro-nvim/lua;
     recursive = true;
   };
 
