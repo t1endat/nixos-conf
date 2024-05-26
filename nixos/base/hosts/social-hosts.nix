@@ -1,5 +1,5 @@
 {
-  # source:  https://nixos.org/manual/nixos/stable/#sec-configuration-file
+  # source: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts
   networking.extraHosts = ''
     # Title: StevenBlack/hosts extension social
     #
