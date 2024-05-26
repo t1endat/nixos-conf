@@ -7,5 +7,6 @@
     ./environment.nix
     ./extra-hosts.nix
     ./apps
+    ./hosts
   ];
 }
