@@ -1,15 +1,19 @@
 return {
-  "catppuccin/nvim",
-  name = "catppuccin",
-  opts = {
-    -- configuration options...
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      -- configuration options...
+    },
   },
   
-  ---@type LazySpec
-  "AstroNvim/astroui",
-  ---@type AstroUIOpts
-  opts = {
-    -- change colorscheme
-    colorscheme = "catppuccin",
+  {
+    ---@type LazySpec
+    "AstroNvim/astroui",
+    ---@type AstroUIOpts
+    opts = {
+      -- change colorscheme
+      colorscheme = "catppuccin",
+    },
   },
 }
