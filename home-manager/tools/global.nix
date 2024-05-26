@@ -11,5 +11,8 @@
     pkgs.clippy
     pkgs.rustfmt
     pkgs-unstable.rust-analyzer
+
+    # lsp
+    pkgs.lua-language-server
   ];
 }
