@@ -3,7 +3,7 @@
 # Replace 'filename' with the actual filename you want to make read-only
 filename1="../flake.nix"
 filename2="../home-manager/desktop-apps/firefox/firefox.nix"
-filename3="../nixos/base/extra-hosts.nix"
+filename3="../nixos/base/hosts/extra-hosts.nix"
 
 # Check if the file exists
 if [ ! -f "$filename1" ]; then
