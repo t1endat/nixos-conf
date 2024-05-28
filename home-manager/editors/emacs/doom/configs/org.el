@@ -2,10 +2,8 @@
 
 (setq org-directory "~/Documents/org")
 (setq org-roam-directory "~/Documents/org/roam/")
-(setq org-agenda-files '( "~/Documents/org/TODO/every-day.org"
-                          "~/Documents/org/TODO/long-term.org"
-                          "~/Documents/org/TODO/tracking-habit.org" ))
-(setq org-noter-notes-search-path '("~/Documents/org/noter/"))
+(setq org-agenda-files '( "~/Documents/org/TODO/every-day.org" ))
+;; (setq org-noter-notes-search-path '("~/Documents/org/noter/"))
 ;; (setq org-journal-dir "~/Documents/org/journal/")
 
 ;; org notification
@@ -23,14 +21,14 @@
 ;; (setq org-journal-file-type 'yearly)
 
 ;; add mermaid to org-babel-load-languages
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((mermaid . t)
-   (scheme . t)
-   (rust . t)
-   (C . t)
-   (python . t)
-   ))
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '((mermaid . t)
+;;    (scheme . t)
+;;    (rust . t)
+;;    (C . t)
+;;    (python . t)
+;;    ))
 
 ;; enable fold when open new file
 (setq org-startup-folded 'content)

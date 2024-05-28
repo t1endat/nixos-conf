@@ -1,11 +1,8 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; $DOOMDIR/packages.el
 
-;; packages for org
 ;; notification on org
 (package! org-alert)
-;; code rust in org mode
-(package! ob-rust)
 
 ;; customize theme
 (package! catppuccin-theme)

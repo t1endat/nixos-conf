@@ -43,23 +43,23 @@
     (error
      (delete-window))))         ; If error, delete the current window anyway
 
-(defun open-specific-file (file-path)
-  "Open a specific file with the given path"
-  (interactive "fEnter file path: ")
-  (find-file file-path)
-  (evil-split-buffer nil)
-  (edwina-arrange)
-  (other-window 1)
-  )
-
-(defun open-specific-read-only-file (file-path)
-  "Open a specific file with the given path"
-  (interactive "fEnter file path: ")
-  (find-file-read-only file-path)
-  (evil-split-buffer nil)
-  (edwina-arrange)
-  (other-window 1)
-  )
+;; (defun open-specific-file (file-path)
+;;   "Open a specific file with the given path"
+;;   (interactive "fEnter file path: ")
+;;   (find-file file-path)
+;;   (evil-split-buffer nil)
+;;   (edwina-arrange)
+;;   (other-window 1)
+;;   )
+;;
+;; (defun open-specific-read-only-file (file-path)
+;;   "Open a specific file with the given path"
+;;   (interactive "fEnter file path: ")
+;;   (find-file-read-only file-path)
+;;   (evil-split-buffer nil)
+;;   (edwina-arrange)
+;;   (other-window 1)
+;;   )
 
 (map! :leader
       ;; rebinding vterm
@@ -81,10 +81,10 @@
        )
 
       ;; quick open files
-      (:prefix ("=" . "Open file")
-       :desc "Cheat-sheet" "c" #'(lambda() (interactive) (open-specific-read-only-file "~/.config/doom/cheat-sheet/README.org"))
-       :desc "Org mode" "o" #'(lambda() (interactive) (open-specific-file "~/Documents/org/README.org"))
-       )
+      ;; (:prefix ("=" . "Open file")
+      ;;  :desc "Cheat-sheet" "c" #'(lambda() (interactive) (open-specific-read-only-file "~/.config/doom/cheat-sheet/README.org"))
+      ;;  :desc "Org mode" "o" #'(lambda() (interactive) (open-specific-file "~/Documents/org/README.org"))
+      ;;  )
 
       (:prefix ("j". "My binding functions")
        :desc "eww" "e" #'eww ;; eww
