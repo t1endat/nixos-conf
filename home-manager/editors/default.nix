@@ -1,1 +1,1 @@
-{ imports = [ ./emacs/required.nix ./neovim/required.nix ./extend-dicts.nix ./helix.nix ]; }
+{ imports = [ ./emacs/required.nix ./neovim/required.nix ./extend-dicts.nix ]; }
