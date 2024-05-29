@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, libre-dictionaries,... }:
 
 {
   # doom config
@@ -9,7 +9,7 @@
 
   # library for spelling
   home.file."Library/Spelling" = {
-    source = ./dicts/en_US;
+    source = "${libre-dictionaries}/en";
     recursive = true;
   };
 

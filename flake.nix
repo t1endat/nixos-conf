@@ -63,11 +63,16 @@
       url = "github:Jamir-boop/minimalisticfox";
       flake = false;
     };
+    
+    libre-dictionaries = {
+      url = "github:LibreOffice/dictionaries";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, yazi
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
-    , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
+    , catppuccin-alacritty, nushell-defaultConfig, libre-dictionaries, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -144,7 +149,7 @@
           extraSpecialArgs = {
             inherit inputs outputs overlays_var yazi minimalisticfox
               catppuccin-mako catppuccin-rofi catppuccin-waybar
-              catppuccin-alacritty nushell-defaultConfig;
+              catppuccin-alacritty nushell-defaultConfig libre-dictionaries;
             pkgs-unstable = import nixpkgs-unstable {
               system = "x86_64-linux";
               config.allowUnfree = true;

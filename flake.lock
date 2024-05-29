@@ -121,6 +121,22 @@
         "type": "github"
       }
     },
+    "libre-dictionaries": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1716089708,
+        "narHash": "sha256-Wv+o9spKeParXBRbb8y6lPhDzjU6YfCcEjCqMT9jJlY=",
+        "owner": "LibreOffice",
+        "repo": "dictionaries",
+        "rev": "7272a82714ca91947b4573c09bce4938861a9877",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LibreOffice",
+        "repo": "dictionaries",
+        "type": "github"
+      }
+    },
     "minimalisticfox": {
       "flake": false,
       "locked": {
@@ -222,6 +238,7 @@
         "catppuccin-rofi": "catppuccin-rofi",
         "catppuccin-waybar": "catppuccin-waybar",
         "home-manager": "home-manager",
+        "libre-dictionaries": "libre-dictionaries",
         "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
