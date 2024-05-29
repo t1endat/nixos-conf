@@ -8,6 +8,7 @@
   };
 
   # library for spelling
+  # source: https://passingcuriosity.com/2017/emacs-hunspell-and-dictionaries/
   home.file."Library/Spelling" = {
     source = "${libre-dictionaries}/en";
     recursive = true;
