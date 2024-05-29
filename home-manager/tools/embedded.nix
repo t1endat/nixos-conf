@@ -7,12 +7,4 @@
     # cargo-binutils # invoke the LLVM tools shipped
     # cargo-generate # tool to generaet a new Rust project
   ];
-
-  # source: https://nixos.wiki/wiki/Virt-manager
-  dconf.settings = {
-    "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu:///system" ];
-      uris = [ "qemu:///system" ];
-    };
-  };
 }

@@ -1,6 +1,9 @@
 cc.arduino.IDE2
 com.discordapp.Discord
 io.gitlab.idevecore.Pomodoro
+com.spotify.Client
+com.jgraph.drawio.desktop
+com.obsproject.Studio
 
 # games
 com.play0ad.zeroad

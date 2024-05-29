@@ -3,9 +3,7 @@
     pavucontrol # PulseAudio Volume Control
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
-    spotify # prevent listen music in yt
     libreoffice-qt # office tools
     evince # pdf reader
-    drawio # diagram
   ];
 }
