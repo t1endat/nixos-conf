@@ -1,34 +1,24 @@
-#!/bin/bash
+# Define the filenames as an array
+filenames=(
+  "../flake.nix"
+  "../home-manager/desktop-apps/firefox/firefox.nix"
+  "../nixos/base/hosts/extra-hosts.nix"
+  "../nixos/base/preset.nix"
+  "../nixos/dell-pc/hardware-configuration.nix"
+  "../nixos/lenovo-laptop/hardware-configuration.nix"
+)
 
-# Replace 'filename' with the actual filename you want to make read-only
-filename1="../flake.nix"
-filename2="../home-manager/desktop-apps/firefox/firefox.nix"
-filename3="../nixos/base/hosts/extra-hosts.nix"
+# Loop through each filename in the array
+for filename in "${filenames[@]}"; do
+  # Check if the file exists
+  if [ ! -f "$filename" ]; then
+    echo "Error: File '$filename' does not exist!"
+    continue  # Skip to the next iteration if file doesn't exist
+  fi
 
-# Check if the file exists
-if [ ! -f "$filename1" ]; then
-  echo "Error: File '$filename' does not exist!"
-  exit 1
-fi
-if [ ! -f "$filename2" ]; then
-  echo "Error: File '$filename' does not exist!"
-  exit 1
-fi
-if [ ! -f "$filename3" ]; then
-  echo "Error: File '$filename' does not exist!"
-  exit 1
-fi
-
-# Set read-only permission for the file owner (user)
-chmod 400 "$filename1"
-chmod 400 "$filename2"
-chmod 400 "$filename3"
-
-# Optional: Inform the user about the success
-echo "File '$filename1' set to read-only."
-echo "File '$filename2' set to read-only."
-echo "File '$filename3' set to read-only."
+  # Set read-only permission (400) for the file owner
+  chmod 400 "$filename"
+  echo "File '$filename' set to read-only."
+done
 
 exit 0
-
-
