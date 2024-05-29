@@ -1,8 +1,7 @@
 cc.arduino.IDE2
 com.discordapp.Discord
-com.visualstudio.code
+io.gitlab.idevecore.Pomodoro
 
 # games
-page.kramo.Cartridges
 com.play0ad.zeroad
 
