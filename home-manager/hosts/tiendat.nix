@@ -1,5 +1,5 @@
 {
-  imports = [ ../default.nix ../gaming.nix ];
+  imports = [ ../default.nix ];
 
   home.username = "tiendat";
   home.homeDirectory = "/home/tiendat";

@@ -5,7 +5,6 @@ in {
     ./hardware-configuration.nix
     ./laptop.nix
     ./systemd.nix
-    ./gaming.nix
     ../base
   ];
 
