@@ -7,9 +7,8 @@ return {
       -- vim options can be configured here
       options = {
         opt = { -- vim.opt.<key>
-
-          -- add this file
-          colorcolumn = "80"
+          colorcolumn = "80",
+          mouse = "",
         },
       },
     },

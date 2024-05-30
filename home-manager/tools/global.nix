@@ -1,18 +1,15 @@
-{ pkgs, pkgs-unstable, ... }:
+{ pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.python311 # python global
+  home.packages = with pkgs; [
+    python311 # python global
 
-    pkgs.gcc # cc global
+    gcc # cc global
 
-    pkgs.rustc # rust global
-    pkgs.cargo
-    pkgs.clippy
-    pkgs.rustfmt
-    pkgs-unstable.rust-analyzer
-
-    # lsp
-    pkgs.lua-language-server
+    rustc # rust global
+    cargo
+    clippy
+    rustfmt
+    unstable.rust-analyzer
   ];
 }

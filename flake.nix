@@ -99,8 +99,6 @@
       # pass to it, with each system as an argument
       forAllSystems = nixpkgs.lib.genAttrs systems;
 
-      #NOTE: use in both "let" and "in"
-      overlays_var = import ./overlays { inherit inputs; };
     in {
       # Your custom packages
       # Accessible through 'nix build', 'nix shell', etc
@@ -147,7 +145,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs overlays_var yazi minimalisticfox
+            inherit inputs outputs yazi minimalisticfox
               catppuccin-mako catppuccin-rofi catppuccin-waybar
               catppuccin-alacritty nushell-defaultConfig libre-dictionaries;
           };
