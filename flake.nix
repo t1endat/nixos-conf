@@ -70,7 +70,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, blockSites, yazi
+  outputs = { self, nixpkgs, home-manager, blockSites, yazi
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
     , catppuccin-alacritty, nushell-defaultConfig, libre-dictionaries, ... }@inputs:
     let
@@ -150,10 +150,6 @@
             inherit inputs outputs overlays_var yazi minimalisticfox
               catppuccin-mako catppuccin-rofi catppuccin-waybar
               catppuccin-alacritty nushell-defaultConfig libre-dictionaries;
-            pkgs-unstable = import nixpkgs-unstable {
-              system = "x86_64-linux";
-              config.allowUnfree = true;
-            };
           };
           modules = [ ./home-manager/hosts/${user}.nix ];
         }) userToAttrs;

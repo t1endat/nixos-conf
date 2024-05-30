@@ -8,6 +8,5 @@
     ./global.nix
     ./tui.nix
     ./git.nix
-    ./pkgs-unstable.nix
   ];
 }
