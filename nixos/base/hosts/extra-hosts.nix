@@ -1,7 +1,7 @@
 {
   # source:  https://nixos.org/manual/nixos/stable/#sec-configuration-file
   networking.extraHosts = ''
-    0.0.0.0 animevietsub.fun
+    0.0.0.0 animevietsub.art
     0.0.0.0 kick.com
     0.0.0.0 mangadex.org
     0.0.0.0 mangakakalot.to
