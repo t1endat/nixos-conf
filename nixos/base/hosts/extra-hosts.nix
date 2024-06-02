@@ -8,6 +8,7 @@
     0.0.0.0 truyenqqviet.com
     0.0.0.0 www.twitch.tv
     0.0.0.0 www.vlr.gg
+    0.0.0.0 liquipedia.net
     0.0.0.0 ww8.mangakakalot.tv
     0.0.0.0 nettruyencc.com
     0.0.0.0 nettruyenco.vn
