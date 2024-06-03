@@ -58,7 +58,6 @@ exec swaymsg seat seat0 hide_cursor 3000 # hide cursor after 3 secs
 # give sway a little time to startup before starting kanshi.
 exec systemctl --user start kanshi.service
 exec systemctl --user import-environment # ensure that the environment variables are correctly set for the user systemd units
-# exec swaybg --image /home/icslab/Documents/nix-dev/nixos-conf/home-manager/gui/sway/wallpapers/aesthetic_deer.jpg
 
 # lockscreen after period of time
 exec swayidle -w \

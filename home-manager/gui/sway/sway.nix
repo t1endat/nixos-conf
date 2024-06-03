@@ -9,6 +9,8 @@ in {
 
   wayland.windowManager.sway = {
     enable = true;
+    # source: https://www.reddit.com/r/NixOS/comments/1c9n1qk/nixosrebuild_of_sway_failing_with_unable_to/
+    checkConfig = false;
     config = rec {
       input = {
         "type:touchpad" = {
@@ -19,7 +21,6 @@ in {
 
         "type:pointer".accel_profile = "flat";
       };
-      # output = { "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill"; };
       output = { "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill"; };
       modifier = "Mod4";
       terminal = "alacritty";

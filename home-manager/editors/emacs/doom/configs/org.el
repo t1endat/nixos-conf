@@ -43,7 +43,7 @@
           (directory . emacs)
           ("\\.mm\\'" . default)
           ("\\.x?html?\\'" . default)
-          ("\\.pdf\\'" . "evince %s")))
+          ("\\.pdf\\'" . "sioyek %s")))
   )
 ;; (add-hook 'buffer-list-update-hook 'my-org-setup)
 (add-hook 'org-mode-hook 'my-org-setup)
