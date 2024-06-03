@@ -23,7 +23,7 @@
 (package! elfeed-score)
 
 ;;translate
-(package! google-translate)
+;; (package! google-translate)
 
 ;; cross-platform embedded
 (package! platformio-mode)
