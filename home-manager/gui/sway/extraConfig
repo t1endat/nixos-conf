@@ -41,9 +41,9 @@ bindsym --release $mod+9 exec "echo 0 > /tmp/sovpipe"
 bindsym --release $mod+0 exec "echo 0 > /tmp/sovpipe"
 
 # hide titlebar
-font pango:monospace 0
-titlebar_padding 1
-titlebar_border_thickness 0
+# font pango:monospace 0
+# titlebar_padding 1
+# titlebar_border_thickness 0
 default_border pixel 4
 
 # daemon
@@ -58,6 +58,7 @@ exec swaymsg seat seat0 hide_cursor 3000 # hide cursor after 3 secs
 # give sway a little time to startup before starting kanshi.
 exec systemctl --user start kanshi.service
 exec systemctl --user import-environment # ensure that the environment variables are correctly set for the user systemd units
+# exec swaybg --image /home/icslab/Documents/nix-dev/nixos-conf/home-manager/gui/sway/wallpapers/aesthetic_deer.jpg
 
 # lockscreen after period of time
 exec swayidle -w \

@@ -17,7 +17,7 @@
     tldr # collaborative cheatsheets for console commands
     atuin # history shell
     trash-cli # alternative for rm
-    rclone # drive cmdline tool
+    # rclone # drive cmdline tool
     neofetch # system info script
     screen # multiplexes a physical terminal
     just # A handy way to save and run project-specific commands
@@ -26,6 +26,6 @@
     # rar # .rar files
     _7zz # 7z files
     dict # dictionary 
-    nh
+    nh # nix cli helper  
   ];
 }

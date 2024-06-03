@@ -27,6 +27,7 @@
         "browser.fullscreen.autohide" = false;
         "browser.startup.page" = 3;
         "font.name.monospace.x-western" = "IntoneMono Nerd Font Propo";
+        "browser.compactmode.show" = true;
       };
 
       # source: about:support
