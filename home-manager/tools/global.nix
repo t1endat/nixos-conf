@@ -10,6 +10,6 @@
     cargo
     clippy
     rustfmt
-    unstable.rust-analyzer
+    rust-analyzer
   ];
 }

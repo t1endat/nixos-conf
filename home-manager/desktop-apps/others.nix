@@ -5,5 +5,6 @@
     networkmanagerapplet # NetworkManager control applet for GNOME
     libreoffice-qt # office tools
     evince # pdf reader
+    zathura # another pdf viewer
   ];
 }

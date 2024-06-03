@@ -84,11 +84,11 @@
   #   installation_mode = "force_installed";
   # };
   # Simple Tab Groups
-  "simple-tab-groups@drive4ik" = {
-    install_url =
-      "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups/latest.xpi";
-    installation_mode = "force_installed";
-  };
+  # "simple-tab-groups@drive4ik" = {
+  #   install_url =
+  #     "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups/latest.xpi";
+  #   installation_mode = "force_installed";
+  # };
   # uBlock Origin
   # ublock to block short in yt : https://christitus.com/remove-youtube-shorts/
   "uBlock0@raymondhill.net" = {
