@@ -109,9 +109,15 @@
     installation_mode = "force_installed";
   };
   # Vimium
-  "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
+  # "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
+  #   install_url =
+  #     "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
+  #   installation_mode = "force_installed";
+  # };
+  # alternative for Vimium
+  "tridactyl.vim@cmcaine.co.uk" = {
     install_url =
-      "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
+      "https://addons.mozilla.org/firefox/downloads/latest/tridactyl-vim/latest.xpi";
     installation_mode = "force_installed";
   };
   # NixOS Packages Search Engine
