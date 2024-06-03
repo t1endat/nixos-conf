@@ -18,11 +18,11 @@
     installation_mode = "force_installed";
   };
   # QuicKey – The quick tab switcher
-  "{0b289d05-9030-47a6-813b-aa80bbf959f5}" = {
-    install_url =
-      "https://addons.mozilla.org/firefox/downloads/latest/quickey-the-quick-tab-switcher/latest.xpi";
-    installation_mode = "force_installed";
-  };
+  # "{0b289d05-9030-47a6-813b-aa80bbf959f5}" = {
+  #   install_url =
+  #     "https://addons.mozilla.org/firefox/downloads/latest/quickey-the-quick-tab-switcher/latest.xpi";
+  #   installation_mode = "force_installed";
+  # };
   # Rust Search Extension
   "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
     install_url =
