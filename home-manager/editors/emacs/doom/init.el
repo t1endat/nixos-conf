@@ -146,7 +146,7 @@
        ;;gdscript           ; the language you waited for
        ;;(go +lsp)          ; the hipster dialect
        ;;(graphql +lsp)     ; Give queries a REST
-       ;;(haskell +lsp)     ; a language that's lazier than I am
+       (haskell +lsp)       ; a language that's lazier than I am
        ;;hy                 ; readability of scheme w/ speed of python
        ;;idris              ; a language you can depend on
        ;;json               ; At least it ain't XML
@@ -188,7 +188,7 @@
        (rust +lsp)          ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala              ; java, but good
        ;;(scheme +guile)    ; a fully conniving family of lisps
-       (sh +lsp)            ; she sells {ba,z,fi}sh shells on the C xor
+       ;; (sh +lsp)         ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
        ;;solidity           ; do you need a blockchain? No.
        ;;swift              ; who asked for emoji variables?
