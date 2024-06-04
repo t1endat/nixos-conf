@@ -5,12 +5,10 @@
   nixConfig = {
     extra-substituters = [ 
       "https://nix-community.cachix.org" 
-      "https://yazi.cachix.org" 
     ];
     extra-trusted-public-keys =
       [ 
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=" 
-        "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k=" 
       ];
   };
 
@@ -25,9 +23,6 @@
 
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
     blockSites.url = "github:StevenBlack/hosts";
-
-    # source: https://yazi-rs.github.io/docs/installation
-    yazi.url = "github:sxyazi/yazi";
 
     # source: https://github.com/NixOS/nixos-hardware?tab=readme-ov-file#using-nix-flakes-support
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -70,7 +65,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, blockSites, yazi
+  outputs = { self, nixpkgs, home-manager, blockSites
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
     , catppuccin-alacritty, nushell-defaultConfig, libre-dictionaries, ... }@inputs:
     let
@@ -145,7 +140,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs yazi minimalisticfox
+            inherit inputs outputs minimalisticfox
               catppuccin-mako catppuccin-rofi catppuccin-waybar
               catppuccin-alacritty nushell-defaultConfig libre-dictionaries;
           };
