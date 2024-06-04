@@ -60,7 +60,7 @@
     };
 
     minimalisticfox = {
-      url = "github:Jamir-boop/minimalisticfox";
+      url = "github:t1endat/minimalisticfox";
       flake = false;
     };
     

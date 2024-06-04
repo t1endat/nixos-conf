@@ -140,15 +140,15 @@
     "minimalisticfox": {
       "flake": false,
       "locked": {
-        "lastModified": 1713713261,
-        "narHash": "sha256-pD1O1AYk8KPYbw7ycUpVx2fd+plcINfSfl5pU+GdgTs=",
-        "owner": "Jamir-boop",
+        "lastModified": 1717465368,
+        "narHash": "sha256-0IiR727S8zkwLoeJvH1T7RWuPgsyr4itKQyGaGO+JDQ=",
+        "owner": "t1endat",
         "repo": "minimalisticfox",
-        "rev": "a2c8e2d7bf6e5060bf4b77d9e8330f92fccf5376",
+        "rev": "ed085151c9f5fc0d38a34bb4cb797341ebcbf12a",
         "type": "github"
       },
       "original": {
-        "owner": "Jamir-boop",
+        "owner": "t1endat",
         "repo": "minimalisticfox",
         "type": "github"
       }
