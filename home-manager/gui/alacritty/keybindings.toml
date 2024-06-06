@@ -1,5 +1,5 @@
+# source: https://github.com/alacritty/alacritty/issues/808#issuecomment-943087523
 [keyboard]
 bindings = [
-{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
-{ key = "L", mods = "Control|Shift", chars = "l" },
+{ key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]
