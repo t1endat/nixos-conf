@@ -2,10 +2,13 @@
 filenames=(
   "../flake.nix"
   "../home-manager/desktop-apps/firefox/firefox.nix"
-  "../nixos/base/hosts/extra-hosts.nix"
   "../nixos/base/preset.nix"
   "../nixos/dell-pc/hardware-configuration.nix"
   "../nixos/lenovo-laptop/hardware-configuration.nix"
+  "../nixos/base/hosts/extra-hosts.nix"
+  "../nixos/base/hosts/social-hosts.nix"
+  "../nixos/base/hosts/workmode-hosts.nix"
+  "../nixos/base/hosts/default.nix"
 )
 
 # Loop through each filename in the array
