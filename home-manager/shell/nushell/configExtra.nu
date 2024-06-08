@@ -29,30 +29,14 @@ source ~/.zoxide.nu
 
 alias l = ls
 alias c = clear
-alias v = nvim
-alias j = joshuto
+# alias v = nvim
+alias h = hx
 alias e = exit
 alias y = yazi
 alias tp = trash-put
 alias bt = blueman-manager  
 alias lt = exa -l -T
 alias wifi = nmtui
-
-# switch for home-manager and nixos
-let user = $env.HOME | path basename
-let host = if $user == "icslab" { "dell-pc" } else { "lenovo-laptop" }
-
-# home-manager swith
-def hs [] {
-  cd ~/Documents/nix-dev/nixos-conf/; 
-  home-manager switch --flake .#$user
-}
-
-# nixos swith
-def ns [] {
-  cd ~/Documents/nix-dev/nixos-conf/; 
-  sudo nixos-rebuild switch --flake .#$host
-}
 
 # -----------------------------------------------------
 # GIT
