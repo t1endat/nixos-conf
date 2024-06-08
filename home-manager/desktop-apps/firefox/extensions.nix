@@ -126,10 +126,4 @@
       "https://addons.mozilla.org/firefox/downloads/latest/edge_translate/latest.xpi";
     installation_mode = "force_installed";
   };
-  # Firenvim
-  "firenvim@lacamb.re" = {
-    install_url =
-      "https://addons.mozilla.org/firefox/downloads/latest/firenvim/latest.xpi";
-    installation_mode = "force_installed";
-  };
 }
