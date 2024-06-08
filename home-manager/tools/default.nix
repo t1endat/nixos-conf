@@ -7,5 +7,6 @@
     ./wasm.nix
     ./tui.nix
     ./git.nix
+    ./lsp.nix
   ];
 }
