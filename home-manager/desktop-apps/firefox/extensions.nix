@@ -17,12 +17,6 @@
       "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
     installation_mode = "force_installed";
   };
-  # QuicKey – The quick tab switcher
-  # "{0b289d05-9030-47a6-813b-aa80bbf959f5}" = {
-  #   install_url =
-  #     "https://addons.mozilla.org/firefox/downloads/latest/quickey-the-quick-tab-switcher/latest.xpi";
-  #   installation_mode = "force_installed";
-  # };
   # Rust Search Extension
   "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
     install_url =
@@ -83,12 +77,6 @@
   #     "https://addons.mozilla.org/firefox/downloads/latest/private-relay/latest.xpi";
   #   installation_mode = "force_installed";
   # };
-  # Simple Tab Groups
-  # "simple-tab-groups@drive4ik" = {
-  #   install_url =
-  #     "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups/latest.xpi";
-  #   installation_mode = "force_installed";
-  # };
   # uBlock Origin
   # ublock to block short in yt : https://christitus.com/remove-youtube-shorts/
   "uBlock0@raymondhill.net" = {
@@ -108,12 +96,6 @@
       "https://addons.mozilla.org/firefox/downloads/latest/auto-tab-discard/latest.xpi";
     installation_mode = "force_installed";
   };
-  # Vimium
-  # "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
-  #   install_url =
-  #     "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
-  #   installation_mode = "force_installed";
-  # };
   # alternative for Vimium
   "tridactyl.vim@cmcaine.co.uk" = {
     install_url =
@@ -142,6 +124,12 @@
   "nickyfeng@edgetranslate.com" = {
     install_url =
       "https://addons.mozilla.org/firefox/downloads/latest/edge_translate/latest.xpi";
+    installation_mode = "force_installed";
+  };
+  # Firenvim
+  "firenvim@lacamb.re" = {
+    install_url =
+      "https://addons.mozilla.org/firefox/downloads/latest/firenvim/latest.xpi";
     installation_mode = "force_installed";
   };
 }
