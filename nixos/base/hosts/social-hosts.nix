@@ -6,7 +6,7 @@
     # This hosts file is a merged collection of hosts from reputable sources,
     # with a dash of crowd sourcing via GitHub
     #
-    # Date: 28 May 2024 01:21:16 (UTC)
+    # Date: 03 June 2024 21:08:44 (UTC)
     # The unified hosts file was not used while generating this file.
     # Extensions used to generate this file: social
     # Number of unique domains: 3,221
@@ -2380,179 +2380,179 @@
     0.0.0.0 www.threads.net
 
     # Twitter
-    0.0.0.0 0.twitter.com
-    0.0.0.0 2010.twitter.com
-    0.0.0.0 2011.twitter.com
-    0.0.0.0 2012.twitter.com
-    0.0.0.0 2013.twitter.com
-    0.0.0.0 2014.twitter.com
-    0.0.0.0 2015.twitter.com
-    0.0.0.0 about.twitter.com
-    0.0.0.0 abs.twimg.com
-    0.0.0.0 access.twitter.com
-    0.0.0.0 ads-api.twitter.com
-    0.0.0.0 ads-twitter.com
-    0.0.0.0 ads.twitter.com
-    0.0.0.0 amp.twimg.com
-    0.0.0.0 analytics.twitter.com
-    0.0.0.0 api-0-4-0.twitter.com
-    0.0.0.0 api-0-4-2.twitter.com
-    0.0.0.0 api-0-4-3.twitter.com
-    0.0.0.0 api-0-4-4.twitter.com
-    0.0.0.0 api-0-4-5.twitter.com
-    0.0.0.0 api-0-4-6.twitter.com
-    0.0.0.0 api-0-4-7.twitter.com
-    0.0.0.0 api-0-4-8.twitter.com
-    0.0.0.0 api-0-5-0.twitter.com
-    0.0.0.0 api-1-0-0.twitter.com
-    0.0.0.0 api-2-0-0.twitter.com
-    0.0.0.0 api-20-0-0.twitter.com
-    0.0.0.0 api-21-0-0.twitter.com
-    0.0.0.0 api-23-0-0.twitter.com
-    0.0.0.0 api-24-0-0.twitter.com
-    0.0.0.0 api-26-0-0.twitter.com
-    0.0.0.0 api-28-0-0.twitter.com
-    0.0.0.0 api-3-0-0.twitter.com
-    0.0.0.0 api-30-0-0.twitter.com
-    0.0.0.0 api-31-0-0.twitter.com
-    0.0.0.0 api-32-0-0.twitter.com
-    0.0.0.0 api-33-0-0.twitter.com
-    0.0.0.0 api-34-0-0.twitter.com
-    0.0.0.0 api-36-0-0.twitter.com
-    0.0.0.0 api-37-0-0.twitter.com
-    0.0.0.0 api-38-0-0.twitter.com
-    0.0.0.0 api-39-0-0.twitter.com
-    0.0.0.0 api-40-0-0.twitter.com
-    0.0.0.0 api-41-0-0.twitter.com
-    0.0.0.0 api-42-0-0.twitter.com
-    0.0.0.0 api-43-0-0.twitter.com
-    0.0.0.0 api-44-0-0.twitter.com
-    0.0.0.0 api-45-0-0.twitter.com
-    0.0.0.0 api-46-0-0.twitter.com
-    0.0.0.0 api-stream.twitter.com
-    0.0.0.0 api-test.twitter.com
-    0.0.0.0 api.twitter.com
-    0.0.0.0 api2.twitter.com
-    0.0.0.0 api4.twitter.com
-    0.0.0.0 app.tweet.twitter.com
-    0.0.0.0 apps.twitter.com
-    0.0.0.0 blog.twitter.com
-    0.0.0.0 brand.twitter.com
-    0.0.0.0 business.twitter.com
-    0.0.0.0 calendar.twitter.com
-    0.0.0.0 caps.twitter.com
-    0.0.0.0 cards-dev.twitter.com
-    0.0.0.0 cards.twitter.com
-    0.0.0.0 cdn.syndication.twimg.com
-    0.0.0.0 cdn.syndication.twitter.com
-    0.0.0.0 click.e.twitter.com
-    0.0.0.0 content.twitter.com
-    0.0.0.0 d2rdfnizen5apl.cloudfront.net
-    0.0.0.0 dc-api.twitter.com
-    0.0.0.0 dev-about.twitter.com
-    0.0.0.0 dev-blog.twitter.com
-    0.0.0.0 dev-brand.twitter.com
-    0.0.0.0 dev-business.twitter.com
-    0.0.0.0 dev-horizon.twitter.com
-    0.0.0.0 dev-jobs.twitter.com
-    0.0.0.0 dev-marketing.twitter.com
-    0.0.0.0 dev.twitter.com
-    0.0.0.0 developer.twitter.com
-    0.0.0.0 dnt.twimg.com
-    0.0.0.0 download.twitter.com
-    0.0.0.0 dualstack.twimg.twitter.map.fastly.net
-    0.0.0.0 dualstack.video.twitter.map.fastly.net
-    0.0.0.0 ea.twimg.com
-    0.0.0.0 election.twitter.com
-    0.0.0.0 eng.twitter.com
-    0.0.0.0 engineering.twitter.com
-    0.0.0.0 events.twitter.com
-    0.0.0.0 firefox.twitter.com
-    0.0.0.0 g.twimg.com
-    0.0.0.0 g2.twimg.com
-    0.0.0.0 gu.twimg.com
-    0.0.0.0 hca.twimg.com
-    0.0.0.0 help.twitter.com
-    0.0.0.0 horizon.twitter.com
-    0.0.0.0 image-proxy-origin.twimg.com
-    0.0.0.0 images.tweet.twitter.com
-    0.0.0.0 info.twitter.com
-    0.0.0.0 jobs.twitter.com
-    0.0.0.0 jp.twimg.com
-    0.0.0.0 m.twitter.com
-    0.0.0.0 ma.twimg.com
-    0.0.0.0 ma0.twimg.com
-    0.0.0.0 ma1.twimg.com
-    0.0.0.0 ma2.twimg.com
-    0.0.0.0 ma3.twimg.com
-    0.0.0.0 mail.twitter.com
-    0.0.0.0 marketing.twitter.com
-    0.0.0.0 media.twitter.com
-    0.0.0.0 mobile.twitter.com
-    0.0.0.0 music.twitter.com
-    0.0.0.0 mux.twitter.com
-    0.0.0.0 mx.twitter.com
-    0.0.0.0 mx1.twitter.com
-    0.0.0.0 mx2.twitter.com
-    0.0.0.0 mx3.twitter.com
-    0.0.0.0 mx4.twitter.com
-    0.0.0.0 o.twimg.com
-    0.0.0.0 p.twimg.com
-    0.0.0.0 partnerstream1.twitter.com
-    0.0.0.0 partnerstream2.twitter.com
-    0.0.0.0 pay.twitter.com
-    0.0.0.0 pbs.twimg.com
-    0.0.0.0 pic.twitter.com
-    0.0.0.0 platform.twitter.com
-    0.0.0.0 platform.twitter.map.fastly.net
-    0.0.0.0 pro.twitter.com
-    0.0.0.0 probe.twitter.com
-    0.0.0.0 publish.twitter.com
-    0.0.0.0 pulse.twitter.com
-    0.0.0.0 r.twimg.com
-    0.0.0.0 s.ads-twitter.com
-    0.0.0.0 s.twimg.com
-    0.0.0.0 s.twitter.com
-    0.0.0.0 search.twitter.com
-    0.0.0.0 search2.twitter.com
-    0.0.0.0 sites.twitter.com
-    0.0.0.0 sitestream.twitter.com
-    0.0.0.0 sms.twitter.com
-    0.0.0.0 ssl2.twitter.com.edgekey.net
-    0.0.0.0 static.ads-twitter.com
-    0.0.0.0 static.twitter.com
-    0.0.0.0 status.twitter.com
-    0.0.0.0 stream.twitter.com
-    0.0.0.0 studio.twitter.com
-    0.0.0.0 support.twitter.com
-    0.0.0.0 syndication-o.twimg.com
-    0.0.0.0 syndication.twimg.com
-    0.0.0.0 syndication.twitter.com
-    0.0.0.0 t.co
-    0.0.0.0 tailfeather.twimg.com
-    0.0.0.0 td.twitter.com
-    0.0.0.0 ton.twimg.com
-    0.0.0.0 tpop-api.twitter.com
-    0.0.0.0 transparency.twitter.com
-    0.0.0.0 twimg.twitter.map.fastly.net
-    0.0.0.0 twimg0-0.akamaihd.net
-    0.0.0.0 twitter.co
-    0.0.0.0 twitter.com
-    0.0.0.0 twitter.de
-    0.0.0.0 twitter.map.fastly.net
-    0.0.0.0 upload.twitter.com
-    0.0.0.0 userstream.twitter.com
-    0.0.0.0 video.twitter.com
-    0.0.0.0 video.twitter.map.fastly.net
-    0.0.0.0 widgets.platform.twitter.com
-    0.0.0.0 widgets.twimg.com
-    0.0.0.0 www.ads-twitter.com
-    0.0.0.0 www.t.co
-    0.0.0.0 www.twitter.com
-    0.0.0.0 www.x.com
-    0.0.0.0 www2.twitter.com
-    0.0.0.0 www4.twitter.com
-    0.0.0.0 x.com
+    # 0.0.0.0 0.twitter.com
+    # 0.0.0.0 2010.twitter.com
+    # 0.0.0.0 2011.twitter.com
+    # 0.0.0.0 2012.twitter.com
+    # 0.0.0.0 2013.twitter.com
+    # 0.0.0.0 2014.twitter.com
+    # 0.0.0.0 2015.twitter.com
+    # 0.0.0.0 about.twitter.com
+    # 0.0.0.0 abs.twimg.com
+    # 0.0.0.0 access.twitter.com
+    # 0.0.0.0 ads-api.twitter.com
+    # 0.0.0.0 ads-twitter.com
+    # 0.0.0.0 ads.twitter.com
+    # 0.0.0.0 amp.twimg.com
+    # 0.0.0.0 analytics.twitter.com
+    # 0.0.0.0 api-0-4-0.twitter.com
+    # 0.0.0.0 api-0-4-2.twitter.com
+    # 0.0.0.0 api-0-4-3.twitter.com
+    # 0.0.0.0 api-0-4-4.twitter.com
+    # 0.0.0.0 api-0-4-5.twitter.com
+    # 0.0.0.0 api-0-4-6.twitter.com
+    # 0.0.0.0 api-0-4-7.twitter.com
+    # 0.0.0.0 api-0-4-8.twitter.com
+    # 0.0.0.0 api-0-5-0.twitter.com
+    # 0.0.0.0 api-1-0-0.twitter.com
+    # 0.0.0.0 api-2-0-0.twitter.com
+    # 0.0.0.0 api-20-0-0.twitter.com
+    # 0.0.0.0 api-21-0-0.twitter.com
+    # 0.0.0.0 api-23-0-0.twitter.com
+    # 0.0.0.0 api-24-0-0.twitter.com
+    # 0.0.0.0 api-26-0-0.twitter.com
+    # 0.0.0.0 api-28-0-0.twitter.com
+    # 0.0.0.0 api-3-0-0.twitter.com
+    # 0.0.0.0 api-30-0-0.twitter.com
+    # 0.0.0.0 api-31-0-0.twitter.com
+    # 0.0.0.0 api-32-0-0.twitter.com
+    # 0.0.0.0 api-33-0-0.twitter.com
+    # 0.0.0.0 api-34-0-0.twitter.com
+    # 0.0.0.0 api-36-0-0.twitter.com
+    # 0.0.0.0 api-37-0-0.twitter.com
+    # 0.0.0.0 api-38-0-0.twitter.com
+    # 0.0.0.0 api-39-0-0.twitter.com
+    # 0.0.0.0 api-40-0-0.twitter.com
+    # 0.0.0.0 api-41-0-0.twitter.com
+    # 0.0.0.0 api-42-0-0.twitter.com
+    # 0.0.0.0 api-43-0-0.twitter.com
+    # 0.0.0.0 api-44-0-0.twitter.com
+    # 0.0.0.0 api-45-0-0.twitter.com
+    # 0.0.0.0 api-46-0-0.twitter.com
+    # 0.0.0.0 api-stream.twitter.com
+    # 0.0.0.0 api-test.twitter.com
+    # 0.0.0.0 api.twitter.com
+    # 0.0.0.0 api2.twitter.com
+    # 0.0.0.0 api4.twitter.com
+    # 0.0.0.0 app.tweet.twitter.com
+    # 0.0.0.0 apps.twitter.com
+    # 0.0.0.0 blog.twitter.com
+    # 0.0.0.0 brand.twitter.com
+    # 0.0.0.0 business.twitter.com
+    # 0.0.0.0 calendar.twitter.com
+    # 0.0.0.0 caps.twitter.com
+    # 0.0.0.0 cards-dev.twitter.com
+    # 0.0.0.0 cards.twitter.com
+    # 0.0.0.0 cdn.syndication.twimg.com
+    # 0.0.0.0 cdn.syndication.twitter.com
+    # 0.0.0.0 click.e.twitter.com
+    # 0.0.0.0 content.twitter.com
+    # 0.0.0.0 d2rdfnizen5apl.cloudfront.net
+    # 0.0.0.0 dc-api.twitter.com
+    # 0.0.0.0 dev-about.twitter.com
+    # 0.0.0.0 dev-blog.twitter.com
+    # 0.0.0.0 dev-brand.twitter.com
+    # 0.0.0.0 dev-business.twitter.com
+    # 0.0.0.0 dev-horizon.twitter.com
+    # 0.0.0.0 dev-jobs.twitter.com
+    # 0.0.0.0 dev-marketing.twitter.com
+    # 0.0.0.0 dev.twitter.com
+    # 0.0.0.0 developer.twitter.com
+    # 0.0.0.0 dnt.twimg.com
+    # 0.0.0.0 download.twitter.com
+    # 0.0.0.0 dualstack.twimg.twitter.map.fastly.net
+    # 0.0.0.0 dualstack.video.twitter.map.fastly.net
+    # 0.0.0.0 ea.twimg.com
+    # 0.0.0.0 election.twitter.com
+    # 0.0.0.0 eng.twitter.com
+    # 0.0.0.0 engineering.twitter.com
+    # 0.0.0.0 events.twitter.com
+    # 0.0.0.0 firefox.twitter.com
+    # 0.0.0.0 g.twimg.com
+    # 0.0.0.0 g2.twimg.com
+    # 0.0.0.0 gu.twimg.com
+    # 0.0.0.0 hca.twimg.com
+    # 0.0.0.0 help.twitter.com
+    # 0.0.0.0 horizon.twitter.com
+    # 0.0.0.0 image-proxy-origin.twimg.com
+    # 0.0.0.0 images.tweet.twitter.com
+    # 0.0.0.0 info.twitter.com
+    # 0.0.0.0 jobs.twitter.com
+    # 0.0.0.0 jp.twimg.com
+    # 0.0.0.0 m.twitter.com
+    # 0.0.0.0 ma.twimg.com
+    # 0.0.0.0 ma0.twimg.com
+    # 0.0.0.0 ma1.twimg.com
+    # 0.0.0.0 ma2.twimg.com
+    # 0.0.0.0 ma3.twimg.com
+    # 0.0.0.0 mail.twitter.com
+    # 0.0.0.0 marketing.twitter.com
+    # 0.0.0.0 media.twitter.com
+    # 0.0.0.0 mobile.twitter.com
+    # 0.0.0.0 music.twitter.com
+    # 0.0.0.0 mux.twitter.com
+    # 0.0.0.0 mx.twitter.com
+    # 0.0.0.0 mx1.twitter.com
+    # 0.0.0.0 mx2.twitter.com
+    # 0.0.0.0 mx3.twitter.com
+    # 0.0.0.0 mx4.twitter.com
+    # 0.0.0.0 o.twimg.com
+    # 0.0.0.0 p.twimg.com
+    # 0.0.0.0 partnerstream1.twitter.com
+    # 0.0.0.0 partnerstream2.twitter.com
+    # 0.0.0.0 pay.twitter.com
+    # 0.0.0.0 pbs.twimg.com
+    # 0.0.0.0 pic.twitter.com
+    # 0.0.0.0 platform.twitter.com
+    # 0.0.0.0 platform.twitter.map.fastly.net
+    # 0.0.0.0 pro.twitter.com
+    # 0.0.0.0 probe.twitter.com
+    # 0.0.0.0 publish.twitter.com
+    # 0.0.0.0 pulse.twitter.com
+    # 0.0.0.0 r.twimg.com
+    # 0.0.0.0 s.ads-twitter.com
+    # 0.0.0.0 s.twimg.com
+    # 0.0.0.0 s.twitter.com
+    # 0.0.0.0 search.twitter.com
+    # 0.0.0.0 search2.twitter.com
+    # 0.0.0.0 sites.twitter.com
+    # 0.0.0.0 sitestream.twitter.com
+    # 0.0.0.0 sms.twitter.com
+    # 0.0.0.0 ssl2.twitter.com.edgekey.net
+    # 0.0.0.0 static.ads-twitter.com
+    # 0.0.0.0 static.twitter.com
+    # 0.0.0.0 status.twitter.com
+    # 0.0.0.0 stream.twitter.com
+    # 0.0.0.0 studio.twitter.com
+    # 0.0.0.0 support.twitter.com
+    # 0.0.0.0 syndication-o.twimg.com
+    # 0.0.0.0 syndication.twimg.com
+    # 0.0.0.0 syndication.twitter.com
+    # 0.0.0.0 t.co
+    # 0.0.0.0 tailfeather.twimg.com
+    # 0.0.0.0 td.twitter.com
+    # 0.0.0.0 ton.twimg.com
+    # 0.0.0.0 tpop-api.twitter.com
+    # 0.0.0.0 transparency.twitter.com
+    # 0.0.0.0 twimg.twitter.map.fastly.net
+    # 0.0.0.0 twimg0-0.akamaihd.net
+    # 0.0.0.0 twitter.co
+    # 0.0.0.0 twitter.com
+    # 0.0.0.0 twitter.de
+    # 0.0.0.0 twitter.map.fastly.net
+    # 0.0.0.0 upload.twitter.com
+    # 0.0.0.0 userstream.twitter.com
+    # 0.0.0.0 video.twitter.com
+    # 0.0.0.0 video.twitter.map.fastly.net
+    # 0.0.0.0 widgets.platform.twitter.com
+    # 0.0.0.0 widgets.twimg.com
+    # 0.0.0.0 www.ads-twitter.com
+    # 0.0.0.0 www.t.co
+    # 0.0.0.0 www.twitter.com
+    # 0.0.0.0 www.x.com
+    # 0.0.0.0 www2.twitter.com
+    # 0.0.0.0 www4.twitter.com
+    # 0.0.0.0 x.com
 
     # LinkedIn
     0.0.0.0 addtoprofile.linkedin.com
@@ -2917,6 +2917,84 @@
     0.0.0.0 v.tumblr.com
     0.0.0.0 vt.tumblr.com
     0.0.0.0 www.tumblr.com
+
+    # Reddit
+    # 0.0.0.0 a.thumbs.redditmedia.com
+    # 0.0.0.0 about.reddit.com
+    # 0.0.0.0 accounts.reddit.com
+    # 0.0.0.0 alb.reddit.com
+    # 0.0.0.0 amp-reddit-com.cdn.ampproject.org
+    # 0.0.0.0 b.thumbs.redditmedia.com
+    # 0.0.0.0 c.thumbs.redditmedia.com
+    # 0.0.0.0 d.thumbs.redditmedia.com
+    # 0.0.0.0 e.reddit.com
+    # 0.0.0.0 e.thumbs.redditmedia.com
+    # 0.0.0.0 embed.reddit.com
+    # 0.0.0.0 emoji.redditmedia.com
+    # 0.0.0.0 en.reddit.com
+    # 0.0.0.0 events.reddit.com
+    # 0.0.0.0 events.redditmedia.com
+    # 0.0.0.0 external-preview.redd.it
+    # 0.0.0.0 f.thumbs.redditmedia.com
+    # 0.0.0.0 fr.reddit.com
+    # 0.0.0.0 g.redditmedia.com
+    # 0.0.0.0 gateway.reddit.com
+    # 0.0.0.0 gp.reddit.com
+    # 0.0.0.0 gql-fed.reddit.com
+    # 0.0.0.0 gql-realtime.reddit.com
+    # 0.0.0.0 gql.reddit.com
+    # 0.0.0.0 hw.reddit.com
+    # 0.0.0.0 i.redd.it
+    # 0.0.0.0 i.reddit.com
+    # 0.0.0.0 i.redditmedia.com
+    # 0.0.0.0 i.reddituploads.com
+    # 0.0.0.0 it.reddit.com
+    # 0.0.0.0 m.reddit.com
+    # 0.0.0.0 meta-api.reddit.com
+    # 0.0.0.0 mod.reddit.com
+    # 0.0.0.0 new.reddit.com
+    # 0.0.0.0 np.reddit.com
+    # 0.0.0.0 nsfw.reddit.com
+    # 0.0.0.0 oauth.reddit.com
+    # 0.0.0.0 old.reddit.com
+    # 0.0.0.0 oops.redditmedia.com
+    # 0.0.0.0 out.reddit.com
+    # 0.0.0.0 pixel.redditmedia.com
+    # 0.0.0.0 preview.redd.it
+    # 0.0.0.0 redd.it
+    # 0.0.0.0 reddit-image.s3.amazonaws.com
+    # 0.0.0.0 reddit-stream.com
+    # 0.0.0.0 reddit-uploaded-media.s3-accelerate.amazonaws.com
+    # 0.0.0.0 reddit-uploaded-video.s3-accelerate.amazonaws.com
+    # 0.0.0.0 reddit.com
+    # 0.0.0.0 reddit.map.fastly.net
+    # 0.0.0.0 redditama.reddit.com
+    # 0.0.0.0 redditblog.com
+    # 0.0.0.0 redditgifts.com
+    # 0.0.0.0 redditgifts.s3.amazonaws.com
+    # 0.0.0.0 redditmedia.com
+    # 0.0.0.0 s.reddit.com
+    # 0.0.0.0 s.redditmedia.com
+    # 0.0.0.0 sendbird.reddit.com
+    # 0.0.0.0 ssl.reddit.com
+    # 0.0.0.0 static.redditgifts.com
+    # 0.0.0.0 stats.redditmedia.com
+    # 0.0.0.0 strapi.reddit.com
+    # 0.0.0.0 styles.redditmedia.com
+    # 0.0.0.0 us.reddit.com
+    # 0.0.0.0 v.redd.it
+    # 0.0.0.0 w3-reporting-csp.reddit.com
+    # 0.0.0.0 w3-reporting-nel.reddit.com
+    # 0.0.0.0 w3-reporting.reddit.com
+    # 0.0.0.0 wh.reddit.com
+    # 0.0.0.0 www.np.reddit.com
+    # 0.0.0.0 www.reddit-stream.com
+    # 0.0.0.0 www.reddit.com
+    # 0.0.0.0 www.redditblog.com
+    # 0.0.0.0 www.redditgifts.com
+    # 0.0.0.0 www.redditinc.com
+    # 0.0.0.0 www.redditmedia.com
+    # 0.0.0.0 www.redditstatic.com
 
     # TikTok
     0.0.0.0 abtest-sg-tiktok.byteoversea.com
