@@ -39,8 +39,6 @@ in {
 
   "${modifier}+Shift+Return" = "exec ${pkgs.rofi}/bin/rofi -show drun";
   "${modifier}+Shift+q" = "exec ${pkgs.wlogout}/bin/wlogout";
-  # "${modifier}+Shift+e" = ''
-  #   exec ${pkgs.emacs29-gtk3}/bin/emacsclient --create-frame --alternate-editor=""'';
   "${modifier}+Ctrl+l" = ''
       exec ${pkgs.swaylock-effects}/bin/swaylock \
     	--screenshots \

@@ -29,7 +29,6 @@ source ~/.zoxide.nu
 
 alias l = ls
 alias c = clear
-# alias v = nvim
 alias h = hx
 alias e = exit
 alias y = yazi
@@ -48,5 +47,4 @@ alias gc = git commit -m
 alias gp = git push
 alias gpl = git pull
 alias gst = git stash
-# alias gsp = git stash; git pull
 alias gcheck = git checkout
