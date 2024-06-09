@@ -10,8 +10,8 @@ rulers = [80]
 bufferline = "multiple"
 
 [editor.statusline]
-left = ["mode", "file-name", "read-only-indicator", "file-modification-indicator", "position"]
-right = ["spinner", "diagnostics", "selections", "register", "file-encoding", "version-control", "file-type"]
+left = ["mode", "file-name", "read-only-indicator", "file-modification-indicator", "selections", "position"]
+right = ["spinner", "diagnostics", "register", "version-control", "file-encoding", "file-type"]
 
 [editor.cursor-shape]
 insert = "bar"
