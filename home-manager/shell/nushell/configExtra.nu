@@ -18,7 +18,7 @@ $env.config = {
 source ~/.local/share/atuin/init.nu
 
 # add to PATH
-# $env.PATH = ($env.PATH | split row (char esep) | append "~/.config/emacs/bin" | append "~/.cargo/bin")
+$env.PATH = ($env.PATH | split row (char esep) | append "~/.cargo/bin")
 
 # zoxide
 source ~/.zoxide.nu
