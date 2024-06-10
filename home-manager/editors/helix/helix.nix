@@ -11,4 +11,8 @@ in {
   home.file.".config/helix/config.toml" = {
     source = "${ROOT}/config.toml";
   };
+
+  home.file.".config/helix/languages.toml" = {
+    source = "${ROOT}/languages.toml";
+  };
 }
