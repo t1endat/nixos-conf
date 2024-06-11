@@ -4,4 +4,9 @@ theme "catppuccin-mocha"
 default_layout "compact"
 pane_frames false
 mouse_mode false
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
 

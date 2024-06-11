@@ -9,5 +9,3 @@ if command -v nu &> /dev/null; then
   exec nu 
 fi
 
-# source: https://zellij.dev/documentation/integration#bash
-eval "$(zellij setup --generate-auto-start bash)"
