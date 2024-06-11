@@ -1,0 +1,7 @@
+theme "catppuccin-mocha"
+
+// minimal look
+default_layout "compact"
+pane_frames false
+mouse_mode false
+

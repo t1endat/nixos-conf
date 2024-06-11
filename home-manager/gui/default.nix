@@ -8,5 +8,6 @@
     ./daemon/daemon.nix
     ./mako/mako.nix
     ./cursor/cursor.nix
+    ./zellij/zellij.nix
   ];
 }
