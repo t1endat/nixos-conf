@@ -1,3 +1,4 @@
+#source: https://github.com/helix-editor/helix/blob/master/languages.toml
 [[language]]
 name = "c"
 scope = "source.c"

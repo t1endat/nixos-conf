@@ -2,10 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    # terminal
-    nushell # mordern shell
-
-    # cli tools
     bat # alternative of cat
     fd # alternative of find
     zoxide # alternative of cd
