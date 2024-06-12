@@ -2,6 +2,7 @@ theme "catppuccin-mocha"
 
 // minimal look
 default_layout "compact"
+default_shell "nu"
 pane_frames false
 mouse_mode false
 ui {
