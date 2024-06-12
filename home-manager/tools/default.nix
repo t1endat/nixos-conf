@@ -8,6 +8,5 @@
     ./tui.nix
     ./git.nix
     ./lsp.nix
-    ./global.nix
   ];
 }
