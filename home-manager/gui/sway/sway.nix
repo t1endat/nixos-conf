@@ -3,7 +3,7 @@ let ROOT = builtins.toString ./.;
 in {
   # create symlink for fcitx5 profile 
   home.file.".config/fcitx5" = {
-    source = ./fcitx5;
+    source = "${ROOT}/fcitx5";
     recursive = true;
   };
 
