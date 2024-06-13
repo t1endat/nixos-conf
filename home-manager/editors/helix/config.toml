@@ -282,6 +282,9 @@ g = { g = [
 esc = ["collapse_selection", "normal_mode"]
 
 [keys.select]
+# NOTE: personal config
+J = "copy_selection_on_next_line"
+
 # Muscle memory
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
