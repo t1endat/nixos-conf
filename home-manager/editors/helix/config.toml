@@ -43,10 +43,6 @@ k = "normal_mode" # Maps `jk` to exit insert mode
 
 # source: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 [keys.normal]
-f = ["find_next_char", "collapse_selection"]
-F = ["find_prev_char", "collapse_selection"]
-"." = ["repeat_last_motion", "collapse_selection"]
-
 # Quick iteration on config changes
 C-o = ":config-open"
 C-r = ":config-reload"
