@@ -47,6 +47,7 @@ start_zellij
 alias l = ls
 alias c = clear
 alias h = hx
+alias v = nvim
 alias e = exit
 alias y = yazi
 alias tp = trash-put
