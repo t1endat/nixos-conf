@@ -24,13 +24,6 @@
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
     blockSites.url = "github:StevenBlack/hosts";
 
-    # source: https://nix-community.github.io/nixvim/
-    nixvim = {
-        url = "github:nix-community/nixvim/nixos-24.05";
-        # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
-        inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # source: https://github.com/NixOS/nixos-hardware?tab=readme-ov-file#using-nix-flakes-support
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
@@ -72,7 +65,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, blockSites, nixvim
+  outputs = { self, nixpkgs, home-manager, blockSites 
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
     , catppuccin-alacritty, nushell-defaultConfig, libre-dictionaries, ... }@inputs:
     let
@@ -153,7 +146,6 @@
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 
-            # nixvim.homeManagerModules.nixvim
           ];
         }) userToAttrs;
     };
