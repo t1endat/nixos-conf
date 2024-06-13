@@ -12,3 +12,16 @@ ui {
     }
 }
 
+// remap some keys prevent override from zellij 
+keybinds {
+    normal clear-defaults=true {
+        bind "Ctrl n" { NewPane; }
+
+        bind "Ctrl h" { MoveFocus "Left"; }
+        bind "Ctrl j" { MoveFocus "Down"; }
+        bind "Ctrl k" { MoveFocus "Up"; }
+        bind "Ctrl l" { MoveFocus "Right"; }
+    }
+}
+
+
