@@ -16,6 +16,8 @@ ui {
 keybinds {
     normal clear-defaults=true {
         bind "Ctrl n" { NewPane; }
+        bind "Ctrl f" { ToggleFocusFullscreen; }
+        bind "Ctrl s" { SwitchToMode "Scroll"; }
 
         bind "Ctrl h" { MoveFocus "Left"; }
         bind "Ctrl j" { MoveFocus "Down"; }
