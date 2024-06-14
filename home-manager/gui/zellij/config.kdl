@@ -18,6 +18,7 @@ keybinds {
         bind "Ctrl n" { NewPane; }
         bind "Ctrl f" { ToggleFocusFullscreen; }
         bind "Ctrl s" { SwitchToMode "Scroll"; }
+        bind "Ctrl q" { CloseFocus; }
 
         bind "Ctrl h" { MoveFocus "Left"; }
         bind "Ctrl j" { MoveFocus "Down"; }
