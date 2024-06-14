@@ -47,8 +47,7 @@ start_zellij
 alias l = ls
 alias c = clear
 alias h = hx
-# prevent bad habit
-# alias e = exit
+alias e = exit
 alias y = yazi
 alias tp = trash-put
 alias bt = blueman-manager  
