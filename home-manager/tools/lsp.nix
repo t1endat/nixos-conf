@@ -3,6 +3,5 @@
     nil # lsp for nix
     nodePackages.bash-language-server # lsp fo sh  
     markdown-oxide# lsp for markdown
-    lua-language-server # lsp for lua 
   ];
 }
