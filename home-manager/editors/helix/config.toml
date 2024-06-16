@@ -45,6 +45,7 @@ k = "normal_mode" # Maps `jk` to exit insert mode
 # source: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 [keys.normal]
 y = ["yank_main_selection_to_clipboard"]
+d = ["yank_main_selection_to_clipboard", "delete_selection"]
 p = ["paste_clipboard_after"]
 P = ["paste_clipboard_before"]
 
@@ -55,4 +56,5 @@ esc = ["collapse_selection", "normal_mode"]
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 [keys.select]
 y = ["yank_main_selection_to_clipboard"]
+d = ["yank_main_selection_to_clipboard", "delete_selection"]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
