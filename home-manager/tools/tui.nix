@@ -13,6 +13,7 @@
     # other tui tools
     imv # image viewer
     mpv # line video viewer
-    gitu # magit tui
+    lazygit # git tui
+    lazydocker # docker tui
    ];
 }

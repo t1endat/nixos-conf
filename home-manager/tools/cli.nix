@@ -23,5 +23,6 @@
     _7zz # 7z files
     dict # dictionary 
     nh # nix cli helper  
+    broot # explore files
    ];
 }
