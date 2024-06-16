@@ -49,6 +49,7 @@ alias c = clear
 alias h = hx
 alias e = exit
 alias y = yazi
+alias g = gitu
 alias tp = trash-put
 alias bt = blueman-manager  
 alias lt = exa -l -T
