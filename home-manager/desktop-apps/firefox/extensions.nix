@@ -126,4 +126,10 @@
       "https://addons.mozilla.org/firefox/downloads/latest/edge_translate/latest.xpi";
     installation_mode = "force_installed";
   };
+  # Tab Session Manager
+  "Tab-Session-Manager@sienori" = {
+    install_url =
+      "https://addons.mozilla.org/firefox/downloads/latest/tab-session-manager/latest.xpi";
+    installation_mode = "force_installed";
+  };
 }
