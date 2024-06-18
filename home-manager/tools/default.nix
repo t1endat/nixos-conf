@@ -8,5 +8,6 @@
     ./tui.nix
     ./git.nix
     ./lsp.nix
+    ./wtf.nix
   ];
 }
