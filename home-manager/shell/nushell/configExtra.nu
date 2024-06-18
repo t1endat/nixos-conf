@@ -50,6 +50,7 @@ alias h = hx
 alias e = exit
 alias y = yazi
 alias g = lazygit
+alias d = lazydocker
 alias tp = trash-put
 alias bt = blueman-manager  
 alias lt = exa -l -T
