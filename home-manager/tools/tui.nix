@@ -1,7 +1,5 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    nushell # mordern shell
-
     yazi # terminal file manager
     ueberzugpp # required by yazi for wayland
     file # required by yazi
