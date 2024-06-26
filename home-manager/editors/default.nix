@@ -1,1 +1,1 @@
-{ imports = [ ./helix/helix.nix ]; }
+{ imports = [ ./helix/helix.nix ./obsidian.nix ]; }
