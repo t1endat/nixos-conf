@@ -10,7 +10,7 @@
 
     # other tui tools
     imv # image viewer
-    mpv # line video viewer
+    mpv # video viewer
     lazygit # git 
     lazydocker # docker 
     glow # render markdow

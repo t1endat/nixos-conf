@@ -10,5 +10,14 @@
       ];
       config.common.default = "*";
     };
+    # source: https://mynixos.com/options/xdg.mime
+    mime = {
+      enable = true;
+      defaultApplications = {
+        "application/pdf" = "sioyek.desktop";
+        "image/png" = "imv.desktop";
+        "video/mp4" = "mpv.desktop";
+      };
+    };
   };
 }
