@@ -28,7 +28,8 @@
     0.0.0.0 www.nettruyenmck.com
 
     # football (illegal)
-    0.0.0.0 rakhoi.rakhoiz.space
-    0.0.0.0 cakhia.cakhia10.xyz
+    0.0.0.0 rakhoiz.link
+    0.0.0.0 rakhoi8.link
+    0.0.0.0 cakhiaz.link
   '';
 }
