@@ -132,4 +132,10 @@
       "https://addons.mozilla.org/firefox/downloads/latest/tab-session-manager/latest.xpi";
     installation_mode = "force_installed";
   };
+  # User-Agent Switcher
+  "{75afe46a-7a50-4c6b-b866-c43a1075b071}" = {
+    install_url =
+      "https://addons.mozilla.org/firefox/downloads/latest/user-agent-switcher-revived/latest.xpi";
+    installation_mode = "force_installed";
+  };
 }
