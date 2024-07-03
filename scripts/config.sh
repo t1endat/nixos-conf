@@ -9,6 +9,8 @@ filenames=(
   "../nixos/base/hosts/social-hosts.nix"
   "../nixos/base/hosts/workmode-hosts.nix"
   "../nixos/base/hosts/default.nix"
+  "../nixos/lenovo-laptop/systemd.nix"
+  "../nixos/lenovo-laptop/reset-input-devices.sh"
 )
 
 # Loop through each filename in the array
