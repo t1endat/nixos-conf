@@ -1,13 +1,13 @@
 {
   imports = [
     ./sway/sway.nix
-    ./rofi/rofi.nix
+    ./rofi.nix
     ./waybar/waybar.nix
     ./alacritty/alacritty.nix
-    ./gtk/gtk.nix
-    ./daemon/daemon.nix
+    ./gtk.nix
+    ./daemon.nix
     ./mako/mako.nix
-    ./cursor/cursor.nix
+    ./cursor.nix
     ./zellij/zellij.nix
   ];
 }

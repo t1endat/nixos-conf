@@ -59,15 +59,15 @@
       flake = false;
     };
     
-    libre-dictionaries = {
-      url = "github:LibreOffice/dictionaries";
-      flake = false;
-    };
+    # libre-dictionaries = {
+    #   url = "github:LibreOffice/dictionaries";
+    #   flake = false;
+    # };
   };
 
   outputs = { self, nixpkgs, home-manager, blockSites 
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
-    , catppuccin-alacritty, nushell-defaultConfig, libre-dictionaries, ... }@inputs:
+    , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -142,7 +142,7 @@
           extraSpecialArgs = {
             inherit inputs outputs minimalisticfox
               catppuccin-mako catppuccin-rofi catppuccin-waybar
-              catppuccin-alacritty nushell-defaultConfig libre-dictionaries;
+              catppuccin-alacritty nushell-defaultConfig;
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 
