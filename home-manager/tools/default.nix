@@ -7,5 +7,6 @@
     ./git.nix
     ./lsp.nix
     ./wine.nix
+    ./yazi.nix
   ];
 }
