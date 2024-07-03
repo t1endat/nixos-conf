@@ -22,8 +22,7 @@ in {
     wantedBy = [ "timers.target" ];
     timerConfig = {
       # source: https://man.archlinux.org/man/systemd.time.7
-      OnCalendar="*-*-* 22,23,00,01,02,03,04,05";
-      # OnCalendar="*-*-* 22:00 22:05 22:10 23:50";
+      OnCalendar="*-*-* 22,23,00,01,02,03,04,05:*:00";
       Persistent=true;
       Unit = "shutdown-daily.service";
     };
