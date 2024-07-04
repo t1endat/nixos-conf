@@ -31,6 +31,11 @@
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # non-flake repositories
+    nushell-defaultConfig = {
+      url = "github:nushell/nushell";
+      flake = false;
+    };
+
     minimalisticfox = {
       url = "github:t1endat/minimalisticfox";
       flake = false;

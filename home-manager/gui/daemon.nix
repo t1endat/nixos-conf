@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     autotiling # tiling behavior like hyprland
-    swaylock-effects # lock screen
     swayidle # lock screen after time
     libnotify # to test mako
     wl-clipboard # copy/paste utilities
@@ -14,4 +13,9 @@
     swayest-workstyle # icons in workspace
     playerctl # mpris media player command-line
   ];
+
+  programs.swaylock = {
+    enable = true;
+    package = pkgs.swaylock-effects;
+  };
 }

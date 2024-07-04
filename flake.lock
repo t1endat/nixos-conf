@@ -33,70 +33,6 @@
         "type": "github"
       }
     },
-    "catppuccin-alacritty": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1712663324,
-        "narHash": "sha256-Pi1Hicv3wPALGgqurdTzXEzJNx7vVh+8B9tlqhRpR2Y=",
-        "owner": "catppuccin",
-        "repo": "alacritty",
-        "rev": "94800165c13998b600a9da9d29c330de9f28618e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "alacritty",
-        "type": "github"
-      }
-    },
-    "catppuccin-mako": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1691845483,
-        "narHash": "sha256-nUzWkQVsIH4rrCFSP87mXAka6P+Td2ifNbTuP7NM/SQ=",
-        "owner": "catppuccin",
-        "repo": "mako",
-        "rev": "9dd088aa5f4529a3dd4d9760415e340664cb86df",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "mako",
-        "type": "github"
-      }
-    },
-    "catppuccin-rofi": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1718841465,
-        "narHash": "sha256-zA8Zum19pDTgn0KdQ0gD2kqCOXK4OCHBidFpGwrJOqg=",
-        "owner": "catppuccin",
-        "repo": "rofi",
-        "rev": "b636a00fd40a7899a8206195464ae8b7f0450a6d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "rofi",
-        "type": "github"
-      }
-    },
-    "catppuccin-waybar": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1711907468,
-        "narHash": "sha256-9lY+v1CTbpw2lREG/h65mLLw5KuT8OJdEPOb+NNC6Fo=",
-        "owner": "catppuccin",
-        "repo": "waybar",
-        "rev": "0830796af6aa64ce8bc7453d42876a628777ac68",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "waybar",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -199,10 +135,6 @@
       "inputs": {
         "blockSites": "blockSites",
         "catppuccin": "catppuccin",
-        "catppuccin-alacritty": "catppuccin-alacritty",
-        "catppuccin-mako": "catppuccin-mako",
-        "catppuccin-rofi": "catppuccin-rofi",
-        "catppuccin-waybar": "catppuccin-waybar",
         "home-manager": "home-manager",
         "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
