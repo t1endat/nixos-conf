@@ -9,5 +9,6 @@
     ./mako/mako.nix
     ./cursor.nix
     ./zellij/zellij.nix
+    ./catppuccin.nix 
   ];
 }

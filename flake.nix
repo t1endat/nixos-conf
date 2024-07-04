@@ -24,6 +24,9 @@
     # source: https://github.com/StevenBlack/hosts?tab=readme-ov-file#nix-flake
     blockSites.url = "github:StevenBlack/hosts";
 
+    # catppuccin for nix
+    catppuccin.url = "github:catppuccin/nix";
+
     # source: https://github.com/NixOS/nixos-hardware?tab=readme-ov-file#using-nix-flakes-support
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
@@ -67,7 +70,7 @@
 
   outputs = { self, nixpkgs, home-manager, blockSites 
     , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
-    , catppuccin-alacritty, nushell-defaultConfig, ... }@inputs:
+    , catppuccin-alacritty, nushell-defaultConfig, catppuccin, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -146,6 +149,7 @@
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 
+            catppuccin.homeManagerModules.catppuccin
           ];
         }) userToAttrs;
     };
