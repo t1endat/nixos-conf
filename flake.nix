@@ -134,6 +134,7 @@
               };
             }
             # nixos-hardware.nixosModules.dell-xps-13-9380
+            catppuccin.nixosModules.catppuccin
           ];
         }) hostToAttrs;
 

@@ -9,8 +9,8 @@ in {
   programs.rofi = {
     enable = true;
     font = "IntoneMono Nerd Font 12";
-    theme =
-      "${catppuccin-rofi}/basic/.local/share/rofi/themes/catppuccin-mocha.rasi";
+    # theme =
+    #   "${catppuccin-rofi}/basic/.local/share/rofi/themes/catppuccin-mocha.rasi";
     extraConfig = {
       modi = "run,drun";
       lines = 5;

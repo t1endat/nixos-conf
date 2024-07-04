@@ -7,5 +7,6 @@
     ./apps
     ./hosts
     ./daemon
+    ./catppuccin.nix
   ];
 }
