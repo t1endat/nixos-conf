@@ -3,6 +3,8 @@ let
   ROOT = builtins.toString ./.;
 in 
 {
+  # NOTE: can not convert .kdl file to .yaml, have to use pkgs instead
+  # programs of home-manager
   home.packages = with pkgs; [
     zellij # terminal workspace 
   ];
@@ -16,5 +18,4 @@ in
   home.file.".config/zellij/layouts" = {
     source = "${ROOT}/layouts";
   };
-
 }

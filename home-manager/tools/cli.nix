@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    bat # alternative of cat
     fd # alternative of find
     zoxide # alternative of cd
     ripgrep # recursively searches directories
@@ -25,4 +24,6 @@
     nh # nix cli helper  
     unstable.aichat # llm  
    ];
+
+  programs.bat.enable = true; # alternative of cat
 }

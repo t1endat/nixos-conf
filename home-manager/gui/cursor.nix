@@ -1,9 +1,4 @@
-{ pkgs, ... }: {
-  home.packages = with pkgs;
-    [
-      # gnome3.adwaita-icon-theme # default gnome cursors
-    ];
-
+{ ... }: {
   # source: https://nixos.wiki/wiki/Sway#Cursor_is_too_tiny_on_HiDPI_displays
   # home.pointerCursor = {
   #   name = "Adwaita";
@@ -15,4 +10,5 @@
   #     defaultCursor = "Adwaita";
   #   };
   # };
+  catppuccin.pointerCursor.enable = true;
 }
