@@ -31,32 +31,6 @@
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # non-flake repositories
-    # source: https://github.com/ryan4yin/nix-config
-    catppuccin-alacritty = {
-      url = "github:catppuccin/alacritty";
-      flake = false;
-    };
-
-    catppuccin-mako = {
-      url = "github:catppuccin/mako";
-      flake = false;
-    };
-
-    catppuccin-rofi = {
-      url = "github:catppuccin/rofi";
-      flake = false;
-    };
-
-    catppuccin-waybar = {
-      url = "github:catppuccin/waybar";
-      flake = false;
-    };
-
-    nushell-defaultConfig = {
-      url = "github:nushell/nushell";
-      flake = false;
-    };
-
     minimalisticfox = {
       url = "github:t1endat/minimalisticfox";
       flake = false;
@@ -69,8 +43,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, blockSites 
-    , minimalisticfox, catppuccin-mako, catppuccin-rofi, catppuccin-waybar
-    , catppuccin-alacritty, nushell-defaultConfig, catppuccin, ... }@inputs:
+    , minimalisticfox, nushell-defaultConfig, catppuccin, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -144,9 +117,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs minimalisticfox
-              catppuccin-mako catppuccin-rofi catppuccin-waybar
-              catppuccin-alacritty nushell-defaultConfig;
+            inherit inputs outputs minimalisticfox nushell-defaultConfig;
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 
