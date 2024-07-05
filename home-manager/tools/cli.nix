@@ -12,9 +12,6 @@
     tldr # collaborative cheatsheets for console commands
     atuin # history shell
     trash-cli # alternative for rm
-    # rclone # drive cmdline tool
-    # neofetch # system info script
-    # screen # multiplexes a physical terminal
     just # A handy way to save and run project-specific commands
     appimage-run # run appimage application
     unzip # .zip files
@@ -23,6 +20,9 @@
     dict # dictionary 
     nh # nix cli helper  
     unstable.aichat # llm  
+    # rclone # drive cmdline tool
+    # neofetch # system info script
+    # screen # multiplexes a physical terminal
    ];
 
   programs.bat.enable = true; # alternative of cat

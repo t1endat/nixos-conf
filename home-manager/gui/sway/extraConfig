@@ -1,9 +1,7 @@
 set $mod Mod4
 set $lockscreen_lock_after 300
 set $lockscreen_turnoff_after 10
-set $lockscreen swaylock
---clock \
---indicator \
+set $lockscreen swaylock --clock --indicator
 
 # flags for keybindings
 bindsym --no-repeat $mod+1 workspace number 1; exec "echo 1 > /tmp/sovpipe"

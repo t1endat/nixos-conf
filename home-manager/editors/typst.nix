@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    typst # alternative for latext 
-    typst-lsp # lsp
-    typstyle # formatter
+    unstable.typst # alternative for latext 
+    unstable.typst-lsp # lsp
+    unstable.typstyle # formatter
   ];
 }
