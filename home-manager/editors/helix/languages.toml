@@ -27,7 +27,7 @@ block-comment-tokens = [
   { start = "/**", end = "*/" },
   { start = "/*!", end = "*/" },
 ]
-language-servers = [ "rust-analyzer" ]
+language-servers = [ "rust-analyzer", "vale" ]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
 
@@ -38,7 +38,7 @@ injection-regex = "c"
 file-types = ["c"] # TODO: ["h"]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "clangd" ]
+language-servers = [ "clangd", "vale" ]
 indent = { tab-width = 2, unit = "  " }
 formatter = { command = "clang-format", args = ["--style=file"] }
 auto-format = true
@@ -51,7 +51,7 @@ file-types = ["py", "pyi", "py3", "pyw", "ptl", "rpy", "cpy", "ipy", "pyt", { gl
 shebangs = ["python"]
 roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
 comment-token = "#"
-language-servers = [ "pyright", "pylsp" ]
+language-servers = [ "pyright", "pylsp", "vale" ]
 # TODO: pyls needs utf-8 offsets
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "black", args = ["--quiet", "-"] }
