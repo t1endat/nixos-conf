@@ -1,11 +1,10 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  # NOTE: will be removed soon!!
   gtk = {
     enable = true;
-    catppuccin = {
-      enable = true;
-      icon.enable = true;
-      };
+    theme = {
+      name = "adw-gtk3";
+      package = pkgs.adw-gtk3;
+    };
   };
 }

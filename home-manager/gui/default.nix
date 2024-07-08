@@ -10,5 +10,6 @@
     ./cursor.nix
     ./zellij/zellij.nix
     ./catppuccin.nix 
+    ./qt.nix
   ];
 }

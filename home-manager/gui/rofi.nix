@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
-  # home.packages = with pkgs;
-  #   [
-  #     papirus-icon-theme # icon for rofi
-  #   ];
+  home.packages = with pkgs;
+    [
+      papirus-icon-theme # icon for rofi
+    ];
 
   programs.rofi = {
     enable = true;
