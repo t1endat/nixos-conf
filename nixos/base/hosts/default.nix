@@ -1,6 +1,6 @@
 {
   imports = [
-    ./extra-hosts.nix
+    ./hosts.nix
     ./workmode-hosts.nix
   ];
 }
