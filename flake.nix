@@ -108,7 +108,7 @@
                 blockFakenews = true;
                 blockGambling = true;
                 blockPorn = true;
-                blockSocial = true;
+                # blockSocial = true;
               };
             }
             # nixos-hardware.nixosModules.dell-xps-13-9380

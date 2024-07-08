@@ -5,7 +5,7 @@
     ./udev.nix
     ./environment.nix
     ./apps
-    ./hosts
+    ./hosts/hosts.nix
     ./daemon
     ./catppuccin.nix
   ];
