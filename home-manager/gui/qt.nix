@@ -2,9 +2,13 @@
 {
   qt = {
     enable = true;
-    style.catppuccin = {
-      enable = true;
-      apply = true;
+    platformTheme.name = "kvantum";
+    style = {
+      name = "kvantum";
+      catppuccin = {
+        enable = true;
+        apply = true;
+      };
     };
   };
 }
