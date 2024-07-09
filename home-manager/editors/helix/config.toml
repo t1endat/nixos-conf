@@ -36,6 +36,9 @@ hidden = false
 [editor.indent-guides]
 render = true
 
+[editor.soft-wrap]
+enable = true
+
 # remap keybinding for better
 [keys.insert.j]
 k = "normal_mode" # Maps `jk` to exit insert mode
