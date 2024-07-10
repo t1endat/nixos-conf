@@ -38,6 +38,7 @@ render = true
 
 [editor.soft-wrap]
 enable = true
+wrap-at-text-width = true
 
 # remap keybinding for better
 [keys.insert.j]
