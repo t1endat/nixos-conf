@@ -1,14 +1,14 @@
 # Define the filenames as an array
 filenames=(
-  "../flake.nix"
-  "../home-manager/desktop-apps/firefox/firefox.nix"
   "../nixos/base/preset.nix"
   "../nixos/dell-pc/hardware-configuration.nix"
   "../nixos/lenovo-laptop/hardware-configuration.nix"
-  "../nixos/base/hosts/extra-hosts.nix"
-  "../nixos/base/hosts/social-hosts.nix"
-  "../nixos/base/hosts/workmode-hosts.nix"
-  "../nixos/base/hosts/default.nix"
+  "../flake.nix"
+  "../home-manager/desktop-apps/firefox/firefox.nix"
+  "../nixos/base/hosts/extra-hosts"
+  "../nixos/base/hosts/social-hosts"
+  "../nixos/base/hosts/workmode-hosts"
+  "../nixos/base/hosts/hosts.nix"
   "../nixos/lenovo-laptop/systemd.nix"
   "../nixos/lenovo-laptop/reset-input-devices.sh"
 )
