@@ -65,3 +65,25 @@ m.youtube.com##ytm-reel-shelf-renderer.item:has(.reel-shelf-title-wrapper:has-te
 
 ! Hide shorts tab on channel pages
 m.youtube.com##.single-column-browse-results-tabs>a:has-text(Shorts)
+
+! Youtube unnecessary elements
+www.youtube.com###scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope
+www.youtube.com###logo
+www.youtube.com##ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer.style-scope
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com###guide-links-primary
+www.youtube.com###guide-links-secondary
+www.youtube.com###copyright
+
+! suggestion videos
+www.youtube.com##.grid-disabled.ytd-browse.style-scope
+www.youtube.com##ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope
+www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
+
+! Reddit unnecessary elements
+www.reddit.com##.justify-end.items-center.flex.gap-xs.pl-lg
+www.reddit.com##.pt-md.px-md.w-\[272px\].box-border.bg-neutral-background.overflow-x-hidden.overflow-y-scroll.styled-scrollbars.h-screen-without-header.top-\[56px\].sticky.w-full.block.nd\:visible
+www.reddit.com##.border-r-neutral-border.s\:border-r-sm.border-solid.border-0.m\:block.hidden.order-first.isolate.theme-rpl.left-sidebar
+www.reddit.com##.hello-world.contents.nd\:visible > .items-center.flex.no-underline

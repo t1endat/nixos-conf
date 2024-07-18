@@ -3,7 +3,7 @@ let
   platformio-udev = builtins.fetchurl {
     url =
       "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules";
-    sha256 = "07xbwvnzm3zr695j9rlpxa09vln3ra72k9298pgdb8261viarwq9";
+    sha256 = "1ihkih39vi48azf40z9qjy3m8whnpa21x7fjw2vrbwy15kzvp8yp";
   };
 in {
   # source: https://discourse.nixos.org/t/how-to-create-files-in-the-etc-udev-rules-d-directory/11929/5

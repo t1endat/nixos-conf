@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     lazydocker # docker 
-    glow # render markdow
    ];
 
   programs = {
