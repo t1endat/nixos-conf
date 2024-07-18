@@ -72,12 +72,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1721116560,
-        "narHash": "sha256-++TYlGMAJM1Q+0nMVaWBSEvEUjRs7ZGiNQOpqbQApCU=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "9355fa86e6f27422963132c2c9aeedb0fb963d93",
-        "type": "github"
+        "lastModified": 1720954236,
+        "narHash": "sha256-1mEKHp4m9brvfQ0rjCca8P1WHpymK3TOr3v34ydv9bs=",
+        "path": "/nix/store/hkv63lvykwr520xf8yv2gcw3s78fjfpd-source",
+        "rev": "53e81e790209e41f0c1efa9ff26ff2fd7ab35e27",
+        "type": "path"
       },
       "original": {
         "id": "nixpkgs",
@@ -102,11 +101,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1720954236,
-        "narHash": "sha256-1mEKHp4m9brvfQ0rjCca8P1WHpymK3TOr3v34ydv9bs=",
+        "lastModified": 1721226092,
+        "narHash": "sha256-UBvzVpo5sXSi2S/Av+t+Q+C2mhMIw/LBEZR+d6NMjws=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "53e81e790209e41f0c1efa9ff26ff2fd7ab35e27",
+        "rev": "c716603a63aca44f39bef1986c13402167450e0a",
         "type": "github"
       },
       "original": {
@@ -119,17 +118,29 @@
     "nushell-defaultConfig": {
       "flake": false,
       "locked": {
-        "lastModified": 1721180837,
-        "narHash": "sha256-D4aw23fTpJca55GHB9BGoKjUaQqX6ZcyKCDcVvSFwEQ=",
+        "lastModified": 1721260367,
+        "narHash": "sha256-lBOeHHYSs3sq6UI+RTqIm5RriIo6j34jeXE2CxxTSlQ=",
         "owner": "nushell",
         "repo": "nushell",
-        "rev": "f976c318870730a1674376ff33141626faf67a07",
+        "rev": "22379c9846713c3905bc3e4ef5f9187113f5a689",
         "type": "github"
       },
       "original": {
         "owner": "nushell",
         "repo": "nushell",
         "type": "github"
+      }
+    },
+    "platformio-udev": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-4/VBdHFOStlGfaDR61KfzxKuKtQ8l4isdnkFeCqdB6I=",
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules"
       }
     },
     "root": {
@@ -140,7 +151,8 @@
         "minimalisticfox": "minimalisticfox",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "nushell-defaultConfig": "nushell-defaultConfig"
+        "nushell-defaultConfig": "nushell-defaultConfig",
+        "platformio-udev": "platformio-udev"
       }
     }
   },

@@ -9,8 +9,7 @@ in {
     # package = pkgs.unstable.nushell;
     configFile.source =
       "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_config.nu";
-    # envFile.source =
-    #   "${nushell-defaultConfig}/crates/nu-utils/src/sample_config/default_env.nu";
+
     envFile.source =
       "${ROOT}/env.nu";
     extraConfig = ''

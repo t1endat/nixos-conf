@@ -40,6 +40,11 @@
       url = "github:t1endat/minimalisticfox";
       flake = false;
     };
+
+    platformio-udev = {
+      url = "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules";
+      flake = false;
+    };
     
     # libre-dictionaries = {
     #   url = "github:LibreOffice/dictionaries";
@@ -48,7 +53,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, blockSites 
-    , minimalisticfox, nushell-defaultConfig, catppuccin, ... }@inputs:
+    , minimalisticfox, nushell-defaultConfig, catppuccin, platformio-udev, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -98,7 +103,7 @@
       # Available through 'nixos-rebuild --flake .#your-hostname'
       nixosConfigurations = builtins.mapAttrs (host: value:
         nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs outputs; };
+          specialArgs = { inherit inputs outputs platformio-udev; };
           modules = [
             ./nixos/${host}/configuration.nix
             blockSites.nixosModule
@@ -122,7 +127,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs minimalisticfox nushell-defaultConfig;
+            inherit inputs outputs minimalisticfox nushell-defaultConfig ;
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 
