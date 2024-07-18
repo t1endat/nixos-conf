@@ -81,6 +81,9 @@ www.youtube.com###copyright
 www.youtube.com##.grid-disabled.ytd-browse.style-scope
 www.youtube.com##ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope
 www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
+www.youtube.com###panels-full-bleed-container
+www.youtube.com###chat
+www.youtube.com###comments > .ytd-comments.style-scope
 
 ! Reddit unnecessary elements
 www.reddit.com##.justify-end.items-center.flex.gap-xs.pl-lg
