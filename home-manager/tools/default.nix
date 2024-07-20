@@ -9,5 +9,6 @@
     ./wine.nix
     ./yazi.nix
     ./robotics.nix
+    ./qt.nix
   ];
 }
