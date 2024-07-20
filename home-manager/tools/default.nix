@@ -8,5 +8,6 @@
     ./lsp.nix
     ./wine.nix
     ./yazi.nix
+    ./robotics.nix
   ];
 }
