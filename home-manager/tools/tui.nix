@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    lazydocker # docker 
+    # lazydocker # docker 
+    podman-tui # podman
    ];
 
   programs = {
