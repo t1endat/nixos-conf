@@ -21,8 +21,8 @@
     nh # nix cli helper  
     unstable.aichat # llm  
     distrobox # run any linux distro 
+    neofetch # system info script
     # rclone # drive cmdline tool
-    # neofetch # system info script
     # screen # multiplexes a physical terminal
    ];
 
