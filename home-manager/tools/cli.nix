@@ -20,6 +20,7 @@
     dict # dictionary 
     nh # nix cli helper  
     unstable.aichat # llm  
+    distrobox # run any linux distro 
     # rclone # drive cmdline tool
     # neofetch # system info script
     # screen # multiplexes a physical terminal
