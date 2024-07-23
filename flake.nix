@@ -36,8 +36,13 @@
       flake = false;
     };
 
+    # custom firefox
     minimalisticfox = {
       url = "github:t1endat/minimalisticfox";
+      flake = false;
+    };
+    ffcsshacks = {
+      url = "github:MrOtherGuy/firefox-csshacks";
       flake = false;
     };
 
@@ -53,7 +58,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, blockSites 
-    , minimalisticfox, nushell-defaultConfig, catppuccin, platformio-udev, ... }@inputs:
+    , minimalisticfox, ffcsshacks, nushell-defaultConfig, catppuccin, platformio-udev, ... }@inputs:
     let
       # custom user and host
       users = [ "tiendat" "icslab" ];
@@ -127,7 +132,7 @@
         home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
-            inherit inputs outputs minimalisticfox nushell-defaultConfig ;
+            inherit inputs outputs minimalisticfox ffcsshacks nushell-defaultConfig ;
           };
           modules = [ 
             ./home-manager/hosts/${user}.nix 

@@ -1,4 +1,14 @@
-{ pkgs, minimalisticfox, ... }: {
+{ pkgs, minimalisticfox, ffcsshacks, ... }: 
+{
+  # ffcsshacks
+  home.file.".mozilla/firefox/default/chrome/navbar_below_content.css" = {
+    source = "${ffcsshacks}/chrome/navbar_below_content.css";
+  };
+
+  home.file.".mozilla/firefox/default/chrome/minimalistic_tab.css" = {
+    source = "${minimalisticfox}/minimalistic_tab.css";
+  };
+
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;
