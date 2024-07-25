@@ -1,5 +1,6 @@
 { pkgs, minimalisticfox, ffcsshacks, ... }: 
-{
+let ROOT = builtins.toString ./.;
+in{
   # ffcsshacks
   home.file.".mozilla/firefox/default/chrome/navbar_below_content.css" = {
     source = "${ffcsshacks}/chrome/navbar_below_content.css";
@@ -19,7 +20,7 @@
         id = 0;
         path = "default";
         # source: https://github.com/Jamir-boop/minimalisticfox 
-        userChrome = builtins.readFile "${minimalisticfox}/userChrome.css";
+        userChrome = builtins.readFile "${ROOT}/userChrome.css";
       };
     };
     # source: about:policies#documentation
