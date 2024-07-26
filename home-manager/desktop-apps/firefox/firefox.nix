@@ -1,10 +1,10 @@
-{ pkgs, minimalisticfox, ffcsshacks, ... }: 
+{ pkgs, minimalisticfox, ... }: 
 let ROOT = builtins.toString ./.;
 in{
-  # ffcsshacks
-  home.file.".mozilla/firefox/default/chrome/autohide_bookmarks_and_main_toolbars.css" = {
-    source = "${ffcsshacks}/chrome/autohide_bookmarks_and_main_toolbars.css";
-  };
+  # # ffcsshacks
+  # home.file.".mozilla/firefox/default/chrome/autohide_bookmarks_and_main_toolbars.css" = {
+  #   source = "${ffcsshacks}/chrome/autohide_bookmarks_and_main_toolbars.css";
+  # };
 
   home.file.".mozilla/firefox/default/chrome/minimalistic_tab.css" = {
     source = "${minimalisticfox}/minimalistic_tab.css";

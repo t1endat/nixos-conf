@@ -2,7 +2,8 @@
 @import url("./minimalistic_tab.css");
 
 /* force hide navbar for using more keyboard */
-root[sessionrestored] #nav-bar:not(:focus-within) {
+/* source: https://www.reddit.com/r/FirefoxCSS/comments/h9yq2s/autohide_navigation_bar/ */
+:root[sessionrestored] #nav-bar:not(:focus-within) {
   height:     0px !important;
   min-height: 0px !important;
 }
