@@ -1,2 +1,8 @@
-@import url("./autohide_bookmarks_and_main_toolbars.css");
+/* @import url("./autohide_bookmarks_and_main_toolbars.css"); */
 @import url("./minimalistic_tab.css");
+
+/* force hide navbar for using more keyboard */
+root[sessionrestored] #nav-bar:not(:focus-within) {
+  height:     0px !important;
+  min-height: 0px !important;
+}
