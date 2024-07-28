@@ -76,7 +76,7 @@ www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-o
 www.youtube.com###guide-links-primary
 www.youtube.com###guide-links-secondary
 www.youtube.com###copyright
-www.youtube.com###secondary
+www.youtube.com###panels
 
 ! suggestion videos
 www.youtube.com##.grid-disabled.ytd-browse.style-scope
