@@ -11,7 +11,7 @@ swaymsg move workspace to output $output_2_name
 swaymsg workspace number ${workspace_on_2:0:1}
 swaymsg move workspace to output $output_1_name 
 
-# move to main screen (2)
+# move to main screen (workspace 2)
 main_workspace=$(swaymsg -t get_outputs --raw | jq '.[1].current_workspace' -r)
 swaymsg workspace number ${main_workspace:0:1}
 
