@@ -10,6 +10,7 @@ other_workspace=10
 # move 1 -> 10, 2 -> 1 and 10 -> 2
 swaymsg workspace number ${workspace_on_1:0:1}
 swaymsg move container to workspace number $other_workspace
+
 swaymsg workspace number ${workspace_on_2:0:1}
 swaymsg move container to workspace number ${workspace_on_1:0:1}
 
