@@ -8,14 +8,49 @@ other_workspace=10
 
 # move workspace
 # move 1 -> 10, 2 -> 1 and 10 -> 2
-swaymsg workspace number ${workspace_on_1:0:1}
-swaymsg move container to workspace number $other_workspace
+move1to10(){
+  swaymsg workspace number ${workspace_on_1:0:1}
+  swaymsg move container to workspace number $other_workspace
+}
 
-swaymsg workspace number ${workspace_on_2:0:1}
-swaymsg move container to workspace number ${workspace_on_1:0:1}
+move2to1(){
+  swaymsg workspace number ${workspace_on_2:0:1}
+  swaymsg move container to workspace number ${workspace_on_1:0:1}
+}
 
-swaymsg workspace number $other_workspace
-swaymsg move container to workspace number ${workspace_on_2:0:1}
+move10to2(){
+  swaymsg workspace number $other_workspace
+  swaymsg move container to workspace number ${workspace_on_2:0:1}
+}
+
+
+main() {
+    move1to10
+
+    # Check if the command failed
+    if [ $? -ne 0 ]; then
+        echo "Command failed, can not move container from 1 to 10"
+        move2to1
+        return
+    else
+        echo "Command succeeded."
+    fi
+
+    move2to1
+    if [ $? -ne 0 ]; then
+        echo "Command failed, can not move container from 2 to 1"
+        move10to2
+        return
+    else
+        echo "Command succeeded."
+    fi
+
+    move10to2
+}
+
+
+# Call the function
+main
 
 # to hide other_workspace
 swaymsg workspace number ${workspace_on_1:0:1}
@@ -23,5 +58,3 @@ swaymsg workspace number ${workspace_on_1:0:1}
 # move to main workspace (workspace 2)
 main_workspace=$(swaymsg -t get_outputs --raw | jq '.[1].current_workspace' -r)
 swaymsg workspace number ${main_workspace:0:1}
-
-
