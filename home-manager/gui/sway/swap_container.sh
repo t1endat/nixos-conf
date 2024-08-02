@@ -31,6 +31,12 @@ main() {
     if [ $? -ne 0 ]; then
         echo "Command failed, can not move container from 1 to 10"
         move2to1
+        if [ $? -ne 0 ]; then
+            echo "Command failed, can not move container from 2 to 1"
+            return
+        else
+            echo "Command succeeded."
+        fi
         return
     else
         echo "Command succeeded."
