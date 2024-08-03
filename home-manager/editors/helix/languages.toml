@@ -31,6 +31,18 @@ language-servers = ["tinymist", "typst-lsp", "vale" ]
 indent = { tab-width = 2, unit = "  " }
 
 [[language]]
+name = "nix"
+scope = "source.nix"
+injection-regex = "nix"
+file-types = ["nix"]
+shebangs = []
+comment-token = "#"
+language-servers = [ "nil" ]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "nixfmt", args = ["--quiet", "-"] }
+auto-format = true
+
+[[language]]
 name = "rust"
 scope = "source.rust"
 injection-regex = "rs|rust"
