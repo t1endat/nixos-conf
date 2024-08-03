@@ -85,6 +85,7 @@ www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 www.youtube.com###panels-full-bleed-container
 www.youtube.com###chat
 www.youtube.com###comments > .ytd-comments.style-scope
+www.youtube.com###secondary
 
 ! Reddit unnecessary elements
 www.reddit.com##.justify-end.items-center.flex.gap-xs.pl-lg
