@@ -1,6 +1,8 @@
 { pkgs, ... }:
-let ROOT = builtins.toString ./.;
-in {
+let
+  ROOT = builtins.toString ./.;
+in
+{
   # https://discourse.nixos.org/t/how-to-add-a-modprobe-reset-in-config/21423/5
   # reset devices list after reboot, run after init swayWM 
   systemd.services."reset-input-devices" = {
@@ -8,7 +10,9 @@ in {
     description = "Reset input devices to make keyboard work";
     after = [ "tlp.service" ];
     wantedBy = [ "tlp.service" ];
-    serviceConfig = { Type = "oneshot"; };
+    serviceConfig = {
+      Type = "oneshot";
+    };
     path = with pkgs; [ bash ];
     script = ''
       bash ${ROOT}/reset-input-devices.sh
@@ -22,8 +26,8 @@ in {
     wantedBy = [ "timers.target" ];
     timerConfig = {
       # source: https://man.archlinux.org/man/systemd.time.7
-      OnCalendar="*-*-* 22,23,00,01,02,03,04,05:*:00";
-      Persistent=true;
+      OnCalendar = "*-*-* 22,23,00,01,02,03,04,05:*:00";
+      Persistent = true;
       Unit = "shutdown-daily.service";
     };
   };
