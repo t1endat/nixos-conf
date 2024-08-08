@@ -5,6 +5,12 @@ output_2_name=$(swaymsg -t get_outputs --raw | jq '.[1].name' -r)
 workspace_on_1=$(swaymsg -t get_outputs --raw | jq '.[0].current_workspace' -r)
 workspace_on_2=$(swaymsg -t get_outputs --raw | jq '.[1].current_workspace' -r)
 
+# Check if either variable is null
+if [ "$workspace_on_1" = null ] || [ "$workspace_on_2" = null ]; then
+    echo "One of the variables is null. Exiting..."
+    exit 1  # Exit the script with a non-zero status
+fi
+
 # move workspace
 swaymsg workspace number ${workspace_on_1:0:1}
 swaymsg move workspace to output $output_2_name
