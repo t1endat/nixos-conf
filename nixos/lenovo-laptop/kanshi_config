@@ -4,6 +4,6 @@ profile single {
 }
 
 profile dual {
-	output "HDMI-A-1" scale 0.9 mode 1366x768 position 0,0 
+	output "HDMI-A-1" scale 0.8 mode 1366x768 position 0,0 
     output "eDP-1" disable
 }
